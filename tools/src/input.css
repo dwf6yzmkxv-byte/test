@@ -1,0 +1,358 @@
+/* ══════════════════════════════════════════════════════════════════
+   MontagneNoireLaser — source de la feuille de style unique du site.
+   Compilée et minifiée par Tailwind vers « site laser ok copie/assets/site.css » :
+       cd tools && npm run build:css
+   Ne pas modifier assets/site.css à la main : il est régénéré à chaque build.
+   ══════════════════════════════════════════════════════════════════ */
+
+/* ── Polices auto-hébergées (sous-ensemble latin, woff2) ────────────
+   Seules les graisses réellement utilisées sont embarquées :
+   Lato 400 / 700 (texte) et Playfair Display 700 (titres).
+   Licence SIL Open Font License 1.1 — fichiers issus de @fontsource. */
+@font-face {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("../fonts/lato-latin-400-normal.woff2") format("woff2");
+}
+@font-face {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url("../fonts/lato-latin-700-normal.woff2") format("woff2");
+}
+@font-face {
+    font-family: "Playfair Display";
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url("../fonts/playfair-display-latin-700-normal.woff2") format("woff2");
+}
+
+/* Polices de repli aux métriques ajustées : le texte occupe la même place
+   avant et après le chargement des polices (pas de décalage de mise en page). */
+@font-face {
+    font-family: "Lato Fallback";
+    font-weight: 400;
+    src: local("Arial"), local("ArialMT");
+    size-adjust: 96.35%;
+    ascent-override: 102.44%;
+    descent-override: 22.11%;
+    line-gap-override: 0%;
+}
+@font-face {
+    font-family: "Lato Fallback";
+    font-weight: 700;
+    src: local("Arial Bold"), local("Arial-BoldMT");
+    size-adjust: 91.96%;
+    ascent-override: 107.32%;
+    descent-override: 23.16%;
+    line-gap-override: 0%;
+}
+@font-face {
+    font-family: "Playfair Display Fallback";
+    font-weight: 700;
+    src: local("Times New Roman Bold"), local("TimesNewRomanPS-BoldMT");
+    size-adjust: 106.96%;
+    ascent-override: 101.16%;
+    descent-override: 23.47%;
+    line-gap-override: 0%;
+}
+
+@tailwind base;
+
+/* ══════════════════════════════════════════════════════════════════
+   Styles propres au site (anciennement style.css)
+   ══════════════════════════════════════════════════════════════════ */
+
+/* ── Icônes SVG (sprite <symbol> en début de <body>) ────────────────
+   Se comportent comme les anciennes icônes-police : hauteur = taille du
+   texte (text-2xl, text-lg…), couleur = couleur du texte, largeur
+   proportionnelle au viewBox de l'icône. */
+.icon {
+    display: inline-block;
+    height: 1em;
+    width: auto;
+    fill: currentColor;
+    vertical-align: -0.125em;
+    overflow: visible;
+    flex-shrink: 0;
+}
+
+/* ── Défilement ─────────────────────────────────────────────────── */
+html {
+    scroll-behavior: smooth;
+    /* Les ancres ne passent pas sous la barre de navigation fixe */
+    scroll-padding-top: 5rem;
+}
+
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: #1e1a15; }
+::-webkit-scrollbar-thumb { background: #a98467; border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: #d4a373; }
+
+/* ── Lien d'évitement ───────────────────────────────────────────── */
+.skip-link {
+    position: absolute;
+    left: 1rem;
+    top: 0;
+    z-index: 100;
+    padding: 0.75rem 1.25rem;
+    background: #d4a373;
+    color: #1e1a15;
+    font-weight: 700;
+    border-radius: 0 0 0.75rem 0.75rem;
+    transform: translateY(-120%);
+    transition: transform 0.2s ease;
+}
+
+.skip-link:focus {
+    transform: translateY(0);
+}
+
+/* ── Focus clavier : double anneau lisible sur fonds clairs et sombres ── */
+:focus-visible {
+    outline: 3px solid #d4a373;
+    outline-offset: 2px;
+    box-shadow: 0 0 0 2px #1e1a15;
+}
+
+main:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+/* ── Apparition au défilement ───────────────────────────────────────
+   Le contenu n'est masqué que lorsque script.js a réellement démarré
+   (classe .reveal-on) : sans JavaScript, ou si le script échoue,
+   tout reste visible. */
+.reveal-on .reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.reveal-on .reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.delay-100 { transition-delay: 0.1s; }
+.delay-200 { transition-delay: 0.2s; }
+.delay-300 { transition-delay: 0.3s; }
+.delay-400 { transition-delay: 0.4s; }
+
+/* ── Hero ───────────────────────────────────────────────────────── */
+#hero-bg {
+    animation: heroZoom 12s ease-out forwards;
+}
+
+@keyframes heroZoom {
+    from { transform: scale(1.08); }
+    to   { transform: scale(1); }
+}
+
+.hero-content {
+    animation: heroFade 0.9s ease-out both;
+}
+
+@keyframes heroFade {
+    from { opacity: 0; transform: translateY(24px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ── Barre de navigation après défilement ───────────────────────── */
+#navbar.scrolled {
+    background-color: rgba(30, 26, 21, 0.98);
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.4);
+}
+
+/* ── Carrousels (défilement natif + scroll-snap) ────────────────── */
+.carousel-track {
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior-x: contain;
+}
+
+.carousel-track::-webkit-scrollbar {
+    display: none;
+}
+
+.carousel-arrow {
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    width: 2.75rem;
+    height: 2.75rem;
+    margin-top: -1.375rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 9999px;
+    background: rgba(30, 26, 21, 0.72);
+    color: #fff;
+    transition: background-color 0.2s ease, opacity 0.2s ease;
+}
+
+.carousel-arrow:hover { background: #1e1a15; }
+.carousel-arrow[disabled] { opacity: 0.35; cursor: default; }
+.carousel-arrow--prev { left: 0.5rem; }
+.carousel-arrow--next { right: 0.5rem; }
+
+.carousel-arrow svg {
+    width: 1.1rem;
+    height: 1.1rem;
+}
+
+.carousel-dots {
+    position: absolute;
+    left: 50%;
+    bottom: 0.25rem;
+    z-index: 10;
+    display: flex;
+    transform: translateX(-50%);
+    padding: 0 0.25rem;
+    border-radius: 9999px;
+    background: rgba(30, 26, 21, 0.55);
+}
+
+/* Zone tactile de 36 × 44 px autour d'un point visuel de 10 px */
+.carousel-dot {
+    width: 2.25rem;
+    height: 2.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-dot::before {
+    content: "";
+    width: 0.625rem;
+    height: 0.625rem;
+    border-radius: 9999px;
+    border: 2px solid #fff;
+    background: transparent;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.carousel-dot[aria-current="true"]::before {
+    background: #fff;
+    transform: scale(1.2);
+}
+
+/* ── FAQ ────────────────────────────────────────────────────────── */
+.faq-item summary {
+    list-style: none;
+    cursor: pointer;
+}
+
+.faq-item summary::-webkit-details-marker {
+    display: none;
+}
+
+.faq-item .faq-chevron {
+    transition: transform 0.25s ease;
+}
+
+.faq-item[open] .faq-chevron {
+    transform: rotate(180deg);
+}
+
+/* ── Boutons flottants (devis mobile, retour en haut) ───────────── */
+.floating-actions {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(12px);
+    transition: opacity 0.25s ease, transform 0.25s ease, visibility 0.25s;
+}
+
+.floating-actions.visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+/* ── Modale de devis ────────────────────────────────────────────── */
+#devis-modal {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+#devis-modal.open {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modal-box {
+    transform: translateY(24px) scale(0.97);
+    transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1), opacity 0.3s ease;
+    opacity: 0;
+}
+
+#devis-modal.open .modal-box {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+}
+
+/* Flèche personnalisée du menu déroulant */
+#devis-type {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='%237a6350'%3E%3Cpath fill-rule='evenodd' d='M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z' clip-rule='evenodd'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    background-size: 1.2em;
+    padding-right: 2.5rem;
+}
+
+/* Erreurs de saisie */
+.field-error {
+    margin-top: 0.375rem;
+    font-size: 0.8125rem;
+    font-weight: 700;
+    color: #b91c1c;
+}
+
+[aria-invalid="true"] {
+    border-color: #b91c1c !important;
+    box-shadow: 0 0 0 1px #b91c1c;
+}
+
+/* Indicateur de chargement du bouton d'envoi */
+.spinner {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    margin-right: 0.5rem;
+    vertical-align: -0.125em;
+    border: 2px solid rgba(255, 255, 255, 0.35);
+    border-top-color: #fff;
+    border-radius: 50%;
+    animation: spin 0.7s linear infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+/* ── Moins d'animations si l'utilisateur le demande ─────────────── */
+@media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+        transition-delay: 0s !important;
+    }
+
+    .reveal-on .reveal {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@tailwind components;
+@tailwind utilities;

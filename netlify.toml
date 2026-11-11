@@ -1,0 +1,11 @@
+# Configuration Netlify — MontagneNoireLaser
+# Le site est statique : aucun build, on publie directement le dossier du site.
+[build]
+  publish = "site laser ok copie"
+
+# En-têtes HTTP (cache, sécurité) : définis dans "site laser ok copie/_headers".
+# Redirections : "site laser ok copie/_redirects".
+# Ces deux fichiers vivent dans le dossier publié et s'appliquent donc aussi bien
+# à un déploiement Git (via ce netlify.toml) qu'à un déploiement du dossier seul
+# (glisser-déposer ou "base directory" = dossier du site). Ne pas les dupliquer ici.
+# Page 404 : Netlify sert automatiquement "404.html" (code HTTP 404) pour toute URL inconnue.

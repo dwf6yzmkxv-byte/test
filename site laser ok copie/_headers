@@ -1,0 +1,69 @@
+# En-têtes HTTP Netlify — MontagneNoireLaser
+# Source unique des en-têtes (netlify.toml ne les redéfinit pas, pour éviter les doublons).
+
+# Sécurité (toutes les pages).
+# Content-Security-Policy : le site ne charge plus aucune ressource tierce (CSS, polices et icônes
+# sont auto-hébergés) et ne contient ni script ni style inline ; tout est donc limité à 'self'.
+#   - img-src data:  -> flèche du menu déroulant du formulaire (image SVG intégrée dans le CSS)
+#   - connect-src / form-action 'self' -> envoi du formulaire de devis (Netlify Forms)
+#   - les blocs <script type="application/ld+json"> sont des données, non exécutées : non concernés
+# Si un jour un service externe est ajouté (statistiques, vidéo, carte…), il faudra l'autoriser ici.
+/*
+  Content-Security-Policy: default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; manifest-src 'self'; form-action 'self' mailto:; frame-ancestors 'none'; base-uri 'self'; object-src 'none'
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: DENY
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: accelerometer=(), camera=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), payment=(), usb=(), interest-cohort=()
+  Strict-Transport-Security: max-age=31536000
+
+# HTML : toujours revalidé
+/
+  Cache-Control: public, max-age=0, must-revalidate
+/*.html
+  Cache-Control: public, max-age=0, must-revalidate
+
+# Feuille de style principale : générée par `npm run build:css` (dossier tools/), qui met à jour
+# le numéro de version ?v=… dans index.html à chaque changement -> cache long
+/assets/site.css
+  Cache-Control: public, max-age=31536000, immutable
+
+# JS et petites feuilles de style modifiés à la main : cache court + revalidation
+/script.js
+  Cache-Control: public, max-age=3600, must-revalidate
+/assets/404.css
+  Cache-Control: public, max-age=3600, must-revalidate
+/assets/legal.css
+  Cache-Control: public, max-age=3600, must-revalidate
+
+# Images optimisées et polices : noms de fichiers stables/versionnés -> cache long
+/images/*
+  Cache-Control: public, max-age=31536000, immutable
+/fonts/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Icônes et image de partage : une semaine
+/favicon.ico
+  Cache-Control: public, max-age=604800
+/favicon-32.png
+  Cache-Control: public, max-age=604800
+/apple-touch-icon.png
+  Cache-Control: public, max-age=604800
+/icon-192.png
+  Cache-Control: public, max-age=604800
+/icon-512.png
+  Cache-Control: public, max-age=604800
+/og-image.jpg
+  Cache-Control: public, max-age=604800
+
+/site.webmanifest
+  Content-Type: application/manifest+json; charset=utf-8
+  Cache-Control: public, max-age=86400
+
+/sitemap.xml
+  Cache-Control: public, max-age=3600
+/robots.txt
+  Cache-Control: public, max-age=3600
+
+# Pages utilitaires hors index
+/404.html
+  X-Robots-Tag: noindex

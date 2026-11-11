@@ -1,3 +1,4 @@
+# robots.txt — MontagneNoireLaser
 User-agent: *
 Allow: /
 

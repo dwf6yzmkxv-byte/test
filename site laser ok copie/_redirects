@@ -1,0 +1,3 @@
+# Script de développement local : ne pas le servir en production
+/serve.py    /404.html    404!
+# Toute URL inconnue : Netlify sert automatiquement /404.html (code 404)
