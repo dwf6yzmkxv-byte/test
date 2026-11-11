@@ -17,8 +17,10 @@
     <link rel="canonical" href="https://montagnenoirelaser.netlify.app/">
 
     <!-- Image LCP (hero) -->
-    <link rel="preload" as="image" type="image/webp" href="images/canal-du-midi-800.webp"
-          imagesrcset="images/canal-du-midi-800.webp 800w, images/canal-du-midi-1195.webp 1195w"
+    <!-- Doit rester identique au <source type="image/avif"> du hero (sinon double téléchargement).
+         Les navigateurs sans AVIF ignorent ce preload (attribut type) et chargent le WebP via <picture>. -->
+    <link rel="preload" as="image" type="image/avif" href="images/canal-du-midi-800.avif"
+          imagesrcset="images/canal-du-midi-480.avif 480w, images/canal-du-midi-800.avif 800w, images/canal-du-midi-1195.avif 1195w"
           imagesizes="100vw" fetchpriority="high">
 
     <script>document.documentElement.classList.add('js');</script>
@@ -407,88 +409,113 @@
 <body class="font-sans text-wood-900 bg-wood-50">
 
     <!-- ═══════════════════════════ NAVIGATION ═══════════════════════════ -->
-    <nav class="fixed w-full z-50 bg-wood-900/90 backdrop-blur-md transition-all duration-300" id="navbar">
-        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="#home" class="flex items-center gap-3" aria-label="Retour à l'accueil">
-                <img src="logo.jpg" alt="Logo MontagneNoireLaser" class="h-9 w-9 rounded-full object-cover">
-                <span class="text-xl font-serif font-bold tracking-wide text-white">MontagneNoireLaser</span>
-            </a>
+    <a href="#contenu" class="skip-link">Aller au contenu</a>
 
-            <!-- Desktop Menu -->
-            <div class="hidden md:flex items-center space-x-8 font-medium text-wood-100">
-                <a href="#surmesure" class="hover:text-wood-300 transition-colors text-sm tracking-wider uppercase">Sur Mesure</a>
-                <a href="#catalogue" class="hover:text-wood-300 transition-colors text-sm tracking-wider uppercase">Catalogue</a>
-                <a href="#reviews" class="hover:text-wood-300 transition-colors text-sm tracking-wider uppercase">Avis</a>
-                <a href="#apropos" class="hover:text-wood-300 transition-colors text-sm tracking-wider uppercase">Atelier</a>
-                <button onclick="openDevisModal()"
-                        class="px-5 py-2.5 border border-wood-300 text-wood-300 rounded-full hover:bg-wood-300 hover:text-wood-900 font-bold transition-all text-sm">
-                    <i class="fa-solid fa-file-invoice mr-1.5"></i> Devis gratuit
-                </button>
-                <a href="https://montagnenoirelaser.etsy.com" target="_blank" rel="noopener noreferrer"
-                   class="px-5 py-2.5 bg-wood-300 text-wood-900 rounded-full hover:bg-white font-bold transition-all text-sm">
-                    <i class="fa-brands fa-etsy mr-1.5"></i> Boutique Etsy
+    <header class="fixed top-0 inset-x-0 z-50 bg-wood-900/90 backdrop-blur-md transition-all duration-300" id="navbar">
+        <nav aria-label="Navigation principale">
+            <div class="container mx-auto px-4 sm:px-6 py-3 flex justify-between items-center gap-4">
+                <a href="#home" class="flex items-center gap-3 min-w-0">
+                    <picture>
+                        <source type="image/avif" srcset="images/logo-96.avif 1x, images/logo-192.avif 2x">
+                        <img src="images/logo-96.webp" srcset="images/logo-96.webp 1x, images/logo-192.webp 2x" alt="" width="96" height="96"
+                             class="h-10 w-10 shrink-0 rounded-full object-cover">
+                    </picture>
+                    <span class="text-lg sm:text-xl font-serif font-bold tracking-wide text-white truncate">MontagneNoireLaser</span>
+                    <span class="sr-only">— retour à l'accueil</span>
                 </a>
-            </div>
 
-            <!-- Mobile Menu Button -->
-            <button id="mobile-menu-btn" type="button" class="md:hidden text-white focus:outline-none" aria-label="Ouvrir le menu" aria-controls="mobile-menu" aria-expanded="false">
-                <i class="fa-solid fa-bars text-2xl"></i>
-            </button>
-        </div>
+                <!-- Menu grand écran -->
+                <div class="hidden lg:flex items-center gap-6 xl:gap-8 font-medium text-wood-100">
+                    <a href="#surmesure" class="hover:text-wood-300 transition-colors text-sm tracking-wider uppercase">Sur mesure</a>
+                    <a href="#catalogue" class="hover:text-wood-300 transition-colors text-sm tracking-wider uppercase">Boutique</a>
+                    <a href="#reviews" class="hover:text-wood-300 transition-colors text-sm tracking-wider uppercase">Avis</a>
+                    <a href="#apropos" class="hover:text-wood-300 transition-colors text-sm tracking-wider uppercase">Atelier</a>
+                    <a href="#faq" class="hover:text-wood-300 transition-colors text-sm tracking-wider uppercase">FAQ</a>
+                    <button type="button" data-devis-open
+                            class="px-5 py-2.5 border border-wood-300 text-wood-300 rounded-full hover:bg-wood-300 hover:text-wood-900 font-bold transition-all text-sm whitespace-nowrap">
+                        <i class="fa-solid fa-file-invoice mr-1.5" aria-hidden="true"></i> Devis gratuit
+                    </button>
+                    <a href="https://montagnenoirelaser.etsy.com" target="_blank" rel="noopener noreferrer"
+                       class="hidden xl:inline-block px-5 py-2.5 bg-wood-300 text-wood-900 rounded-full hover:bg-white font-bold transition-all text-sm whitespace-nowrap">
+                        <i class="fa-brands fa-etsy mr-1.5" aria-hidden="true"></i> Boutique Etsy<span class="sr-only"> (nouvel onglet)</span>
+                    </a>
+                </div>
 
-        <!-- Mobile Menu Panel -->
-        <div id="mobile-menu" class="hidden md:hidden bg-wood-900 border-t border-wood-800 absolute w-full left-0">
-            <div class="flex flex-col px-6 py-5 space-y-4 text-center">
-                <a href="#surmesure" class="block py-2 text-wood-100 tracking-wider uppercase text-sm">Sur Mesure</a>
-                <a href="#catalogue" class="block py-2 text-wood-100 tracking-wider uppercase text-sm">Catalogue</a>
-                <a href="#reviews" class="block py-2 text-wood-100 tracking-wider uppercase text-sm">Avis</a>
-                <a href="#apropos" class="block py-2 text-wood-100 tracking-wider uppercase text-sm">Atelier</a>
-                <button type="button" onclick="openDevisModal()"
-                        class="block w-full py-3 border border-wood-300 text-wood-300 rounded-full font-bold">
-                    <i class="fa-solid fa-file-invoice mr-1.5"></i> Devis gratuit
+                <!-- Bouton du menu mobile -->
+                <button id="mobile-menu-btn" type="button" class="lg:hidden shrink-0 w-11 h-11 flex items-center justify-center rounded-full text-white" aria-label="Ouvrir le menu" aria-controls="mobile-menu" aria-expanded="false">
+                    <i class="fa-solid fa-bars text-2xl" aria-hidden="true"></i>
                 </button>
-                <a href="https://montagnenoirelaser.etsy.com" target="_blank" rel="noopener noreferrer"
-                   class="block py-3 bg-wood-300 text-wood-900 rounded-full font-bold">Boutique Etsy</a>
             </div>
-        </div>
-    </nav>
 
-    <main>
+            <!-- Menu mobile -->
+            <div id="mobile-menu" class="hidden lg:hidden bg-wood-900 border-t border-wood-800 absolute w-full left-0 shadow-2xl">
+                <div class="flex flex-col px-6 py-5 space-y-2 text-center">
+                    <a href="#surmesure" class="block py-3 text-wood-100 tracking-wider uppercase text-sm">Sur mesure</a>
+                    <a href="#catalogue" class="block py-3 text-wood-100 tracking-wider uppercase text-sm">Boutique</a>
+                    <a href="#reviews" class="block py-3 text-wood-100 tracking-wider uppercase text-sm">Avis</a>
+                    <a href="#apropos" class="block py-3 text-wood-100 tracking-wider uppercase text-sm">Atelier</a>
+                    <a href="#faq" class="block py-3 text-wood-100 tracking-wider uppercase text-sm">FAQ</a>
+                    <button type="button" data-devis-open
+                            class="block w-full py-3 border border-wood-300 text-wood-300 rounded-full font-bold">
+                        <i class="fa-solid fa-file-invoice mr-1.5" aria-hidden="true"></i> Devis gratuit
+                    </button>
+                    <a href="https://montagnenoirelaser.etsy.com" target="_blank" rel="noopener noreferrer"
+                       class="block py-3 bg-wood-300 text-wood-900 rounded-full font-bold">
+                        <i class="fa-brands fa-etsy mr-1.5" aria-hidden="true"></i> Boutique Etsy<span class="sr-only"> (nouvel onglet)</span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main id="contenu" tabindex="-1">
     <!-- ═══════════════════════════ HERO ═══════════════════════════ -->
-    <header class="relative h-[100svh] min-h-[38rem] flex items-center justify-center overflow-hidden" id="home">
+    <section class="relative min-h-[100svh] flex items-center justify-center overflow-hidden pt-24 pb-24" id="home" aria-labelledby="hero-title">
         <div class="absolute inset-0 z-0">
-            <img src="canaldumidi.jpg" alt="Gravure laser du Canal du Midi sur bois - artisan graveur Mazamet Tarn" class="w-full h-full object-cover scale-105" id="hero-bg">
-            <div class="absolute inset-0 bg-gradient-to-b from-wood-900/70 via-wood-900/50 to-wood-900/80"></div>
+            <picture>
+                <source type="image/avif" srcset="images/canal-du-midi-480.avif 480w, images/canal-du-midi-800.avif 800w, images/canal-du-midi-1195.avif 1195w" sizes="100vw">
+                <source type="image/webp" srcset="images/canal-du-midi-480.webp 480w, images/canal-du-midi-800.webp 800w, images/canal-du-midi-1195.webp 1195w" sizes="100vw">
+                <img src="images/canal-du-midi-1195.webp" alt="" width="1195" height="896" fetchpriority="high" decoding="async"
+                     class="absolute inset-0 w-full h-full object-cover" id="hero-bg">
+            </picture>
+            <div class="absolute inset-0 bg-gradient-to-b from-wood-900/75 via-wood-900/60 to-wood-900/85"></div>
         </div>
 
-        <div class="relative z-10 text-center px-4 max-w-5xl mx-auto reveal">
-            <img src="baniere.jpg" alt="Logo MontagneNoireLaser - Gravure laser artisanale Mazamet Tarn Occitanie"
-                 class="w-28 h-28 mx-auto mb-8 rounded-full object-cover border-4 border-wood-300 shadow-2xl">
-            <p class="text-wood-300 font-bold tracking-[0.3em] uppercase text-sm mb-4">Artisan Graveur Laser à Mazamet</p>
-            <h1 class="text-5xl md:text-7xl font-serif font-bold text-white mb-6 leading-tight">
+        <div class="hero-content relative z-10 text-center px-4 max-w-5xl mx-auto">
+            <picture>
+                <source type="image/avif" srcset="images/banniere-224.avif 1x, images/banniere-448.avif 2x">
+                <img src="images/banniere-224.webp" srcset="images/banniere-224.webp 1x, images/banniere-448.webp 2x" alt="Logo MontagneNoireLaser" width="224" height="224" decoding="async"
+                     class="w-24 h-24 sm:w-28 sm:h-28 mx-auto mb-6 sm:mb-8 rounded-full object-cover border-4 border-wood-300 shadow-2xl">
+            </picture>
+            <p class="text-wood-300 font-bold tracking-[0.2em] sm:tracking-[0.3em] uppercase text-xs sm:text-sm mb-4">Artisan graveur laser à Mazamet</p>
+            <h1 id="hero-title" class="text-4xl sm:text-5xl md:text-7xl font-serif font-bold text-white mb-6 leading-tight">
                 Gravure laser sur mesure<br><span class="text-wood-300">à Mazamet, dans le Tarn</span>
             </h1>
-            <p class="text-lg text-gray-300 mb-10 font-light max-w-2xl mx-auto tracking-wide">
-                Créations personnalisées sur bois et cuir — décoration murale, cadeaux gravés, objets uniques. Artisan graveur en Occitanie, au coeur de la Montagne Noire.
+            <p class="text-base sm:text-lg text-gray-200 mb-8 sm:mb-10 max-w-2xl mx-auto tracking-wide">
+                Créations personnalisées sur bois et cuir — décoration murale, cadeaux gravés, objets uniques. Artisan graveur en Occitanie, au cœur de la Montagne Noire.
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center">
                 <a href="#surmesure"
                    class="inline-block px-8 py-4 bg-wood-300 text-wood-900 font-bold rounded-full hover:bg-white hover:scale-105 transition-all duration-300 shadow-lg">
-                    <i class="fa-solid fa-star mr-2"></i> Voir les créations sur mesure
+                    <i class="fa-solid fa-star mr-2" aria-hidden="true"></i> Voir les créations sur mesure
                 </a>
-                <a href="https://montagnenoirelaser.etsy.com" target="_blank" rel="noopener noreferrer"
-                   class="inline-block px-8 py-4 border-2 border-white/60 text-white font-bold rounded-full hover:bg-white hover:text-wood-900 hover:scale-105 transition-all duration-300">
-                    <i class="fa-brands fa-etsy mr-2"></i> Catalogue Etsy
-                </a>
+                <button type="button" data-devis-open
+                        class="inline-block px-8 py-4 border-2 border-white/70 text-white font-bold rounded-full hover:bg-white hover:text-wood-900 hover:scale-105 transition-all duration-300">
+                    <i class="fa-solid fa-file-invoice mr-2" aria-hidden="true"></i> Devis gratuit sous 24 h
+                </button>
             </div>
+            <p class="mt-6 text-sm text-gray-200">
+                Envie d'un cadeau prêt à personnaliser ?
+                <a href="#catalogue" class="font-bold text-wood-300 underline underline-offset-4 hover:text-white">Voir la boutique</a>
+            </p>
         </div>
 
-        <div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce">
-            <a href="#surmesure" class="text-white/70 hover:text-white">
-                <i class="fa-solid fa-chevron-down text-2xl"></i>
+        <div class="absolute bottom-4 left-1/2 -translate-x-1/2 animate-bounce hidden sm:block">
+            <a href="#surmesure" class="flex items-center justify-center w-11 h-11 text-white/80 hover:text-white" aria-label="Descendre vers les créations sur mesure">
+                <i class="fa-solid fa-chevron-down text-2xl" aria-hidden="true"></i>
             </a>
         </div>
-    </header>
+    </section>
 
     <!-- ═══════════════════════════ SUR MESURE ═══════════════════════════ -->
     <section id="surmesure" class="py-24 bg-wood-900">
