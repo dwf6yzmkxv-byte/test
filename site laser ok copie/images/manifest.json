@@ -1,0 +1,773 @@
+{
+  "fichiers": [
+    {
+      "fichier": "apple-touch-icon.png",
+      "largeur": 180,
+      "hauteur": 180,
+      "poids": 15812
+    },
+    {
+      "fichier": "favicon-32.png",
+      "largeur": 32,
+      "hauteur": 32,
+      "poids": 897
+    },
+    {
+      "fichier": "favicon.ico",
+      "largeur": 48,
+      "hauteur": 48,
+      "poids": 3096
+    },
+    {
+      "fichier": "icon-192.png",
+      "largeur": 192,
+      "hauteur": 192,
+      "poids": 17464
+    },
+    {
+      "fichier": "icon-512.png",
+      "largeur": 512,
+      "hauteur": 512,
+      "poids": 90456
+    },
+    {
+      "fichier": "images/banniere-224.avif",
+      "largeur": 224,
+      "hauteur": 224,
+      "poids": 6959
+    },
+    {
+      "fichier": "images/banniere-224.webp",
+      "largeur": 224,
+      "hauteur": 224,
+      "poids": 10490
+    },
+    {
+      "fichier": "images/banniere-448.avif",
+      "largeur": 448,
+      "hauteur": 448,
+      "poids": 18155
+    },
+    {
+      "fichier": "images/banniere-448.webp",
+      "largeur": 448,
+      "hauteur": 448,
+      "poids": 28334
+    },
+    {
+      "fichier": "images/bouchon-1-480.avif",
+      "largeur": 480,
+      "hauteur": 640,
+      "poids": 14929
+    },
+    {
+      "fichier": "images/bouchon-1-480.webp",
+      "largeur": 480,
+      "hauteur": 640,
+      "poids": 18068
+    },
+    {
+      "fichier": "images/bouchon-1-800.avif",
+      "largeur": 800,
+      "hauteur": 1067,
+      "poids": 29569
+    },
+    {
+      "fichier": "images/bouchon-1-800.webp",
+      "largeur": 800,
+      "hauteur": 1067,
+      "poids": 36070
+    },
+    {
+      "fichier": "images/bouchon-2-480.avif",
+      "largeur": 480,
+      "hauteur": 640,
+      "poids": 33559
+    },
+    {
+      "fichier": "images/bouchon-2-480.webp",
+      "largeur": 480,
+      "hauteur": 640,
+      "poids": 48054
+    },
+    {
+      "fichier": "images/bouchon-2-800.avif",
+      "largeur": 800,
+      "hauteur": 1067,
+      "poids": 70422
+    },
+    {
+      "fichier": "images/bouchon-2-800.webp",
+      "largeur": 800,
+      "hauteur": 1067,
+      "poids": 104616
+    },
+    {
+      "fichier": "images/bouchon-3-480.avif",
+      "largeur": 480,
+      "hauteur": 640,
+      "poids": 23762
+    },
+    {
+      "fichier": "images/bouchon-3-480.webp",
+      "largeur": 480,
+      "hauteur": 640,
+      "poids": 30810
+    },
+    {
+      "fichier": "images/bouchon-3-800.avif",
+      "largeur": 800,
+      "hauteur": 1067,
+      "poids": 50430
+    },
+    {
+      "fichier": "images/bouchon-3-800.webp",
+      "largeur": 800,
+      "hauteur": 1067,
+      "poids": 65848
+    },
+    {
+      "fichier": "images/canal-du-midi-1195.avif",
+      "largeur": 1195,
+      "hauteur": 896,
+      "poids": 98294
+    },
+    {
+      "fichier": "images/canal-du-midi-1195.webp",
+      "largeur": 1195,
+      "hauteur": 896,
+      "poids": 141902
+    },
+    {
+      "fichier": "images/canal-du-midi-480.avif",
+      "largeur": 480,
+      "hauteur": 360,
+      "poids": 22334
+    },
+    {
+      "fichier": "images/canal-du-midi-480.webp",
+      "largeur": 480,
+      "hauteur": 360,
+      "poids": 31000
+    },
+    {
+      "fichier": "images/canal-du-midi-800.avif",
+      "largeur": 800,
+      "hauteur": 600,
+      "poids": 51880
+    },
+    {
+      "fichier": "images/canal-du-midi-800.webp",
+      "largeur": 800,
+      "hauteur": 600,
+      "poids": 74542
+    },
+    {
+      "fichier": "images/cintre-1-480.avif",
+      "largeur": 480,
+      "hauteur": 640,
+      "poids": 13695
+    },
+    {
+      "fichier": "images/cintre-1-480.webp",
+      "largeur": 480,
+      "hauteur": 640,
+      "poids": 16316
+    },
+    {
+      "fichier": "images/cintre-1-800.avif",
+      "largeur": 800,
+      "hauteur": 1067,
+      "poids": 32701
+    },
+    {
+      "fichier": "images/cintre-1-800.webp",
+      "largeur": 800,
+      "hauteur": 1067,
+      "poids": 37274
+    },
+    {
+      "fichier": "images/cintre-2-480.avif",
+      "largeur": 480,
+      "hauteur": 643,
+      "poids": 22432
+    },
+    {
+      "fichier": "images/cintre-2-480.webp",
+      "largeur": 480,
+      "hauteur": 643,
+      "poids": 26514
+    },
+    {
+      "fichier": "images/cintre-2-800.avif",
+      "largeur": 800,
+      "hauteur": 1071,
+      "poids": 53789
+    },
+    {
+      "fichier": "images/cintre-2-800.webp",
+      "largeur": 800,
+      "hauteur": 1071,
+      "poids": 68116
+    },
+    {
+      "fichier": "images/cintre-3-480.avif",
+      "largeur": 480,
+      "hauteur": 720,
+      "poids": 19068
+    },
+    {
+      "fichier": "images/cintre-3-480.webp",
+      "largeur": 480,
+      "hauteur": 720,
+      "poids": 21526
+    },
+    {
+      "fichier": "images/cintre-3-800.avif",
+      "largeur": 800,
+      "hauteur": 1200,
+      "poids": 45625
+    },
+    {
+      "fichier": "images/cintre-3-800.webp",
+      "largeur": 800,
+      "hauteur": 1200,
+      "poids": 50718
+    },
+    {
+      "fichier": "images/logo-192.avif",
+      "largeur": 192,
+      "hauteur": 192,
+      "poids": 2195
+    },
+    {
+      "fichier": "images/logo-192.webp",
+      "largeur": 192,
+      "hauteur": 192,
+      "poids": 2930
+    },
+    {
+      "fichier": "images/logo-96.avif",
+      "largeur": 96,
+      "hauteur": 96,
+      "poids": 1145
+    },
+    {
+      "fichier": "images/logo-96.webp",
+      "largeur": 96,
+      "hauteur": 96,
+      "poids": 1204
+    },
+    {
+      "fichier": "images/one-piece-1200.avif",
+      "largeur": 1200,
+      "hauteur": 1607,
+      "poids": 99352
+    },
+    {
+      "fichier": "images/one-piece-1200.webp",
+      "largeur": 1200,
+      "hauteur": 1607,
+      "poids": 126748
+    },
+    {
+      "fichier": "images/one-piece-480.avif",
+      "largeur": 480,
+      "hauteur": 643,
+      "poids": 31830
+    },
+    {
+      "fichier": "images/one-piece-480.webp",
+      "largeur": 480,
+      "hauteur": 643,
+      "poids": 41700
+    },
+    {
+      "fichier": "images/one-piece-800.avif",
+      "largeur": 800,
+      "hauteur": 1072,
+      "poids": 61180
+    },
+    {
+      "fichier": "images/one-piece-800.webp",
+      "largeur": 800,
+      "hauteur": 1072,
+      "poids": 78540
+    },
+    {
+      "fichier": "images/passerelle-mazamet-480.avif",
+      "largeur": 480,
+      "hauteur": 360,
+      "poids": 19463
+    },
+    {
+      "fichier": "images/passerelle-mazamet-480.webp",
+      "largeur": 480,
+      "hauteur": 360,
+      "poids": 28040
+    },
+    {
+      "fichier": "images/passerelle-mazamet-800.avif",
+      "largeur": 800,
+      "hauteur": 600,
+      "poids": 43852
+    },
+    {
+      "fichier": "images/passerelle-mazamet-800.webp",
+      "largeur": 800,
+      "hauteur": 600,
+      "poids": 64002
+    },
+    {
+      "fichier": "images/petanque-1-480.avif",
+      "largeur": 480,
+      "hauteur": 360,
+      "poids": 27027
+    },
+    {
+      "fichier": "images/petanque-1-480.webp",
+      "largeur": 480,
+      "hauteur": 360,
+      "poids": 42230
+    },
+    {
+      "fichier": "images/petanque-1-800.avif",
+      "largeur": 800,
+      "hauteur": 600,
+      "poids": 58779
+    },
+    {
+      "fichier": "images/petanque-1-800.webp",
+      "largeur": 800,
+      "hauteur": 600,
+      "poids": 88784
+    },
+    {
+      "fichier": "images/petanque-2-1200.avif",
+      "largeur": 1200,
+      "hauteur": 900,
+      "poids": 109360
+    },
+    {
+      "fichier": "images/petanque-2-1200.webp",
+      "largeur": 1200,
+      "hauteur": 900,
+      "poids": 137128
+    },
+    {
+      "fichier": "images/petanque-2-480.avif",
+      "largeur": 480,
+      "hauteur": 360,
+      "poids": 13030
+    },
+    {
+      "fichier": "images/petanque-2-480.webp",
+      "largeur": 480,
+      "hauteur": 360,
+      "poids": 14894
+    },
+    {
+      "fichier": "images/petanque-2-800.avif",
+      "largeur": 800,
+      "hauteur": 600,
+      "poids": 43328
+    },
+    {
+      "fichier": "images/petanque-2-800.webp",
+      "largeur": 800,
+      "hauteur": 600,
+      "poids": 54810
+    },
+    {
+      "fichier": "images/petanque-3-1200.avif",
+      "largeur": 1200,
+      "hauteur": 900,
+      "poids": 78693
+    },
+    {
+      "fichier": "images/petanque-3-1200.webp",
+      "largeur": 1200,
+      "hauteur": 900,
+      "poids": 99382
+    },
+    {
+      "fichier": "images/petanque-3-480.avif",
+      "largeur": 480,
+      "hauteur": 360,
+      "poids": 14722
+    },
+    {
+      "fichier": "images/petanque-3-480.webp",
+      "largeur": 480,
+      "hauteur": 360,
+      "poids": 19206
+    },
+    {
+      "fichier": "images/petanque-3-800.avif",
+      "largeur": 800,
+      "hauteur": 600,
+      "poids": 39126
+    },
+    {
+      "fichier": "images/petanque-3-800.webp",
+      "largeur": 800,
+      "hauteur": 600,
+      "poids": 50078
+    },
+    {
+      "fichier": "images/pic-de-nore-1200.avif",
+      "largeur": 1200,
+      "hauteur": 1200,
+      "poids": 60957
+    },
+    {
+      "fichier": "images/pic-de-nore-1200.webp",
+      "largeur": 1200,
+      "hauteur": 1200,
+      "poids": 96930
+    },
+    {
+      "fichier": "images/pic-de-nore-480.avif",
+      "largeur": 480,
+      "hauteur": 480,
+      "poids": 18113
+    },
+    {
+      "fichier": "images/pic-de-nore-480.webp",
+      "largeur": 480,
+      "hauteur": 480,
+      "poids": 27972
+    },
+    {
+      "fichier": "images/pic-de-nore-800.avif",
+      "largeur": 800,
+      "hauteur": 800,
+      "poids": 35780
+    },
+    {
+      "fichier": "images/pic-de-nore-800.webp",
+      "largeur": 800,
+      "hauteur": 800,
+      "poids": 57672
+    },
+    {
+      "fichier": "images/porte-cles-1200.avif",
+      "largeur": 1200,
+      "hauteur": 1613,
+      "poids": 123987
+    },
+    {
+      "fichier": "images/porte-cles-1200.webp",
+      "largeur": 1200,
+      "hauteur": 1613,
+      "poids": 162562
+    },
+    {
+      "fichier": "images/porte-cles-480.avif",
+      "largeur": 480,
+      "hauteur": 645,
+      "poids": 38212
+    },
+    {
+      "fichier": "images/porte-cles-480.webp",
+      "largeur": 480,
+      "hauteur": 645,
+      "poids": 49380
+    },
+    {
+      "fichier": "images/porte-cles-800.avif",
+      "largeur": 800,
+      "hauteur": 1076,
+      "poids": 78281
+    },
+    {
+      "fichier": "images/porte-cles-800.webp",
+      "largeur": 800,
+      "hauteur": 1076,
+      "poids": 99678
+    },
+    {
+      "fichier": "images/portefeuille-1-480.avif",
+      "largeur": 480,
+      "hauteur": 360,
+      "poids": 15552
+    },
+    {
+      "fichier": "images/portefeuille-1-480.webp",
+      "largeur": 480,
+      "hauteur": 360,
+      "poids": 22080
+    },
+    {
+      "fichier": "images/portefeuille-1-800.avif",
+      "largeur": 800,
+      "hauteur": 600,
+      "poids": 39806
+    },
+    {
+      "fichier": "images/portefeuille-1-800.webp",
+      "largeur": 800,
+      "hauteur": 600,
+      "poids": 56194
+    },
+    {
+      "fichier": "images/portefeuille-2-1200.avif",
+      "largeur": 1200,
+      "hauteur": 1600,
+      "poids": 214090
+    },
+    {
+      "fichier": "images/portefeuille-2-1200.webp",
+      "largeur": 1200,
+      "hauteur": 1600,
+      "poids": 239316
+    },
+    {
+      "fichier": "images/portefeuille-2-480.avif",
+      "largeur": 480,
+      "hauteur": 640,
+      "poids": 57015
+    },
+    {
+      "fichier": "images/portefeuille-2-480.webp",
+      "largeur": 480,
+      "hauteur": 640,
+      "poids": 59320
+    },
+    {
+      "fichier": "images/portefeuille-2-800.avif",
+      "largeur": 800,
+      "hauteur": 1067,
+      "poids": 115137
+    },
+    {
+      "fichier": "images/portefeuille-2-800.webp",
+      "largeur": 800,
+      "hauteur": 1067,
+      "poids": 123436
+    },
+    {
+      "fichier": "images/shelby-1200.avif",
+      "largeur": 1200,
+      "hauteur": 1644,
+      "poids": 120593
+    },
+    {
+      "fichier": "images/shelby-1200.webp",
+      "largeur": 1200,
+      "hauteur": 1644,
+      "poids": 141734
+    },
+    {
+      "fichier": "images/shelby-480.avif",
+      "largeur": 480,
+      "hauteur": 658,
+      "poids": 29855
+    },
+    {
+      "fichier": "images/shelby-480.webp",
+      "largeur": 480,
+      "hauteur": 658,
+      "poids": 36642
+    },
+    {
+      "fichier": "images/shelby-800.avif",
+      "largeur": 800,
+      "hauteur": 1096,
+      "poids": 70682
+    },
+    {
+      "fichier": "images/shelby-800.webp",
+      "largeur": 800,
+      "hauteur": 1096,
+      "poids": 82168
+    },
+    {
+      "fichier": "og-image.jpg",
+      "largeur": 1200,
+      "hauteur": 630,
+      "poids": 98354
+    }
+  ],
+  "slugs": {
+    "canal-du-midi": {
+      "source": "canaldumidi.jpg",
+      "largeur_source": 1195,
+      "hauteur_source": 896,
+      "ratio": 1.3337,
+      "largeurs": [
+        480,
+        800,
+        1195
+      ]
+    },
+    "passerelle-mazamet": {
+      "source": "passerelletrafic.jpg",
+      "largeur_source": 1195,
+      "hauteur_source": 896,
+      "ratio": 1.3337,
+      "largeurs": [
+        480,
+        800
+      ]
+    },
+    "petanque-1": {
+      "source": "petanque1.jpg",
+      "largeur_source": 1195,
+      "hauteur_source": 896,
+      "ratio": 1.3337,
+      "largeurs": [
+        480,
+        800
+      ]
+    },
+    "petanque-2": {
+      "source": "petanque2.jpeg",
+      "largeur_source": 4032,
+      "hauteur_source": 3024,
+      "ratio": 1.3333,
+      "largeurs": [
+        480,
+        800,
+        1200
+      ]
+    },
+    "petanque-3": {
+      "source": "petanque3.jpeg",
+      "largeur_source": 4032,
+      "hauteur_source": 3024,
+      "ratio": 1.3333,
+      "largeurs": [
+        480,
+        800,
+        1200
+      ]
+    },
+    "porte-cles": {
+      "source": "portecles.jpg.jpg",
+      "largeur_source": 1588,
+      "hauteur_source": 2135,
+      "ratio": 0.7438,
+      "largeurs": [
+        480,
+        800,
+        1200
+      ]
+    },
+    "one-piece": {
+      "source": "gravure one piece.webp",
+      "largeur_source": 1588,
+      "hauteur_source": 2127,
+      "ratio": 0.7466,
+      "largeurs": [
+        480,
+        800,
+        1200
+      ]
+    },
+    "shelby": {
+      "source": "photo gravure shelby.jpg",
+      "largeur_source": 1588,
+      "hauteur_source": 2176,
+      "ratio": 0.7298,
+      "largeurs": [
+        480,
+        800,
+        1200
+      ]
+    },
+    "cintre-1": {
+      "source": "cintre1.jpg",
+      "largeur_source": 896,
+      "hauteur_source": 1195,
+      "ratio": 0.7498,
+      "largeurs": [
+        480,
+        800
+      ]
+    },
+    "cintre-2": {
+      "source": "cintre2.jpg",
+      "largeur_source": 896,
+      "hauteur_source": 1200,
+      "ratio": 0.7467,
+      "largeurs": [
+        480,
+        800
+      ]
+    },
+    "cintre-3": {
+      "source": "cintre3.png",
+      "largeur_source": 1024,
+      "hauteur_source": 1536,
+      "ratio": 0.6667,
+      "largeurs": [
+        480,
+        800
+      ]
+    },
+    "bouchon-1": {
+      "source": "bouchon1.jpg",
+      "largeur_source": 896,
+      "hauteur_source": 1195,
+      "ratio": 0.7498,
+      "largeurs": [
+        480,
+        800
+      ]
+    },
+    "bouchon-2": {
+      "source": "bouchon2.jpg",
+      "largeur_source": 896,
+      "hauteur_source": 1195,
+      "ratio": 0.7498,
+      "largeurs": [
+        480,
+        800
+      ]
+    },
+    "bouchon-3": {
+      "source": "bouchon3.jpg",
+      "largeur_source": 896,
+      "hauteur_source": 1195,
+      "ratio": 0.7498,
+      "largeurs": [
+        480,
+        800
+      ]
+    },
+    "portefeuille-1": {
+      "source": "1portefeuille.jpeg",
+      "largeur_source": 1195,
+      "hauteur_source": 896,
+      "ratio": 1.3337,
+      "largeurs": [
+        480,
+        800
+      ]
+    },
+    "portefeuille-2": {
+      "source": "portefeuille.jpeg",
+      "largeur_source": 3024,
+      "hauteur_source": 4032,
+      "ratio": 0.75,
+      "largeurs": [
+        480,
+        800,
+        1200
+      ]
+    },
+    "pic-de-nore": {
+      "source": "nore.png",
+      "largeur_source": 2048,
+      "hauteur_source": 2048,
+      "ratio": 1.0,
+      "largeurs": [
+        480,
+        800,
+        1200
+      ]
+    }
+  },
+  "poids_total": 5409782
+}
