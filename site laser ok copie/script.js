@@ -23,10 +23,12 @@
         menu.classList.toggle('hidden', !open);
         menuBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
         menuBtn.setAttribute('aria-label', open ? 'Fermer le menu' : 'Ouvrir le menu');
-        var icon = $('i', menuBtn);
-        if (icon) {
-            icon.classList.toggle('fa-bars', !open);
-            icon.classList.toggle('fa-xmark', open);
+        // Icône : burger <-> croix (symboles du sprite SVG de index.html)
+        var icon = $('svg', menuBtn);
+        var use = icon && $('use', icon);
+        if (use) {
+            icon.setAttribute('viewBox', open ? '0 0 384 512' : '0 0 448 512');
+            use.setAttribute('href', open ? '#i-xmark' : '#i-bars');
         }
     }
 
@@ -400,7 +402,8 @@
         successPanel.className = 'flex flex-col items-center justify-center px-8 py-12 text-center gap-4';
         successPanel.innerHTML =
             '<div class="w-16 h-16 rounded-full bg-green-100 flex items-center justify-center" aria-hidden="true">' +
-                '<i class="fa-solid ' + (sent ? 'fa-check' : 'fa-envelope-open-text') + ' text-green-700 text-2xl"></i>' +
+                '<svg class="icon text-green-700 text-2xl" viewBox="' + (sent ? '0 0 448 512' : '0 0 512 512') + '" aria-hidden="true" focusable="false">' +
+                    '<use href="#i-' + (sent ? 'check' : 'envelope-open-text') + '"/></svg>' +
             '</div>' +
             '<h3 class="text-xl font-serif font-bold text-wood-900" tabindex="-1">' +
                 (sent ? 'Demande envoyée, merci !' : 'Votre messagerie s\'ouvre…') +

@@ -1,6 +1,85 @@
 /* ══════════════════════════════════════════════════════════════════
-   MontagneNoireLaser — styles complémentaires à Tailwind
+   MontagneNoireLaser — source de la feuille de style unique du site.
+   Compilée et minifiée par Tailwind vers « site laser ok copie/assets/site.css » :
+       cd tools && npm run build:css
+   Ne pas modifier assets/site.css à la main : il est régénéré à chaque build.
    ══════════════════════════════════════════════════════════════════ */
+
+/* ── Polices auto-hébergées (sous-ensemble latin, woff2) ────────────
+   Seules les graisses réellement utilisées sont embarquées :
+   Lato 400 / 700 (texte) et Playfair Display 700 (titres).
+   Licence SIL Open Font License 1.1 — fichiers issus de @fontsource. */
+@font-face {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("../fonts/lato-latin-400-normal.woff2") format("woff2");
+}
+@font-face {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url("../fonts/lato-latin-700-normal.woff2") format("woff2");
+}
+@font-face {
+    font-family: "Playfair Display";
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url("../fonts/playfair-display-latin-700-normal.woff2") format("woff2");
+}
+
+/* Polices de repli aux métriques ajustées : le texte occupe la même place
+   avant et après le chargement des polices (pas de décalage de mise en page). */
+@font-face {
+    font-family: "Lato Fallback";
+    font-weight: 400;
+    src: local("Arial"), local("ArialMT");
+    size-adjust: 96.35%;
+    ascent-override: 102.44%;
+    descent-override: 22.11%;
+    line-gap-override: 0%;
+}
+@font-face {
+    font-family: "Lato Fallback";
+    font-weight: 700;
+    src: local("Arial Bold"), local("Arial-BoldMT");
+    size-adjust: 91.96%;
+    ascent-override: 107.32%;
+    descent-override: 23.16%;
+    line-gap-override: 0%;
+}
+@font-face {
+    font-family: "Playfair Display Fallback";
+    font-weight: 700;
+    src: local("Times New Roman Bold"), local("TimesNewRomanPS-BoldMT");
+    size-adjust: 106.96%;
+    ascent-override: 101.16%;
+    descent-override: 23.47%;
+    line-gap-override: 0%;
+}
+
+@tailwind base;
+
+/* ══════════════════════════════════════════════════════════════════
+   Styles propres au site (anciennement style.css)
+   ══════════════════════════════════════════════════════════════════ */
+
+/* ── Icônes SVG (sprite <symbol> en début de <body>) ────────────────
+   Se comportent comme les anciennes icônes-police : hauteur = taille du
+   texte (text-2xl, text-lg…), couleur = couleur du texte, largeur
+   proportionnelle au viewBox de l'icône. */
+.icon {
+    display: inline-block;
+    height: 1em;
+    width: auto;
+    fill: currentColor;
+    vertical-align: -0.125em;
+    overflow: visible;
+    flex-shrink: 0;
+}
 
 /* ── Défilement ─────────────────────────────────────────────────── */
 html {
@@ -274,3 +353,6 @@ main:focus {
         transform: none;
     }
 }
+
+@tailwind components;
+@tailwind utilities;
