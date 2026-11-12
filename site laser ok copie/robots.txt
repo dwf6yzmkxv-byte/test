@@ -2,4 +2,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://montagnenoirelaser.netlify.app/sitemap.xml
+Sitemap: https://montagnenoirelaser.fr/sitemap.xml
