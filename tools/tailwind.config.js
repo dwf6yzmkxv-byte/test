@@ -22,6 +22,11 @@ module.exports = {
                     800: '#5e503f',
                     900: '#1e1a15',
                 },
+                // Couleur d'action (boutons « Commander », liens forts) et fonds clairs
+                ember: { 50: '#fbeee6', 500: '#b8501c', 600: '#9a4116' },
+                paper: '#fbf8f3',
+                sand:  '#f3ece1',
+                line:  '#e6dccd',
             },
             fontFamily: {
                 serif: ['"Playfair Display"', '"Playfair Display Fallback"', 'serif'],

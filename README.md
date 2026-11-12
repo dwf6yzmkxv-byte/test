@@ -9,7 +9,7 @@ Aucune ressource tierce n'est chargée : CSS, polices et icônes sont servis par
 netlify.toml              Configuration Netlify (dossier publié, pas de build côté hébergeur)
 site laser ok copie/      ← LE SITE PUBLIÉ (tout ce dossier, et lui seul, est mis en ligne)
   index.html              Page d'accueil (contient aussi le sprite des icônes SVG, en début de <body>)
-  mentions-legales.html   Mentions légales / confidentialité / CGV (champs [À COMPLÉTER])
+  mentions-legales.html   Mentions légales / confidentialité / CGV (page à finaliser : adresse, TVA, médiateur)
   404.html                Page d'erreur
   script.js               Menu mobile, carrousels, modale et formulaire de devis
   assets/site.css         Feuille de style unique, GÉNÉRÉE (ne pas modifier à la main)

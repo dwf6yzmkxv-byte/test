@@ -14,21 +14,21 @@
     <meta name="geo.placename" content="Mazamet, Tarn, Occitanie">
     <meta name="geo.position" content="43.4893;2.3742">
     <meta name="ICBM" content="43.4893, 2.3742">
-    <link rel="canonical" href="https://montagnenoirelaser.netlify.app/">
+    <link rel="canonical" href="https://montagnenoirelaser.fr/">
 
     <!-- Image LCP (hero) -->
     <!-- Doit rester identique au <source type="image/avif"> du hero (sinon double téléchargement).
          Les navigateurs sans AVIF ignorent ce preload (attribut type) et chargent le WebP via <picture>. -->
     <link rel="preload" as="image" type="image/avif" href="images/canal-du-midi-800.avif"
           imagesrcset="images/canal-du-midi-480.avif 480w, images/canal-du-midi-800.avif 800w, images/canal-du-midi-1195.avif 1195w"
-          imagesizes="100vw" fetchpriority="high">
+          imagesizes="(min-width: 1024px) 30vw, 60vw" fetchpriority="high">
 
     <!-- Open Graph -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://montagnenoirelaser.netlify.app/">
+    <meta property="og:url" content="https://montagnenoirelaser.fr/">
     <meta property="og:title" content="Gravure laser sur mesure à Mazamet (Tarn) | MontagneNoireLaser">
     <meta property="og:description" content="Artisan graveur laser à Mazamet, dans le Tarn. Créations uniques sur bois et cuir : décoration murale, cadeaux personnalisés, porte-clés gravés. Devis gratuit.">
-    <meta property="og:image" content="https://montagnenoirelaser.netlify.app/og-image.jpg">
+    <meta property="og:image" content="https://montagnenoirelaser.fr/og-image.jpg">
     <meta property="og:image:type" content="image/jpeg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
@@ -40,7 +40,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Gravure laser sur mesure à Mazamet (Tarn) | MontagneNoireLaser">
     <meta name="twitter:description" content="Artisan graveur laser à Mazamet (Tarn). Bois, cuir, objets personnalisés. Devis gratuit sous 24 h.">
-    <meta name="twitter:image" content="https://montagnenoirelaser.netlify.app/og-image.jpg">
+    <meta name="twitter:image" content="https://montagnenoirelaser.fr/og-image.jpg">
     <meta name="twitter:image:alt" content="Gravure laser sur bois réalisée par MontagneNoireLaser, artisan graveur à Mazamet (Tarn)">
 
     <!-- Favicons / PWA -->
@@ -56,7 +56,7 @@
     <link rel="preload" as="font" type="font/woff2" href="fonts/lato-latin-700-normal.woff2" crossorigin>
 
     <!-- Feuille de style unique (Tailwind compilé + styles du site). Source : tools/src/input.css — voir README.md -->
-    <link rel="stylesheet" href="assets/site.css?v=5410ea568e">
+    <link rel="stylesheet" href="assets/site.css?v=dd55d964a8">
 
     <!-- Schema.org JSON-LD : Organization, WebSite, WebPage, LocalBusiness -->
     <script type="application/ld+json">
@@ -65,13 +65,13 @@
         "@graph": [
             {
                 "@type": "Organization",
-                "@id": "https://montagnenoirelaser.netlify.app/#organization",
+                "@id": "https://montagnenoirelaser.fr/#organization",
                 "name": "MontagneNoireLaser",
-                "url": "https://montagnenoirelaser.netlify.app/",
+                "url": "https://montagnenoirelaser.fr/",
                 "logo": {
                     "@type": "ImageObject",
-                    "@id": "https://montagnenoirelaser.netlify.app/#logo",
-                    "url": "https://montagnenoirelaser.netlify.app/icon-512.png",
+                    "@id": "https://montagnenoirelaser.fr/#logo",
+                    "url": "https://montagnenoirelaser.fr/icon-512.png",
                     "width": 512,
                     "height": 512,
                     "caption": "MontagneNoireLaser"
@@ -81,46 +81,47 @@
                     "https://www.instagram.com/montagnenoirelaser",
                     "https://www.facebook.com/profile.php?id=61588514706927",
                     "https://www.tiktok.com/@montagnenoirlaser",
-                    "https://montagnenoirelaser.etsy.com"
+                    "https://montagnenoirelaser.etsy.com",
+                    "https://share.google/HAJsXumx35SjQ1CpI"
                 ]
             },
             {
                 "@type": "WebSite",
-                "@id": "https://montagnenoirelaser.netlify.app/#website",
-                "url": "https://montagnenoirelaser.netlify.app/",
+                "@id": "https://montagnenoirelaser.fr/#website",
+                "url": "https://montagnenoirelaser.fr/",
                 "name": "MontagneNoireLaser",
                 "alternateName": "Montagne Noire Laser",
                 "description": "Gravure laser artisanale sur bois et cuir à Mazamet, dans le Tarn.",
                 "inLanguage": "fr-FR",
-                "publisher": { "@id": "https://montagnenoirelaser.netlify.app/#organization" }
+                "publisher": { "@id": "https://montagnenoirelaser.fr/#organization" }
             },
             {
                 "@type": "WebPage",
-                "@id": "https://montagnenoirelaser.netlify.app/#webpage",
-                "url": "https://montagnenoirelaser.netlify.app/",
+                "@id": "https://montagnenoirelaser.fr/#webpage",
+                "url": "https://montagnenoirelaser.fr/",
                 "name": "Gravure laser Mazamet (Tarn) – Bois & cuir | MontagneNoireLaser",
                 "description": "Artisan graveur laser à Mazamet (Tarn) : décoration murale en bois, porte-clés, cadeaux et cuir personnalisés. Devis gratuit sous 24 h, livraison en France.",
                 "inLanguage": "fr-FR",
-                "isPartOf": { "@id": "https://montagnenoirelaser.netlify.app/#website" },
-                "about": { "@id": "https://montagnenoirelaser.netlify.app/#business" },
+                "isPartOf": { "@id": "https://montagnenoirelaser.fr/#website" },
+                "about": { "@id": "https://montagnenoirelaser.fr/#business" },
                 "primaryImageOfPage": {
                     "@type": "ImageObject",
-                    "url": "https://montagnenoirelaser.netlify.app/images/canal-du-midi-800.webp"
+                    "url": "https://montagnenoirelaser.fr/images/canal-du-midi-800.webp"
                 }
             },
             {
                 "@type": "LocalBusiness",
-                "@id": "https://montagnenoirelaser.netlify.app/#business",
+                "@id": "https://montagnenoirelaser.fr/#business",
                 "name": "MontagneNoireLaser",
                 "description": "Artisan graveur laser à Mazamet, dans le Tarn. Gravure personnalisée sur bois et cuir : décoration murale, porte-clés, cadeaux sur mesure. Livraison partout en France, retrait possible sur place.",
-                "url": "https://montagnenoirelaser.netlify.app/",
-                "mainEntityOfPage": { "@id": "https://montagnenoirelaser.netlify.app/#webpage" },
-                "parentOrganization": { "@id": "https://montagnenoirelaser.netlify.app/#organization" },
-                "logo": { "@id": "https://montagnenoirelaser.netlify.app/#logo" },
+                "url": "https://montagnenoirelaser.fr/",
+                "mainEntityOfPage": { "@id": "https://montagnenoirelaser.fr/#webpage" },
+                "parentOrganization": { "@id": "https://montagnenoirelaser.fr/#organization" },
+                "logo": { "@id": "https://montagnenoirelaser.fr/#logo" },
                 "image": [
-                    "https://montagnenoirelaser.netlify.app/images/canal-du-midi-800.webp",
-                    "https://montagnenoirelaser.netlify.app/images/passerelle-mazamet-800.webp",
-                    "https://montagnenoirelaser.netlify.app/images/petanque-1-800.webp"
+                    "https://montagnenoirelaser.fr/images/canal-du-midi-800.webp",
+                    "https://montagnenoirelaser.fr/images/passerelle-mazamet-800.webp",
+                    "https://montagnenoirelaser.fr/images/petanque-1-800.webp"
                 ],
                 "email": "mnlaser.contact@gmail.com",
                 "address": {
@@ -156,32 +157,27 @@
                 ],
                 "knowsLanguage": "fr",
                 "priceRange": "€",
-                "currenciesAccepted": "EUR",
-                "openingHoursSpecification": {
-                    "@type": "OpeningHoursSpecification",
-                    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-                    "opens": "09:00",
-                    "closes": "18:00"
-                },
+                "currenciesAccepted": "EUR", 
                 "sameAs": [
                     "https://www.instagram.com/montagnenoirelaser",
                     "https://www.facebook.com/profile.php?id=61588514706927",
                     "https://www.tiktok.com/@montagnenoirlaser",
-                    "https://montagnenoirelaser.etsy.com"
+                    "https://montagnenoirelaser.etsy.com",
+                    "https://share.google/HAJsXumx35SjQ1CpI"
                 ],
                 "hasOfferCatalog": {
                     "@type": "OfferCatalog",
                     "name": "Gravures laser sur bois et cuir",
                     "itemListElement": [
-                        { "@id": "https://montagnenoirelaser.netlify.app/#produit-canal-du-midi" },
-                        { "@id": "https://montagnenoirelaser.netlify.app/#produit-passerelle-mazamet" },
-                        { "@id": "https://montagnenoirelaser.netlify.app/#produit-compteur-petanque" },
-                        { "@id": "https://montagnenoirelaser.netlify.app/#produit-porte-cles" },
-                        { "@id": "https://montagnenoirelaser.netlify.app/#produit-one-piece" },
-                        { "@id": "https://montagnenoirelaser.netlify.app/#produit-shelby" },
-                        { "@id": "https://montagnenoirelaser.netlify.app/#produit-cintre" },
-                        { "@id": "https://montagnenoirelaser.netlify.app/#produit-bouchon" },
-                        { "@id": "https://montagnenoirelaser.netlify.app/#produit-portefeuille" }
+                        { "@id": "https://montagnenoirelaser.fr/#produit-canal-du-midi" },
+                        { "@id": "https://montagnenoirelaser.fr/#produit-passerelle-mazamet" },
+                        { "@id": "https://montagnenoirelaser.fr/#produit-compteur-petanque" },
+                        { "@id": "https://montagnenoirelaser.fr/#produit-porte-cles" },
+                        { "@id": "https://montagnenoirelaser.fr/#produit-one-piece" },
+                        { "@id": "https://montagnenoirelaser.fr/#produit-shelby" },
+                        { "@id": "https://montagnenoirelaser.fr/#produit-cintre" },
+                        { "@id": "https://montagnenoirelaser.fr/#produit-bouchon" },
+                        { "@id": "https://montagnenoirelaser.fr/#produit-portefeuille" }
                     ]
                 }
             }
@@ -196,11 +192,11 @@
         "@graph": [
             {
                 "@type": "Product",
-                "@id": "https://montagnenoirelaser.netlify.app/#produit-canal-du-midi",
+                "@id": "https://montagnenoirelaser.fr/#produit-canal-du-midi",
                 "name": "Gravure laser du Canal du Midi sur bois",
                 "description": "Gravure monumentale du Canal du Midi, patrimoine UNESCO, sur bois. Décoration murale sur mesure, dimensions et motif personnalisables. Fabriquée à Mazamet (Tarn).",
-                "image": "https://montagnenoirelaser.netlify.app/images/canal-du-midi-800.webp",
-                "url": "https://montagnenoirelaser.netlify.app/#surmesure",
+                "image": "https://montagnenoirelaser.fr/images/canal-du-midi-800.webp",
+                "url": "https://montagnenoirelaser.fr/#surmesure",
                 "category": "Décoration murale en bois",
                 "material": "Bois",
                 "brand": { "@type": "Brand", "name": "MontagneNoireLaser" },
@@ -208,17 +204,17 @@
                     "@type": "AggregateOffer",
                     "lowPrice": "20.00",
                     "priceCurrency": "EUR",
-                    "url": "https://montagnenoirelaser.netlify.app/#surmesure",
-                    "seller": { "@id": "https://montagnenoirelaser.netlify.app/#business" }
+                    "url": "https://montagnenoirelaser.fr/#surmesure",
+                    "seller": { "@id": "https://montagnenoirelaser.fr/#business" }
                 }
             },
             {
                 "@type": "Product",
-                "@id": "https://montagnenoirelaser.netlify.app/#produit-passerelle-mazamet",
+                "@id": "https://montagnenoirelaser.fr/#produit-passerelle-mazamet",
                 "name": "Gravure laser de la Passerelle de Mazamet sur bois",
                 "description": "Tableau en bois gravé au laser représentant la Passerelle de Mazamet. Décoration murale sur mesure, dimensions et motif personnalisables. Fabriqué à Mazamet (Tarn).",
-                "image": "https://montagnenoirelaser.netlify.app/images/passerelle-mazamet-800.webp",
-                "url": "https://montagnenoirelaser.netlify.app/#surmesure",
+                "image": "https://montagnenoirelaser.fr/images/passerelle-mazamet-800.webp",
+                "url": "https://montagnenoirelaser.fr/#surmesure",
                 "category": "Décoration murale en bois",
                 "material": "Bois",
                 "brand": { "@type": "Brand", "name": "MontagneNoireLaser" },
@@ -226,21 +222,21 @@
                     "@type": "AggregateOffer",
                     "lowPrice": "20.00",
                     "priceCurrency": "EUR",
-                    "url": "https://montagnenoirelaser.netlify.app/#surmesure",
-                    "seller": { "@id": "https://montagnenoirelaser.netlify.app/#business" }
+                    "url": "https://montagnenoirelaser.fr/#surmesure",
+                    "seller": { "@id": "https://montagnenoirelaser.fr/#business" }
                 }
             },
             {
                 "@type": "Product",
-                "@id": "https://montagnenoirelaser.netlify.app/#produit-compteur-petanque",
+                "@id": "https://montagnenoirelaser.fr/#produit-compteur-petanque",
                 "name": "Compteur de pétanque en bois personnalisé",
                 "description": "Compteur de points de pétanque en bois massif gravé au laser : logo de club, nom d'équipe, marqueurs de points en laiton et médaillons gravés au choix. Fabriqué à Mazamet (Tarn).",
                 "image": [
-                    "https://montagnenoirelaser.netlify.app/images/petanque-1-800.webp",
-                    "https://montagnenoirelaser.netlify.app/images/petanque-2-800.webp",
-                    "https://montagnenoirelaser.netlify.app/images/petanque-3-800.webp"
+                    "https://montagnenoirelaser.fr/images/petanque-1-800.webp",
+                    "https://montagnenoirelaser.fr/images/petanque-2-800.webp",
+                    "https://montagnenoirelaser.fr/images/petanque-3-800.webp"
                 ],
-                "url": "https://montagnenoirelaser.netlify.app/#surmesure",
+                "url": "https://montagnenoirelaser.fr/#surmesure",
                 "category": "Accessoire de pétanque personnalisé",
                 "material": "Bois massif",
                 "brand": { "@type": "Brand", "name": "MontagneNoireLaser" },
@@ -248,17 +244,17 @@
                     "@type": "AggregateOffer",
                     "lowPrice": "30.00",
                     "priceCurrency": "EUR",
-                    "url": "https://montagnenoirelaser.netlify.app/#surmesure",
-                    "seller": { "@id": "https://montagnenoirelaser.netlify.app/#business" }
+                    "url": "https://montagnenoirelaser.fr/#surmesure",
+                    "seller": { "@id": "https://montagnenoirelaser.fr/#business" }
                 }
             },
             {
                 "@type": "Product",
-                "@id": "https://montagnenoirelaser.netlify.app/#produit-porte-cles",
+                "@id": "https://montagnenoirelaser.fr/#produit-porte-cles",
                 "name": "Porte-clés personnalisé gravé au laser",
                 "description": "Porte-clés gravé au laser, personnalisable recto-verso : prénom ou mot doux et dessin au choix au recto, numéro de téléphone ou date au verso. Fabriqué à Mazamet (Tarn).",
-                "image": "https://montagnenoirelaser.netlify.app/images/porte-cles-800.webp",
-                "url": "https://montagnenoirelaser.netlify.app/#catalogue",
+                "image": "https://montagnenoirelaser.fr/images/porte-cles-800.webp",
+                "url": "https://montagnenoirelaser.fr/#catalogue",
                 "category": "Porte-clés personnalisé",
                 "brand": { "@type": "Brand", "name": "MontagneNoireLaser" },
                 "offers": {
@@ -268,16 +264,16 @@
                     "availability": "https://schema.org/InStock",
                     "itemCondition": "https://schema.org/NewCondition",
                     "url": "https://buy.stripe.com/eVq6oHfL64vUcAecEw6Ri06",
-                    "seller": { "@id": "https://montagnenoirelaser.netlify.app/#business" }
+                    "seller": { "@id": "https://montagnenoirelaser.fr/#business" }
                 }
             },
             {
                 "@type": "Product",
-                "@id": "https://montagnenoirelaser.netlify.app/#produit-one-piece",
+                "@id": "https://montagnenoirelaser.fr/#produit-one-piece",
                 "name": "Gravure sur bois One Piece — Gol D. Roger",
                 "description": "Décoration murale pour fans de manga : gravure laser fine sur bois brut. Ajout d'un nom ou d'une date possible. Fabriquée à Mazamet (Tarn).",
-                "image": "https://montagnenoirelaser.netlify.app/images/one-piece-800.webp",
-                "url": "https://montagnenoirelaser.netlify.app/#catalogue",
+                "image": "https://montagnenoirelaser.fr/images/one-piece-800.webp",
+                "url": "https://montagnenoirelaser.fr/#catalogue",
                 "category": "Décoration murale en bois",
                 "material": "Bois",
                 "brand": { "@type": "Brand", "name": "MontagneNoireLaser" },
@@ -288,16 +284,16 @@
                     "availability": "https://schema.org/InStock",
                     "itemCondition": "https://schema.org/NewCondition",
                     "url": "https://buy.stripe.com/cNi9ATaqMd2q9o25c46Ri01",
-                    "seller": { "@id": "https://montagnenoirelaser.netlify.app/#business" }
+                    "seller": { "@id": "https://montagnenoirelaser.fr/#business" }
                 }
             },
             {
                 "@type": "Product",
-                "@id": "https://montagnenoirelaser.netlify.app/#produit-shelby",
+                "@id": "https://montagnenoirelaser.fr/#produit-shelby",
                 "name": "Affiche en bois gravée — Shelby Company",
                 "description": "Affiche en bois gravée au laser dans l'ambiance Peaky Blinders, style industriel brut. Ajout d'un nom ou d'une date possible. Fabriquée à Mazamet (Tarn).",
-                "image": "https://montagnenoirelaser.netlify.app/images/shelby-800.webp",
-                "url": "https://montagnenoirelaser.netlify.app/#catalogue",
+                "image": "https://montagnenoirelaser.fr/images/shelby-800.webp",
+                "url": "https://montagnenoirelaser.fr/#catalogue",
                 "category": "Décoration murale en bois",
                 "material": "Bois",
                 "brand": { "@type": "Brand", "name": "MontagneNoireLaser" },
@@ -308,20 +304,20 @@
                     "availability": "https://schema.org/InStock",
                     "itemCondition": "https://schema.org/NewCondition",
                     "url": "https://buy.stripe.com/4gM6oH9mI1jIdEigUM6Ri03",
-                    "seller": { "@id": "https://montagnenoirelaser.netlify.app/#business" }
+                    "seller": { "@id": "https://montagnenoirelaser.fr/#business" }
                 }
             },
             {
                 "@type": "Product",
-                "@id": "https://montagnenoirelaser.netlify.app/#produit-cintre",
+                "@id": "https://montagnenoirelaser.fr/#produit-cintre",
                 "name": "Cintre en bois personnalisé gravé au laser",
                 "description": "Cintre en bois gravé au laser, personnalisable avec prénoms, date, motif floral ou texte libre. Idéal pour un mariage, un EVJF, un cadeau de témoin ou une naissance. Fabriqué à Mazamet (Tarn).",
                 "image": [
-                    "https://montagnenoirelaser.netlify.app/images/cintre-1-800.webp",
-                    "https://montagnenoirelaser.netlify.app/images/cintre-2-800.webp",
-                    "https://montagnenoirelaser.netlify.app/images/cintre-3-800.webp"
+                    "https://montagnenoirelaser.fr/images/cintre-1-800.webp",
+                    "https://montagnenoirelaser.fr/images/cintre-2-800.webp",
+                    "https://montagnenoirelaser.fr/images/cintre-3-800.webp"
                 ],
-                "url": "https://montagnenoirelaser.netlify.app/#catalogue",
+                "url": "https://montagnenoirelaser.fr/#catalogue",
                 "category": "Cintre personnalisé",
                 "material": "Bois",
                 "brand": { "@type": "Brand", "name": "MontagneNoireLaser" },
@@ -331,20 +327,20 @@
                     "priceCurrency": "EUR",
                     "availability": "https://schema.org/InStock",
                     "url": "https://buy.stripe.com/aFa3cvdCYd2qdEicEw6Ri04",
-                    "seller": { "@id": "https://montagnenoirelaser.netlify.app/#business" }
+                    "seller": { "@id": "https://montagnenoirelaser.fr/#business" }
                 }
             },
             {
                 "@type": "Product",
-                "@id": "https://montagnenoirelaser.netlify.app/#produit-bouchon",
+                "@id": "https://montagnenoirelaser.fr/#produit-bouchon",
                 "name": "Bouchon de vin en bois personnalisé gravé au laser",
                 "description": "Bouchon de vin en bois gravé au laser, personnalisable avec prénom, date, logo, initiales ou motif. Idéal pour un mariage, un EVG/EVJF ou un cadeau d'entreprise. Fabriqué à Mazamet (Tarn).",
                 "image": [
-                    "https://montagnenoirelaser.netlify.app/images/bouchon-1-800.webp",
-                    "https://montagnenoirelaser.netlify.app/images/bouchon-2-800.webp",
-                    "https://montagnenoirelaser.netlify.app/images/bouchon-3-800.webp"
+                    "https://montagnenoirelaser.fr/images/bouchon-1-800.webp",
+                    "https://montagnenoirelaser.fr/images/bouchon-2-800.webp",
+                    "https://montagnenoirelaser.fr/images/bouchon-3-800.webp"
                 ],
-                "url": "https://montagnenoirelaser.netlify.app/#catalogue",
+                "url": "https://montagnenoirelaser.fr/#catalogue",
                 "category": "Bouchon de vin personnalisé",
                 "material": "Bois",
                 "brand": { "@type": "Brand", "name": "MontagneNoireLaser" },
@@ -354,19 +350,19 @@
                     "priceCurrency": "EUR",
                     "availability": "https://schema.org/InStock",
                     "url": "https://buy.stripe.com/8x2aEX56saUi0Rw5c46Ri05",
-                    "seller": { "@id": "https://montagnenoirelaser.netlify.app/#business" }
+                    "seller": { "@id": "https://montagnenoirelaser.fr/#business" }
                 }
             },
             {
                 "@type": "Product",
-                "@id": "https://montagnenoirelaser.netlify.app/#produit-portefeuille",
+                "@id": "https://montagnenoirelaser.fr/#produit-portefeuille",
                 "name": "Portefeuille en cuir personnalisé gravé au laser",
                 "description": "Portefeuille en cuir pleine fleur gravé au laser, entièrement personnalisable : initiales, motif, QR code, texte ou logo. Exclusivité web, sur devis gratuit.",
                 "image": [
-                    "https://montagnenoirelaser.netlify.app/images/portefeuille-1-800.webp",
-                    "https://montagnenoirelaser.netlify.app/images/portefeuille-2-800.webp"
+                    "https://montagnenoirelaser.fr/images/portefeuille-1-800.webp",
+                    "https://montagnenoirelaser.fr/images/portefeuille-2-800.webp"
                 ],
-                "url": "https://montagnenoirelaser.netlify.app/",
+                "url": "https://montagnenoirelaser.fr/",
                 "category": "Maroquinerie personnalisée",
                 "material": "Cuir pleine fleur",
                 "brand": { "@type": "Brand", "name": "MontagneNoireLaser" }
@@ -375,7 +371,7 @@
     }
     </script>
 </head>
-<body class="font-sans text-wood-900 bg-wood-50">
+<body class="font-sans text-wood-900 bg-paper antialiased">
 
     <!-- Icônes : sprite SVG inline (remplace la police FontAwesome).
          Chemins issus de Font Awesome Free 6.7.2 par @fontawesome — https://fontawesome.com
@@ -399,68 +395,74 @@
         <symbol id="i-envelope" viewBox="0 0 512 512"><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48L48 64zM0 176L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-208L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></symbol>
         <symbol id="i-instagram" viewBox="0 0 448 512"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></symbol>
         <symbol id="i-facebook-f" viewBox="0 0 320 512"><path d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z"/></symbol>
+        <symbol id="i-google" viewBox="0 0 488 512"><path d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z"/></symbol>
         <symbol id="i-tiktok" viewBox="0 0 448 512"><path d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z"/></symbol>
         <symbol id="i-arrow-up" viewBox="0 0 384 512"><path d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2 160 448c0 17.7 14.3 32 32 32s32-14.3 32-32l0-306.7L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"/></symbol>
         <symbol id="i-xmark" viewBox="0 0 384 512"><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></symbol>
         <symbol id="i-paper-plane" viewBox="0 0 512 512"><path d="M498.1 5.6c10.1 7 15.4 19.1 13.5 31.2l-64 416c-1.5 9.7-7.4 18.2-16 23s-18.9 5.4-28 1.6L284 427.7l-68.5 74.1c-8.9 9.7-22.9 12.9-35.2 8.1S160 493.2 160 480l0-83.6c0-4 1.5-7.8 4.2-10.8L331.8 202.8c5.8-6.3 5.6-16-.4-22s-15.7-6.4-22-.7L106 360.8 17.7 316.6C7.1 311.3 .3 300.7 0 288.9s5.9-22.8 16.1-28.7l448-256c10.7-6.1 23.9-5.5 34 1.4z"/></symbol>
+        <symbol id="i-arrow-right" viewBox="0 0 448 512"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></symbol>
+        <symbol id="i-bag-shopping" viewBox="0 0 448 512"><path d="M160 112c0-35.3 28.7-64 64-64s64 28.7 64 64l0 48-128 0 0-48zm-48 48l-64 0c-26.5 0-48 21.5-48 48L0 416c0 53 43 96 96 96l256 0c53 0 96-43 96-96l0-208c0-26.5-21.5-48-48-48l-64 0 0-48C336 50.1 285.9 0 224 0S112 50.1 112 112l0 48zm24 48a24 24 0 1 1 0 48 24 24 0 1 1 0-48zm152 24a24 24 0 1 1 48 0 24 24 0 1 1 -48 0z"/></symbol>
+        <symbol id="i-shield-halved" viewBox="0 0 512 512"><path d="M256 0c4.6 0 9.2 1 13.4 2.9L457.7 82.8c22 9.3 38.4 31 38.3 57.2c-.5 99.2-41.3 280.7-213.6 363.2c-16.7 8-36.1 8-52.8 0C57.3 420.7 16.5 239.2 16 140c-.1-26.2 16.3-47.9 38.3-57.2L242.7 2.9C246.8 1 251.4 0 256 0zm0 66.8l0 378.1C394 378 431.1 230.1 432 141.4L256 66.8s0 0 0 0z"/></symbol>
+        <symbol id="i-gift" viewBox="0 0 512 512"><path d="M190.5 68.8L225.3 128l-1.3 0-72 0c-22.1 0-40-17.9-40-40s17.9-40 40-40l2.2 0c14.9 0 28.8 7.9 36.3 20.8zM64 88c0 14.4 3.5 28 9.6 40L32 128c-17.7 0-32 14.3-32 32l0 64c0 17.7 14.3 32 32 32l448 0c17.7 0 32-14.3 32-32l0-64c0-17.7-14.3-32-32-32l-41.6 0c6.1-12 9.6-25.6 9.6-40c0-48.6-39.4-88-88-88l-2.2 0c-31.9 0-61.5 16.9-77.7 44.4L256 85.5l-24.1-41C215.7 16.9 186.1 0 154.2 0L152 0C103.4 0 64 39.4 64 88zm336 0c0 22.1-17.9 40-40 40l-72 0-1.3 0 34.8-59.2C329.1 55.9 342.9 48 357.8 48l2.2 0c22.1 0 40 17.9 40 40zM32 288l0 176c0 26.5 21.5 48 48 48l144 0 0-224L32 288zM288 512l144 0c26.5 0 48-21.5 48-48l0-176-192 0 0 224z"/></symbol>
         <symbol id="i-envelope-open-text" viewBox="0 0 512 512"><path d="M215.4 96L144 96l-36.2 0L96 96l0 8.8L96 144l0 40.4 0 89L.2 202.5c1.6-18.1 10.9-34.9 25.7-45.8L48 140.3 48 96c0-26.5 21.5-48 48-48l76.6 0 49.9-36.9C232.2 3.9 243.9 0 256 0s23.8 3.9 33.5 11L339.4 48 416 48c26.5 0 48 21.5 48 48l0 44.3 22.1 16.4c14.8 10.9 24.1 27.7 25.7 45.8L416 273.4l0-89 0-40.4 0-39.2 0-8.8-11.8 0L368 96l-71.4 0-81.3 0zM0 448L0 242.1 217.6 403.3c11.1 8.2 24.6 12.7 38.4 12.7s27.3-4.4 38.4-12.7L512 242.1 512 448s0 0 0 0c0 35.3-28.7 64-64 64L64 512c-35.3 0-64-28.7-64-64c0 0 0 0 0 0zM176 160l160 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-160 0c-8.8 0-16-7.2-16-16s7.2-16 16-16zm0 64l160 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-160 0c-8.8 0-16-7.2-16-16s7.2-16 16-16z"/></symbol>
     </svg>
 
     <!-- ═══════════════════════════ NAVIGATION ═══════════════════════════ -->
     <a href="#contenu" class="skip-link">Aller au contenu</a>
 
-    <header class="fixed top-0 inset-x-0 z-50 bg-wood-900/90 transition-all duration-300" id="navbar">
+    <!-- Bandeau d'annonce -->
+    <p class="bg-wood-900 text-white text-xs sm:text-sm text-center px-4 py-2.5">
+        <a href="#catalogue" class="hover:underline underline-offset-4">
+            <span class="font-bold text-wood-300">Offres de lancement</span> : jusqu'à −33 % sur la boutique
+            <span class="hidden sm:inline"> · Devis gratuit sous 24 h · Gravé à Mazamet</span>
+        </a>
+    </p>
+
+    <header class="sticky top-0 z-50 bg-white border-b border-line" id="navbar">
         <nav aria-label="Navigation principale">
-            <div class="container mx-auto px-4 sm:px-6 py-3 flex justify-between items-center gap-4">
+            <div class="wrap py-2.5 flex justify-between items-center gap-4">
                 <a href="#home" class="flex items-center gap-3 min-w-0">
                     <picture>
-                        <source type="image/avif" srcset="images/logo-96.avif 96w, images/logo-192.avif 192w" sizes="40px">
-                        <img src="images/logo-96.webp" srcset="images/logo-96.webp 96w, images/logo-192.webp 192w" sizes="40px" alt="" width="96" height="96"
-                             class="h-10 w-10 shrink-0 rounded-full object-cover">
+                        <source type="image/avif" srcset="images/logo-96.avif 96w, images/logo-192.avif 192w" sizes="44px">
+                        <img src="images/logo-96.webp" srcset="images/logo-96.webp 96w, images/logo-192.webp 192w" sizes="44px" alt="" width="96" height="96" class="h-11 w-11 shrink-0 rounded-full object-cover">
                     </picture>
-                    <span class="text-lg sm:text-xl font-serif font-bold tracking-wide text-white truncate">MontagneNoireLaser</span>
+                    <span class="min-w-0">
+                        <span class="block text-lg sm:text-xl font-serif font-bold text-wood-900 leading-tight truncate">MontagneNoireLaser</span>
+                        <span class="hidden sm:block text-[0.6875rem] font-bold uppercase tracking-[0.18em] text-wood-700">Gravure laser · Mazamet</span>
+                    </span>
                     <span class="sr-only">— retour à l'accueil</span>
                 </a>
 
                 <!-- Menu grand écran -->
-                <div class="hidden lg:flex items-center gap-6 xl:gap-8 font-medium text-wood-100">
-                    <a href="#surmesure" class="hover:text-wood-300 transition-colors text-sm tracking-wider uppercase">Sur mesure</a>
-                    <a href="#catalogue" class="hover:text-wood-300 transition-colors text-sm tracking-wider uppercase">Boutique</a>
-                    <a href="#reviews" class="hover:text-wood-300 transition-colors text-sm tracking-wider uppercase">Avis</a>
-                    <a href="#apropos" class="hover:text-wood-300 transition-colors text-sm tracking-wider uppercase">Atelier</a>
-                    <a href="#faq" class="hover:text-wood-300 transition-colors text-sm tracking-wider uppercase">FAQ</a>
-                    <button type="button" data-devis-open
-                            class="px-5 py-2.5 border border-wood-300 text-wood-300 rounded-full hover:bg-wood-300 hover:text-wood-900 font-bold transition-all text-sm whitespace-nowrap">
-                        <svg class="icon mr-1.5" viewBox="0 0 384 512" aria-hidden="true" focusable="false"><use href="#i-file-invoice"/></svg> Devis gratuit
-                    </button>
-                    <a href="https://montagnenoirelaser.etsy.com" target="_blank" rel="noopener noreferrer"
-                       class="hidden xl:inline-block px-5 py-2.5 bg-wood-300 text-wood-900 rounded-full hover:bg-white font-bold transition-all text-sm whitespace-nowrap">
-                        <svg class="icon mr-1.5" viewBox="0 0 384 512" aria-hidden="true" focusable="false"><use href="#i-etsy"/></svg> Boutique Etsy<span class="sr-only"> (nouvel onglet)</span>
-                    </a>
+                <div class="hidden lg:flex items-center gap-7">
+                    <a href="#catalogue" class="nav-link">Boutique</a>
+                    <a href="#surmesure" class="nav-link">Sur mesure</a>
+                    <a href="#reviews" class="nav-link">Avis</a>
+                    <a href="#apropos" class="nav-link">L'atelier</a>
+                    <a href="#faq" class="nav-link">FAQ</a>
+                </div>
+                <div class="hidden lg:flex items-center gap-3">
+                    <button type="button" data-devis-open class="btn btn-sm btn-outline whitespace-nowrap">Devis gratuit</button>
+                    <a href="#catalogue" class="btn btn-sm btn-primary whitespace-nowrap"><svg class="icon" viewBox="0 0 448 512" aria-hidden="true" focusable="false"><use href="#i-bag-shopping"/></svg> Boutique</a>
                 </div>
 
                 <!-- Bouton du menu mobile -->
-                <button id="mobile-menu-btn" type="button" class="lg:hidden shrink-0 w-11 h-11 flex items-center justify-center rounded-full text-white" aria-label="Ouvrir le menu" aria-controls="mobile-menu" aria-expanded="false">
+                <button id="mobile-menu-btn" type="button" class="lg:hidden shrink-0 w-11 h-11 flex items-center justify-center rounded-full text-wood-900" aria-label="Ouvrir le menu" aria-controls="mobile-menu" aria-expanded="false">
                     <svg class="icon text-2xl" viewBox="0 0 448 512" aria-hidden="true" focusable="false"><use href="#i-bars"/></svg>
                 </button>
             </div>
 
             <!-- Menu mobile -->
-            <div id="mobile-menu" class="hidden lg:hidden bg-wood-900 border-t border-wood-800 absolute w-full left-0 shadow-2xl">
-                <div class="flex flex-col px-6 py-5 space-y-2 text-center">
-                    <a href="#surmesure" class="block py-3 text-wood-100 tracking-wider uppercase text-sm">Sur mesure</a>
-                    <a href="#catalogue" class="block py-3 text-wood-100 tracking-wider uppercase text-sm">Boutique</a>
-                    <a href="#reviews" class="block py-3 text-wood-100 tracking-wider uppercase text-sm">Avis</a>
-                    <a href="#apropos" class="block py-3 text-wood-100 tracking-wider uppercase text-sm">Atelier</a>
-                    <a href="#faq" class="block py-3 text-wood-100 tracking-wider uppercase text-sm">FAQ</a>
-                    <button type="button" data-devis-open
-                            class="block w-full py-3 border border-wood-300 text-wood-300 rounded-full font-bold">
-                        <svg class="icon mr-1.5" viewBox="0 0 384 512" aria-hidden="true" focusable="false"><use href="#i-file-invoice"/></svg> Devis gratuit
-                    </button>
-                    <a href="https://montagnenoirelaser.etsy.com" target="_blank" rel="noopener noreferrer"
-                       class="block py-3 bg-wood-300 text-wood-900 rounded-full font-bold">
-                        <svg class="icon mr-1.5" viewBox="0 0 384 512" aria-hidden="true" focusable="false"><use href="#i-etsy"/></svg> Boutique Etsy<span class="sr-only"> (nouvel onglet)</span>
-                    </a>
+            <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-line absolute w-full left-0 shadow-2xl">
+                <div class="flex flex-col px-6 py-4 text-center">
+                    <a href="#catalogue" class="block py-3 font-bold text-wood-900 border-b border-line">Boutique</a>
+                    <a href="#surmesure" class="block py-3 font-bold text-wood-900 border-b border-line">Sur mesure</a>
+                    <a href="#reviews" class="block py-3 font-bold text-wood-900 border-b border-line">Avis</a>
+                    <a href="#apropos" class="block py-3 font-bold text-wood-900 border-b border-line">L'atelier</a>
+                    <a href="#faq" class="block py-3 font-bold text-wood-900 border-b border-line">FAQ</a>
+                    <a href="#catalogue" class="btn btn-primary mt-4"><svg class="icon" viewBox="0 0 448 512" aria-hidden="true" focusable="false"><use href="#i-bag-shopping"/></svg> Voir la boutique</a>
+                    <button type="button" data-devis-open class="btn btn-outline mt-3"><svg class="icon" viewBox="0 0 384 512" aria-hidden="true" focusable="false"><use href="#i-file-invoice"/></svg> Devis gratuit</button>
+                    <a href="https://montagnenoirelaser.etsy.com" target="_blank" rel="noopener noreferrer" class="block py-3 mt-1 text-sm font-bold text-wood-800 underline underline-offset-4"><svg class="icon mr-1" viewBox="0 0 384 512" aria-hidden="true" focusable="false"><use href="#i-etsy"/></svg> Boutique Etsy <span class="sr-only">(nouvel onglet)</span></a>
                 </div>
             </div>
         </nav>
@@ -468,168 +470,484 @@
 
     <main id="contenu" tabindex="-1">
     <!-- ═══════════════════════════ HERO ═══════════════════════════ -->
-    <section class="relative min-h-[100svh] flex items-center justify-center overflow-hidden pt-24 pb-24" id="home" aria-labelledby="hero-title">
-        <div class="absolute inset-0 z-0">
-            <picture>
-                <source type="image/avif" srcset="images/canal-du-midi-480.avif 480w, images/canal-du-midi-800.avif 800w, images/canal-du-midi-1195.avif 1195w" sizes="100vw">
-                <source type="image/webp" srcset="images/canal-du-midi-480.webp 480w, images/canal-du-midi-800.webp 800w, images/canal-du-midi-1195.webp 1195w" sizes="100vw">
-                <img src="images/canal-du-midi-1195.webp" alt="" width="1195" height="896" fetchpriority="high" decoding="async"
-                     class="absolute inset-0 w-full h-full object-cover" id="hero-bg">
-            </picture>
-            <div class="absolute inset-0 bg-gradient-to-b from-wood-900/80 via-wood-900/70 to-wood-900/90"></div>
-        </div>
+    <section class="bg-gradient-to-b from-white to-sand overflow-hidden" id="home" aria-labelledby="hero-title">
+        <div class="wrap py-10 sm:py-14 lg:py-20 grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-center">
 
-        <div class="hero-content relative z-10 text-center px-4 max-w-5xl mx-auto">
-            <picture>
-                <source type="image/avif" srcset="images/banniere-224.avif 224w, images/banniere-448.avif 448w" sizes="(min-width: 640px) 112px, 96px">
-                <img src="images/banniere-224.webp" srcset="images/banniere-224.webp 224w, images/banniere-448.webp 448w" sizes="(min-width: 640px) 112px, 96px" alt="Logo MontagneNoireLaser" width="224" height="224" decoding="async"
-                     class="w-24 h-24 sm:w-28 sm:h-28 mx-auto mb-6 sm:mb-8 rounded-full object-cover border-4 border-wood-300 shadow-2xl">
-            </picture>
-            <p class="text-wood-300 font-bold tracking-[0.2em] sm:tracking-[0.3em] uppercase text-xs sm:text-sm mb-4">Artisan graveur laser à Mazamet</p>
-            <h1 id="hero-title" class="text-4xl sm:text-5xl md:text-7xl font-serif font-bold text-white mb-6 leading-tight">
-                Gravure laser sur mesure<br><span class="text-wood-300">à Mazamet, dans le Tarn</span>
-            </h1>
-            <p class="text-base sm:text-lg text-gray-200 mb-8 sm:mb-10 max-w-2xl mx-auto tracking-wide">
-                Créations personnalisées sur bois et cuir — décoration murale, cadeaux gravés, objets uniques. Artisan graveur en Occitanie, au cœur de la Montagne Noire.
+            <div class="hero-content text-center lg:text-left">
+                <p class="eyebrow">Artisan graveur laser · Mazamet, Tarn</p>
+                <h1 id="hero-title" class="font-serif font-bold text-4xl sm:text-5xl xl:text-6xl leading-[1.1] text-wood-900 mb-5">
+                    Gravure laser personnalisée, <span class="text-ember-500">fabriquée à Mazamet</span>
+                </h1>
+                <p class="lead max-w-xl mx-auto lg:mx-0 mb-8">
+                    Cadeaux gravés, décoration murale et objets sur mesure, en bois et en cuir.
+                    Chaque pièce est gravée dans mon atelier de la Montagne Noire, puis expédiée partout en France.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-3 justify-center lg:justify-start">
+                    <a href="#catalogue" class="btn btn-primary"><svg class="icon" viewBox="0 0 448 512" aria-hidden="true" focusable="false"><use href="#i-bag-shopping"/></svg> Découvrir la boutique</a>
+                    <button type="button" data-devis-open class="btn btn-outline"><svg class="icon" viewBox="0 0 384 512" aria-hidden="true" focusable="false"><use href="#i-file-invoice"/></svg> Devis gratuit sous 24 h</button>
+                </div>
+                <ul class="mt-8 flex flex-wrap justify-center lg:justify-start gap-x-6 gap-y-2 text-sm font-bold text-wood-800">
+                    <li><svg class="icon text-ember-500 mr-1.5" viewBox="0 0 448 512" aria-hidden="true" focusable="false"><use href="#i-check"/></svg>Cadeaux dès 2,50 €</li>
+                    <li><svg class="icon text-ember-500 mr-1.5" viewBox="0 0 448 512" aria-hidden="true" focusable="false"><use href="#i-check"/></svg>Paiement sécurisé</li>
+                    <li><svg class="icon text-ember-500 mr-1.5" viewBox="0 0 448 512" aria-hidden="true" focusable="false"><use href="#i-check"/></svg>Livraison en France</li>
+                </ul>
+            </div>
+
+            <!-- Mosaïque de réalisations -->
+            <div class="relative">
+                <div class="grid grid-cols-5 grid-rows-2 gap-3 sm:gap-4 h-80 sm:h-[26rem] lg:h-[32rem]">
+                    <div class="relative col-span-3 row-span-2 rounded-3xl overflow-hidden shadow-xl">
+                        <picture>
+                            <source type="image/avif" srcset="images/canal-du-midi-480.avif 480w, images/canal-du-midi-800.avif 800w, images/canal-du-midi-1195.avif 1195w" sizes="(min-width: 1024px) 30vw, 60vw">
+                            <source type="image/webp" srcset="images/canal-du-midi-480.webp 480w, images/canal-du-midi-800.webp 800w, images/canal-du-midi-1195.webp 1195w" sizes="(min-width: 1024px) 30vw, 60vw">
+                            <img src="images/canal-du-midi-800.webp" alt="Carte du Canal du Midi gravée au laser sur une planche de bois, posée sur un établi" width="1195" height="896" decoding="async" fetchpriority="high" class="absolute inset-0 w-full h-full object-cover">
+                        </picture>
+                    </div>
+                    <div class="relative col-span-2 rounded-3xl overflow-hidden shadow-lg">
+                        <picture>
+                            <source type="image/avif" srcset="images/cintre-1-480.avif 480w, images/cintre-1-800.avif 800w" sizes="(min-width: 1024px) 20vw, 40vw">
+                            <source type="image/webp" srcset="images/cintre-1-480.webp 480w, images/cintre-1-800.webp 800w" sizes="(min-width: 1024px) 20vw, 40vw">
+                            <img src="images/cintre-1-800.webp" alt="Cintre en bois gravé de deux prénoms et d'une date de mariage" width="896" height="1195" decoding="async" class="absolute inset-0 w-full h-full object-cover">
+                        </picture>
+                    </div>
+                    <div class="relative col-span-2 rounded-3xl overflow-hidden shadow-lg">
+                        <picture>
+                            <source type="image/avif" srcset="images/porte-cles-480.avif 480w, images/porte-cles-800.avif 800w, images/porte-cles-1200.avif 1200w" sizes="(min-width: 1024px) 20vw, 40vw">
+                            <source type="image/webp" srcset="images/porte-cles-480.webp 480w, images/porte-cles-800.webp 800w, images/porte-cles-1200.webp 1200w" sizes="(min-width: 1024px) 20vw, 40vw">
+                            <img src="images/porte-cles-800.webp" alt="Porte-clés gravé d'une patte de chien et d'un prénom, tenu par un golden retriever" width="1588" height="2135" decoding="async" class="absolute inset-0 w-full h-full object-cover">
+                        </picture>
+                    </div>
+                </div>
+                <p class="absolute -bottom-4 left-4 sm:left-6 bg-white rounded-full shadow-lg border border-line px-4 py-2.5 text-xs sm:text-sm font-bold text-wood-900">
+                    <svg class="icon text-ember-500 mr-1.5" viewBox="0 0 384 512" aria-hidden="true" focusable="false"><use href="#i-location-dot"/></svg>Gravé à Mazamet, Montagne Noire
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════ RÉASSURANCE ═══════════════════════════ -->
+    <section class="bg-white border-y border-line" aria-label="Nos engagements">
+        <ul class="wrap py-6 sm:py-8 grid grid-cols-2 lg:grid-cols-4 gap-x-4 gap-y-6">
+            <li class="flex items-center gap-3">
+                <span class="shrink-0 w-11 h-11 rounded-full bg-ember-50 text-ember-600 flex items-center justify-center text-lg" aria-hidden="true"><svg class="icon" viewBox="0 0 384 512" aria-hidden="true" focusable="false"><use href="#i-file-invoice"/></svg></span>
+                <span class="text-sm leading-snug"><strong class="block text-wood-900">Devis gratuit</strong><span class="text-wood-800">Réponse sous 24 h</span></span>
+            </li>
+            <li class="flex items-center gap-3">
+                <span class="shrink-0 w-11 h-11 rounded-full bg-ember-50 text-ember-600 flex items-center justify-center text-lg" aria-hidden="true"><svg class="icon" viewBox="0 0 640 512" aria-hidden="true" focusable="false"><use href="#i-hand-sparkles"/></svg></span>
+                <span class="text-sm leading-snug"><strong class="block text-wood-900">100 % artisanal</strong><span class="text-wood-800">Gravé à Mazamet (Tarn)</span></span>
+            </li>
+            <li class="flex items-center gap-3">
+                <span class="shrink-0 w-11 h-11 rounded-full bg-ember-50 text-ember-600 flex items-center justify-center text-lg" aria-hidden="true"><svg class="icon" viewBox="0 0 512 512" aria-hidden="true" focusable="false"><use href="#i-shield-halved"/></svg></span>
+                <span class="text-sm leading-snug"><strong class="block text-wood-900">Paiement sécurisé</strong><span class="text-wood-800">Carte bancaire via Stripe</span></span>
+            </li>
+            <li class="flex items-center gap-3">
+                <span class="shrink-0 w-11 h-11 rounded-full bg-ember-50 text-ember-600 flex items-center justify-center text-lg" aria-hidden="true"><svg class="icon" viewBox="0 0 640 512" aria-hidden="true" focusable="false"><use href="#i-truck-fast"/></svg></span>
+                <span class="text-sm leading-snug"><strong class="block text-wood-900">Livraison France</strong><span class="text-wood-800">Ou retrait sur place</span></span>
+            </li>
+        </ul>
+    </section>
+
+    <!-- ═══════════════════════════ BOUTIQUE ═══════════════════════════ -->
+    <section id="catalogue" class="section bg-paper">
+        <div class="wrap">
+            <div class="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6 mb-10 md:mb-14 reveal">
+                <div class="max-w-2xl">
+                    <p class="eyebrow">La boutique</p>
+                    <h2 class="h2 mb-4">Cadeaux gravés, prêts à personnaliser</h2>
+                    <p class="lead">Choisissez votre article, indiquez votre personnalisation au moment du paiement : je le grave dans mon atelier du Tarn et je l'expédie partout en France.</p>
+                </div>
+                <p class="shrink-0 flex items-center gap-2 text-sm font-bold text-wood-800">
+                    <svg class="icon text-ember-500" viewBox="0 0 448 512" aria-hidden="true" focusable="false"><use href="#i-lock"/></svg> Paiement sécurisé par carte bancaire
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+                <article id="produit-porte-cles" class="card group flex flex-col overflow-hidden hover:shadow-xl transition-shadow duration-300 reveal delay-100">
+                    <div class="relative overflow-hidden aspect-square sm:aspect-[4/5] bg-sand">
+                        <picture>
+                            <source type="image/avif" srcset="images/porte-cles-480.avif 480w, images/porte-cles-800.avif 800w, images/porte-cles-1200.avif 1200w" sizes="(min-width: 1024px) 352px, (min-width: 640px) 50vw, 100vw">
+                            <source type="image/webp" srcset="images/porte-cles-480.webp 480w, images/porte-cles-800.webp 800w, images/porte-cles-1200.webp 1200w" sizes="(min-width: 1024px) 352px, (min-width: 640px) 50vw, 100vw">
+                            <img src="images/porte-cles-800.webp" alt="Golden retriever tenant dans sa gueule un porte-clés gravé d'une patte de chien et du prénom Baloo" width="1588" height="2135" loading="lazy" decoding="async" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                        </picture>
+                        <p class="absolute top-4 left-4 z-10 pointer-events-none" aria-hidden="true"><span class="badge bg-ember-500 text-white shadow-md">−33 %</span></p>
+                    </div>
+                    <div class="p-5 sm:p-6 flex flex-col flex-1">
+                        <h3 class="text-xl font-serif font-bold text-wood-900 mb-2">Porte-clés personnalisé</h3>
+                        <p class="text-wood-800 text-sm leading-relaxed mb-4">Petit accessoire gravé au laser. Idéal pour les cadeaux personnalisés — prénom, date, motif.</p>
+                        <details class="faq-item mb-4 rounded-xl bg-paper border border-line text-sm">
+                            <summary class="flex items-center justify-between gap-3 px-4 py-3 rounded-xl font-bold text-wood-900">
+                                Options de personnalisation<span class="sr-only"> : le porte-clés personnalisé</span>
+                                <svg class="icon faq-chevron text-wood-700 text-xs shrink-0" viewBox="0 0 512 512" aria-hidden="true" focusable="false"><use href="#i-chevron-down"/></svg>
+                            </summary>
+                            <div class="px-4 pb-4 space-y-1 text-wood-800 leading-relaxed">
+                                <p><span class="font-bold">Recto</span> — Prénom ou mot doux + dessin au choix (patte de chien, cœur, étoile…)</p>
+                                <p><span class="font-bold">Verso</span> — Numéro de téléphone ou date de naissance (JJ.MM.AAAA)</p>
+                                <p class="italic">La personnalisation se fait au moment du paiement.</p>
+                            </div>
+                        </details>
+                        <div class="mt-auto flex flex-col">
+                            <p class="flex items-baseline gap-2 mb-4">
+                                <span class="sr-only">Prix promotionnel :</span>
+                                <span class="text-2xl font-bold text-wood-900">4 €</span>
+                                <span class="sr-only">au lieu de</span>
+                                <span class="text-sm text-wood-700 line-through">6 €</span>
+                                <span class="text-xs font-bold text-ember-600 uppercase tracking-wider">Offre de lancement</span>
+                            </p>
+                            <a href="https://buy.stripe.com/eVq6oHfL64vUcAecEw6Ri06" target="_blank" rel="noopener noreferrer" class="btn btn-primary w-full">
+                                <svg class="icon" viewBox="0 0 576 512" aria-hidden="true" focusable="false"><use href="#i-credit-card"/></svg> Commander<span class="sr-only"> le porte-clés personnalisé (paiement Stripe, nouvel onglet)</span>
+                            </a>
+                            <a href="https://www.etsy.com/fr/listing/4461380858/offre-de-lancement-porte-cles" target="_blank" rel="noopener noreferrer" class="mt-3 text-center text-sm font-bold text-wood-800 underline underline-offset-4 hover:text-ember-600"><svg class="icon mr-1" viewBox="0 0 384 512" aria-hidden="true" focusable="false"><use href="#i-etsy"/></svg> Voir sur Etsy<span class="sr-only"> le porte-clés personnalisé (nouvel onglet)</span></a>
+                        </div>
+                    </div>
+                </article>
+
+                <article id="produit-cintre" class="card group flex flex-col overflow-hidden hover:shadow-xl transition-shadow duration-300 reveal delay-200">
+                    <div class="relative aspect-square sm:aspect-[4/5] bg-sand" data-carousel role="group" aria-roledescription="carrousel" aria-label="Photos : le cintre personnalisé">
+                        <ul class="carousel-track absolute inset-0 flex overflow-x-auto snap-x snap-mandatory" data-carousel-track>
+                            <li class="relative shrink-0 w-full h-full snap-center">
+                                <picture>
+                                    <source type="image/avif" srcset="images/cintre-1-480.avif 480w, images/cintre-1-800.avif 800w" sizes="(min-width: 1024px) 352px, (min-width: 640px) 50vw, 100vw">
+                                    <source type="image/webp" srcset="images/cintre-1-480.webp 480w, images/cintre-1-800.webp 800w" sizes="(min-width: 1024px) 352px, (min-width: 640px) 50vw, 100vw">
+                                    <img src="images/cintre-1-800.webp" alt="Cintre en bois gravé « Charlotte &amp; Antoine » avec la date du mariage, orné d'un nœud en ruban ivoire" width="896" height="1195" loading="lazy" decoding="async" class="absolute inset-0 w-full h-full object-cover">
+                                </picture>
+                            </li>
+                            <li class="relative shrink-0 w-full h-full snap-center">
+                                <picture>
+                                    <source type="image/avif" srcset="images/cintre-2-480.avif 480w, images/cintre-2-800.avif 800w" sizes="(min-width: 1024px) 352px, (min-width: 640px) 50vw, 100vw">
+                                    <source type="image/webp" srcset="images/cintre-2-480.webp 480w, images/cintre-2-800.webp 800w" sizes="(min-width: 1024px) 352px, (min-width: 640px) 50vw, 100vw">
+                                    <img src="images/cintre-2-800.webp" alt="Cintre en bois gravé d'un prénom, posé sur un linge en lin avec des fleurs séchées" width="896" height="1200" loading="lazy" decoding="async" class="absolute inset-0 w-full h-full object-cover">
+                                </picture>
+                            </li>
+                            <li class="relative shrink-0 w-full h-full snap-center">
+                                <picture>
+                                    <source type="image/avif" srcset="images/cintre-3-480.avif 480w, images/cintre-3-800.avif 800w" sizes="(min-width: 1024px) 352px, (min-width: 640px) 50vw, 100vw">
+                                    <source type="image/webp" srcset="images/cintre-3-480.webp 480w, images/cintre-3-800.webp 800w" sizes="(min-width: 1024px) 352px, (min-width: 640px) 50vw, 100vw">
+                                    <img src="images/cintre-3-800.webp" alt="Gros plan sur un cintre en bois gravé du prénom Alice en lettres cursives" width="1024" height="1536" loading="lazy" decoding="async" class="absolute inset-0 w-full h-full object-cover">
+                                </picture>
+                            </li>
+                        </ul>
+                        <p class="absolute top-4 left-4 z-10 pointer-events-none"><span class="badge bg-white text-wood-900 shadow-md">Mariage</span></p>
+                    </div>
+                    <div class="p-5 sm:p-6 flex flex-col flex-1">
+                        <h3 class="text-xl font-serif font-bold text-wood-900 mb-2">Cintre personnalisé</h3>
+                        <p class="text-wood-800 text-sm leading-relaxed mb-4">Cintre en bois gravé au laser. Idéal pour un mariage, un cadeau de témoin ou une attention personnalisée unique.</p>
+                        <details class="faq-item mb-4 rounded-xl bg-paper border border-line text-sm">
+                            <summary class="flex items-center justify-between gap-3 px-4 py-3 rounded-xl font-bold text-wood-900">
+                                Options de personnalisation<span class="sr-only"> : le cintre personnalisé</span>
+                                <svg class="icon faq-chevron text-wood-700 text-xs shrink-0" viewBox="0 0 512 512" aria-hidden="true" focusable="false"><use href="#i-chevron-down"/></svg>
+                            </summary>
+                            <div class="px-4 pb-4 space-y-1 text-wood-800 leading-relaxed">
+                                <p>Prénoms, date, motif floral ou texte libre</p>
+                                <p>Parfait pour : mariage, EVJF, cadeau témoin, naissance</p>
+                                <p class="italic">La personnalisation se fait au moment du paiement.</p>
+                            </div>
+                        </details>
+                        <div class="mt-auto flex flex-col">
+                            <p class="flex items-baseline gap-2 mb-4">
+                                <span class="text-sm font-bold text-wood-800">À partir de</span>
+                                <span class="text-2xl font-bold text-wood-900">2,50 €</span>
+                            </p>
+                            <a href="https://buy.stripe.com/aFa3cvdCYd2qdEicEw6Ri04" target="_blank" rel="noopener noreferrer" class="btn btn-primary w-full">
+                                <svg class="icon" viewBox="0 0 576 512" aria-hidden="true" focusable="false"><use href="#i-credit-card"/></svg> Commander<span class="sr-only"> le cintre personnalisé (paiement Stripe, nouvel onglet)</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article id="produit-bouchon" class="card group flex flex-col overflow-hidden hover:shadow-xl transition-shadow duration-300 reveal delay-300">
+                    <div class="relative aspect-square sm:aspect-[4/5] bg-sand" data-carousel role="group" aria-roledescription="carrousel" aria-label="Photos : le bouchon de vin personnalisé">
+                        <ul class="carousel-track absolute inset-0 flex overflow-x-auto snap-x snap-mandatory" data-carousel-track>
+                            <li class="relative shrink-0 w-full h-full snap-center">
+                                <picture>
+                                    <source type="image/avif" srcset="images/bouchon-1-480.avif 480w, images/bouchon-1-800.avif 800w" sizes="(min-width: 1024px) 352px, (min-width: 640px) 50vw, 100vw">
+                                    <source type="image/webp" srcset="images/bouchon-1-480.webp 480w, images/bouchon-1-800.webp 800w" sizes="(min-width: 1024px) 352px, (min-width: 640px) 50vw, 100vw">
+                                    <img src="images/bouchon-1-800.webp" alt="Deux bouchons de vin en bois gravés « Pascale 1966 » et « 60 ans », posés sur un plan en marbre" width="896" height="1195" loading="lazy" decoding="async" class="absolute inset-0 w-full h-full object-cover">
+                                </picture>
+                            </li>
+                            <li class="relative shrink-0 w-full h-full snap-center">
+                                <picture>
+                                    <source type="image/avif" srcset="images/bouchon-2-480.avif 480w, images/bouchon-2-800.avif 800w" sizes="(min-width: 1024px) 352px, (min-width: 640px) 50vw, 100vw">
+                                    <source type="image/webp" srcset="images/bouchon-2-480.webp 480w, images/bouchon-2-800.webp 800w" sizes="(min-width: 1024px) 352px, (min-width: 640px) 50vw, 100vw">
+                                    <img src="images/bouchon-2-800.webp" alt="Bouchons de vin gravés pour un anniversaire, présentés sur une table avec une bouteille, un verre et du raisin" width="896" height="1195" loading="lazy" decoding="async" class="absolute inset-0 w-full h-full object-cover">
+                                </picture>
+                            </li>
+                            <li class="relative shrink-0 w-full h-full snap-center">
+                                <picture>
+                                    <source type="image/avif" srcset="images/bouchon-3-480.avif 480w, images/bouchon-3-800.avif 800w" sizes="(min-width: 1024px) 352px, (min-width: 640px) 50vw, 100vw">
+                                    <source type="image/webp" srcset="images/bouchon-3-480.webp 480w, images/bouchon-3-800.webp 800w" sizes="(min-width: 1024px) 352px, (min-width: 640px) 50vw, 100vw">
+                                    <img src="images/bouchon-3-800.webp" alt="Quatre bouchons de vin en bois gravés, disposés sur un plateau en bois sombre à côté d'un coffret cadeau" width="896" height="1195" loading="lazy" decoding="async" class="absolute inset-0 w-full h-full object-cover">
+                                </picture>
+                            </li>
+                        </ul>
+                        <p class="absolute top-4 left-4 z-10 pointer-events-none"><span class="badge bg-white text-wood-900 shadow-md">Idée cadeau</span></p>
+                    </div>
+                    <div class="p-5 sm:p-6 flex flex-col flex-1">
+                        <h3 class="text-xl font-serif font-bold text-wood-900 mb-2">Bouchon de vin personnalisé</h3>
+                        <p class="text-wood-800 text-sm leading-relaxed mb-4">Bouchon de vin en bois gravé au laser. Parfait pour offrir lors d'un mariage, d'un anniversaire ou comme cadeau d'entreprise.</p>
+                        <details class="faq-item mb-4 rounded-xl bg-paper border border-line text-sm">
+                            <summary class="flex items-center justify-between gap-3 px-4 py-3 rounded-xl font-bold text-wood-900">
+                                Options de personnalisation<span class="sr-only"> : le bouchon de vin personnalisé</span>
+                                <svg class="icon faq-chevron text-wood-700 text-xs shrink-0" viewBox="0 0 512 512" aria-hidden="true" focusable="false"><use href="#i-chevron-down"/></svg>
+                            </summary>
+                            <div class="px-4 pb-4 space-y-1 text-wood-800 leading-relaxed">
+                                <p>Prénom, date, logo, initiales ou motif au choix</p>
+                                <p>Idéal : mariage, EVG/EVJF, cadeau d'entreprise, amateur de vin</p>
+                                <p class="italic">La personnalisation se fait au moment du paiement.</p>
+                            </div>
+                        </details>
+                        <div class="mt-auto flex flex-col">
+                            <p class="flex items-baseline gap-2 mb-4">
+                                <span class="text-sm font-bold text-wood-800">À partir de</span>
+                                <span class="text-2xl font-bold text-wood-900">3 €</span>
+                            </p>
+                            <a href="https://buy.stripe.com/8x2aEX56saUi0Rw5c46Ri05" target="_blank" rel="noopener noreferrer" class="btn btn-primary w-full">
+                                <svg class="icon" viewBox="0 0 576 512" aria-hidden="true" focusable="false"><use href="#i-credit-card"/></svg> Commander<span class="sr-only"> le bouchon de vin personnalisé (paiement Stripe, nouvel onglet)</span>
+                            </a>
+                            <a href="https://montagnenoirelaser.etsy.com/listing/4487030595" target="_blank" rel="noopener noreferrer" class="mt-3 text-center text-sm font-bold text-wood-800 underline underline-offset-4 hover:text-ember-600"><svg class="icon mr-1" viewBox="0 0 384 512" aria-hidden="true" focusable="false"><use href="#i-etsy"/></svg> Voir sur Etsy<span class="sr-only"> le bouchon de vin personnalisé (nouvel onglet)</span></a>
+                        </div>
+                    </div>
+                </article>
+
+                <article id="produit-one-piece" class="card group flex flex-col overflow-hidden hover:shadow-xl transition-shadow duration-300 reveal delay-100">
+                    <div class="relative overflow-hidden aspect-square sm:aspect-[4/5] bg-sand">
+                        <picture>
+                            <source type="image/avif" srcset="images/one-piece-480.avif 480w, images/one-piece-800.avif 800w, images/one-piece-1200.avif 1200w" sizes="(min-width: 1024px) 352px, (min-width: 640px) 50vw, 100vw">
+                            <source type="image/webp" srcset="images/one-piece-480.webp 480w, images/one-piece-800.webp 800w, images/one-piece-1200.webp 1200w" sizes="(min-width: 1024px) 352px, (min-width: 640px) 50vw, 100vw">
+                            <img src="images/one-piece-800.webp" alt="Portrait de Gol D. Roger, personnage de One Piece, gravé au laser sur une planche de bois clair dans un décor de jungle" width="1588" height="2127" loading="lazy" decoding="async" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                        </picture>
+                        <p class="absolute top-4 left-4 z-10 pointer-events-none" aria-hidden="true"><span class="badge bg-ember-500 text-white shadow-md">−25 %</span></p>
+                    </div>
+                    <div class="p-5 sm:p-6 flex flex-col flex-1">
+                        <h3 class="text-xl font-serif font-bold text-wood-900 mb-2">Gravure One Piece — Gol D. Roger</h3>
+                        <p class="text-wood-800 text-sm leading-relaxed mb-4">Décoration murale exclusive pour fans de manga. Gravure fine sur bois brut.</p>
+                        <details class="faq-item mb-4 rounded-xl bg-paper border border-line text-sm">
+                            <summary class="flex items-center justify-between gap-3 px-4 py-3 rounded-xl font-bold text-wood-900">
+                                Options de personnalisation<span class="sr-only"> : la gravure One Piece</span>
+                                <svg class="icon faq-chevron text-wood-700 text-xs shrink-0" viewBox="0 0 512 512" aria-hidden="true" focusable="false"><use href="#i-chevron-down"/></svg>
+                            </summary>
+                            <div class="px-4 pb-4 space-y-1 text-wood-800 leading-relaxed">
+                                <p>Ajoutez un nom ou une date sur votre gravure.</p>
+                                <p class="italic">La personnalisation se fait au moment du paiement.</p>
+                            </div>
+                        </details>
+                        <div class="mt-auto flex flex-col">
+                            <p class="flex items-baseline gap-2 mb-4">
+                                <span class="sr-only">Prix promotionnel :</span>
+                                <span class="text-2xl font-bold text-wood-900">15 €</span>
+                                <span class="sr-only">au lieu de</span>
+                                <span class="text-sm text-wood-700 line-through">20 €</span>
+                                <span class="text-xs font-bold text-ember-600 uppercase tracking-wider">Offre de lancement</span>
+                            </p>
+                            <a href="https://buy.stripe.com/cNi9ATaqMd2q9o25c46Ri01" target="_blank" rel="noopener noreferrer" class="btn btn-primary w-full">
+                                <svg class="icon" viewBox="0 0 576 512" aria-hidden="true" focusable="false"><use href="#i-credit-card"/></svg> Commander<span class="sr-only"> la gravure One Piece (paiement Stripe, nouvel onglet)</span>
+                            </a>
+                            <a href="https://www.etsy.com/fr/listing/4465006449/gravure-sur-bois-one-piece-gol-d-roger" target="_blank" rel="noopener noreferrer" class="mt-3 text-center text-sm font-bold text-wood-800 underline underline-offset-4 hover:text-ember-600"><svg class="icon mr-1" viewBox="0 0 384 512" aria-hidden="true" focusable="false"><use href="#i-etsy"/></svg> Voir sur Etsy<span class="sr-only"> la gravure One Piece (nouvel onglet)</span></a>
+                        </div>
+                    </div>
+                </article>
+
+                <article id="produit-shelby" class="card group flex flex-col overflow-hidden hover:shadow-xl transition-shadow duration-300 reveal delay-200">
+                    <div class="relative overflow-hidden aspect-square sm:aspect-[4/5] bg-sand">
+                        <picture>
+                            <source type="image/avif" srcset="images/shelby-480.avif 480w, images/shelby-800.avif 800w, images/shelby-1200.avif 1200w" sizes="(min-width: 1024px) 352px, (min-width: 640px) 50vw, 100vw">
+                            <source type="image/webp" srcset="images/shelby-480.webp 480w, images/shelby-800.webp 800w, images/shelby-1200.webp 1200w" sizes="(min-width: 1024px) 352px, (min-width: 640px) 50vw, 100vw">
+                            <img src="images/shelby-800.webp" alt="Affiche en bois gravée « By order of the Peaky Blinders » avec une casquette, posée contre un mur de briques" width="1588" height="2176" loading="lazy" decoding="async" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                        </picture>
+                        <p class="absolute top-4 left-4 z-10 pointer-events-none" aria-hidden="true"><span class="badge bg-ember-500 text-white shadow-md">−25 %</span></p>
+                    </div>
+                    <div class="p-5 sm:p-6 flex flex-col flex-1">
+                        <h3 class="text-xl font-serif font-bold text-wood-900 mb-2">Affiche bois — Shelby Company</h3>
+                        <p class="text-wood-800 text-sm leading-relaxed mb-4">L'ambiance Peaky Blinders dans votre intérieur. Style industriel brut et authentique.</p>
+                        <details class="faq-item mb-4 rounded-xl bg-paper border border-line text-sm">
+                            <summary class="flex items-center justify-between gap-3 px-4 py-3 rounded-xl font-bold text-wood-900">
+                                Options de personnalisation<span class="sr-only"> : l'affiche bois Shelby Company</span>
+                                <svg class="icon faq-chevron text-wood-700 text-xs shrink-0" viewBox="0 0 512 512" aria-hidden="true" focusable="false"><use href="#i-chevron-down"/></svg>
+                            </summary>
+                            <div class="px-4 pb-4 space-y-1 text-wood-800 leading-relaxed">
+                                <p>Ajoutez un nom ou une date sur votre gravure.</p>
+                                <p class="italic">La personnalisation se fait au moment du paiement.</p>
+                            </div>
+                        </details>
+                        <div class="mt-auto flex flex-col">
+                            <p class="flex items-baseline gap-2 mb-4">
+                                <span class="sr-only">Prix promotionnel :</span>
+                                <span class="text-2xl font-bold text-wood-900">15 €</span>
+                                <span class="sr-only">au lieu de</span>
+                                <span class="text-sm text-wood-700 line-through">20 €</span>
+                                <span class="text-xs font-bold text-ember-600 uppercase tracking-wider">Offre de lancement</span>
+                            </p>
+                            <a href="https://buy.stripe.com/4gM6oH9mI1jIdEigUM6Ri03" target="_blank" rel="noopener noreferrer" class="btn btn-primary w-full">
+                                <svg class="icon" viewBox="0 0 576 512" aria-hidden="true" focusable="false"><use href="#i-credit-card"/></svg> Commander<span class="sr-only"> l'affiche bois Shelby Company (paiement Stripe, nouvel onglet)</span>
+                            </a>
+                            <a href="https://www.etsy.com/fr/listing/4460574568/offre-de-lancement-affiche-bois-grave" target="_blank" rel="noopener noreferrer" class="mt-3 text-center text-sm font-bold text-wood-800 underline underline-offset-4 hover:text-ember-600"><svg class="icon mr-1" viewBox="0 0 384 512" aria-hidden="true" focusable="false"><use href="#i-etsy"/></svg> Voir sur Etsy<span class="sr-only"> l'affiche bois Shelby Company (nouvel onglet)</span></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Carte sur mesure -->
+                <article class="rounded-2xl bg-wood-900 text-white p-8 flex flex-col justify-center reveal delay-300">
+                    <p class="eyebrow-light">Sur mesure</p>
+                    <h3 class="text-2xl sm:text-3xl font-serif font-bold mb-4">Une autre idée en tête ?</h3>
+                    <p class="text-wood-100 leading-relaxed mb-6">Logo, prénom, dessin, carte, objet déjà en votre possession… Décrivez votre projet et recevez un devis gratuit sous 24 h.</p>
+                    <ul class="space-y-2 mb-8 text-sm text-wood-100">
+                        <li class="flex items-center gap-2"><svg class="icon text-wood-300" viewBox="0 0 448 512" aria-hidden="true" focusable="false"><use href="#i-check"/></svg> Bois et cuir</li>
+                        <li class="flex items-center gap-2"><svg class="icon text-wood-300" viewBox="0 0 448 512" aria-hidden="true" focusable="false"><use href="#i-check"/></svg> À l'unité ou en quantité</li>
+                        <li class="flex items-center gap-2"><svg class="icon text-wood-300" viewBox="0 0 448 512" aria-hidden="true" focusable="false"><use href="#i-check"/></svg> Devis gratuit et sans engagement</li>
+                    </ul>
+                    <button type="button" data-devis-open class="btn btn-light self-start"><svg class="icon" viewBox="0 0 384 512" aria-hidden="true" focusable="false"><use href="#i-file-invoice"/></svg> Demander un devis</button>
+                </article>
+            </div>
+
+            <p class="text-center mt-10 text-wood-800 reveal">
+                Vous préférez commander sur Etsy ?
+                <a href="https://montagnenoirelaser.etsy.com" target="_blank" rel="noopener noreferrer" class="font-bold text-wood-900 underline underline-offset-4 hover:text-ember-600"><svg class="icon mr-1" viewBox="0 0 384 512" aria-hidden="true" focusable="false"><use href="#i-etsy"/></svg> Voir toute la boutique Etsy <span class="sr-only">(nouvel onglet)</span></a>
             </p>
-            <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="#surmesure"
-                   class="inline-block px-8 py-4 bg-wood-300 text-wood-900 font-bold rounded-full hover:bg-white hover:scale-105 transition-all duration-300 shadow-lg">
-                    <svg class="icon mr-2" viewBox="0 0 576 512" aria-hidden="true" focusable="false"><use href="#i-star"/></svg> Voir les créations sur mesure
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════ OCCASIONS ═══════════════════════════ -->
+    <section id="occasions" class="section bg-white" aria-labelledby="occasions-title">
+        <div class="wrap">
+            <div class="text-center max-w-2xl mx-auto mb-10 md:mb-14 reveal">
+                <p class="eyebrow">Idées cadeaux</p>
+                <h2 id="occasions-title" class="h2 mb-4">Une gravure pour chaque occasion</h2>
+                <p class="lead">À l'unité ou en série, pour offrir, remercier ou marquer un événement.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+                <a href="#produit-cintre" class="group relative block w-full text-left overflow-hidden rounded-2xl aspect-[4/3] md:aspect-[4/5] reveal">
+                    <picture>
+                        <source type="image/avif" srcset="images/cintre-2-480.avif 480w, images/cintre-2-800.avif 800w" sizes="(min-width: 768px) 352px, 100vw">
+                        <source type="image/webp" srcset="images/cintre-2-480.webp 480w, images/cintre-2-800.webp 800w" sizes="(min-width: 768px) 352px, 100vw">
+                        <img src="images/cintre-2-800.webp" alt="" width="896" height="1200" loading="lazy" decoding="async" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                    </picture>
+                    <span class="absolute inset-0 bg-gradient-to-t from-wood-900 via-wood-900/50 to-transparent"></span>
+                    <span class="absolute inset-x-0 bottom-0 p-6 block">
+                        <span class="block text-2xl font-serif font-bold text-white mb-1">Mariage &amp; EVJF</span>
+                        <span class="block text-sm text-wood-100 mb-3">Cintres et bouchons gravés aux prénoms des mariés.</span>
+                        <span class="inline-flex items-center gap-2 text-sm font-bold text-wood-300 group-hover:text-white">Voir les cintres <svg class="icon" viewBox="0 0 448 512" aria-hidden="true" focusable="false"><use href="#i-arrow-right"/></svg></span>
+                    </span>
                 </a>
-                <button type="button" data-devis-open
-                        class="inline-block px-8 py-4 border-2 border-white/70 text-white font-bold rounded-full hover:bg-white hover:text-wood-900 hover:scale-105 transition-all duration-300">
-                    <svg class="icon mr-2" viewBox="0 0 384 512" aria-hidden="true" focusable="false"><use href="#i-file-invoice"/></svg> Devis gratuit sous 24 h
+                <a href="#petanque" class="group relative block w-full text-left overflow-hidden rounded-2xl aspect-[4/3] md:aspect-[4/5] reveal">
+                    <picture>
+                        <source type="image/avif" srcset="images/petanque-1-480.avif 480w, images/petanque-1-800.avif 800w" sizes="(min-width: 768px) 352px, 100vw">
+                        <source type="image/webp" srcset="images/petanque-1-480.webp 480w, images/petanque-1-800.webp 800w" sizes="(min-width: 768px) 352px, 100vw">
+                        <img src="images/petanque-1-800.webp" alt="" width="1195" height="896" loading="lazy" decoding="async" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                    </picture>
+                    <span class="absolute inset-0 bg-gradient-to-t from-wood-900 via-wood-900/50 to-transparent"></span>
+                    <span class="absolute inset-x-0 bottom-0 p-6 block">
+                        <span class="block text-2xl font-serif font-bold text-white mb-1">Clubs &amp; associations</span>
+                        <span class="block text-sm text-wood-100 mb-3">Compteur de pétanque aux couleurs de votre club.</span>
+                        <span class="inline-flex items-center gap-2 text-sm font-bold text-wood-300 group-hover:text-white">Voir le compteur <svg class="icon" viewBox="0 0 448 512" aria-hidden="true" focusable="false"><use href="#i-arrow-right"/></svg></span>
+                    </span>
+                </a>
+                <button type="button" data-devis-open="Cadeau personnalisé" class="group relative block w-full text-left overflow-hidden rounded-2xl aspect-[4/3] md:aspect-[4/5] reveal">
+                    <picture>
+                        <source type="image/avif" srcset="images/bouchon-3-480.avif 480w, images/bouchon-3-800.avif 800w" sizes="(min-width: 768px) 352px, 100vw">
+                        <source type="image/webp" srcset="images/bouchon-3-480.webp 480w, images/bouchon-3-800.webp 800w" sizes="(min-width: 768px) 352px, 100vw">
+                        <img src="images/bouchon-3-800.webp" alt="" width="896" height="1195" loading="lazy" decoding="async" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                    </picture>
+                    <span class="absolute inset-0 bg-gradient-to-t from-wood-900 via-wood-900/50 to-transparent"></span>
+                    <span class="absolute inset-x-0 bottom-0 p-6 block">
+                        <span class="block text-2xl font-serif font-bold text-white mb-1">Entreprises</span>
+                        <span class="block text-sm text-wood-100 mb-3">Cadeaux gravés à votre logo, en quantité.</span>
+                        <span class="inline-flex items-center gap-2 text-sm font-bold text-wood-300 group-hover:text-white">Demander un devis <svg class="icon" viewBox="0 0 448 512" aria-hidden="true" focusable="false"><use href="#i-arrow-right"/></svg></span>
+                    </span>
                 </button>
             </div>
-            <p class="mt-6 text-sm text-gray-200">
-                Envie d'un cadeau prêt à personnaliser ?
-                <a href="#catalogue" class="font-bold text-wood-300 underline underline-offset-4 hover:text-white">Voir la boutique</a>
-            </p>
-        </div>
-
-        <div class="absolute bottom-4 left-1/2 -translate-x-1/2 animate-bounce hidden sm:block">
-            <a href="#surmesure" class="flex items-center justify-center w-11 h-11 text-white/80 hover:text-white" aria-label="Descendre vers les créations sur mesure">
-                <svg class="icon text-2xl" viewBox="0 0 512 512" aria-hidden="true" focusable="false"><use href="#i-chevron-down"/></svg>
-            </a>
         </div>
     </section>
 
     <!-- ═══════════════════════════ SUR MESURE ═══════════════════════════ -->
-    <section id="surmesure" class="py-16 md:py-24 bg-wood-900">
-        <div class="container mx-auto px-4 sm:px-6">
-
-            <!-- Section header -->
-            <div class="text-center mb-12 md:mb-16 reveal">
-                <p class="text-wood-300 font-bold tracking-[0.3em] uppercase text-xs mb-3"><span aria-hidden="true">★ </span>Pièces uniques</p>
-                <h2 class="text-3xl sm:text-4xl md:text-5xl font-serif font-bold text-white mb-4">Créations gravées sur mesure</h2>
-                <p class="text-gray-300 max-w-xl mx-auto text-lg">Chaque projet est unique. Dans mon atelier de Mazamet, dans le Tarn, je grave au laser vos idées sur bois et sur cuir, avec précision.</p>
+    <section id="surmesure" class="section bg-wood-900">
+        <div class="wrap">
+            <div class="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6 mb-10 md:mb-14 reveal">
+                <div class="max-w-2xl">
+                    <p class="eyebrow-light">Créations sur mesure</p>
+                    <h2 class="h2 !text-white mb-4">Votre idée, gravée dans le bois ou le cuir</h2>
+                    <p class="text-wood-100 text-base sm:text-lg leading-relaxed">Chaque projet est unique. Dans mon atelier de Mazamet, dans le Tarn, je grave au laser vos idées sur bois et sur cuir, avec précision.</p>
+                </div>
+                <button type="button" data-devis-open class="btn btn-primary shrink-0 self-start lg:self-auto"><svg class="icon" viewBox="0 0 384 512" aria-hidden="true" focusable="false"><use href="#i-file-invoice"/></svg> Demander un devis gratuit</button>
             </div>
 
-            <!-- Deux créations phares -->
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8 lg:mb-14">
-
-                <!-- Canal du Midi -->
-                <article class="group relative overflow-hidden rounded-2xl reveal delay-100 flex flex-col justify-end min-h-[30rem] lg:min-h-[34rem]">
-                    <picture>
-                        <source type="image/avif" srcset="images/canal-du-midi-480.avif 480w, images/canal-du-midi-800.avif 800w, images/canal-du-midi-1195.avif 1195w" sizes="(min-width: 1024px) 50vw, 100vw">
-                        <source type="image/webp" srcset="images/canal-du-midi-480.webp 480w, images/canal-du-midi-800.webp 800w, images/canal-du-midi-1195.webp 1195w" sizes="(min-width: 1024px) 50vw, 100vw">
-                        <img src="images/canal-du-midi-800.webp" alt="Carte du Canal du Midi gravée au laser sur une planche de bois, de Toulouse à l'étang de Thau, posée sur un établi" width="1195" height="896" loading="lazy" decoding="async"
-                             class="absolute inset-0 w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700">
-                    </picture>
-                    <div class="absolute inset-0 bg-gradient-to-t from-wood-900 via-wood-900/70 to-transparent"></div>
-
-                    <p class="absolute top-6 left-6">
-                        <span class="px-3 py-1.5 bg-wood-300 text-wood-900 text-xs font-bold rounded-full uppercase tracking-wider">Sur mesure</span>
-                    </p>
-
-                    <div class="relative p-6 sm:p-8">
-                        <h3 class="text-2xl sm:text-3xl font-serif font-bold text-white mb-2">Canal du Midi</h3>
-                        <p class="text-gray-200 text-sm mb-3 leading-relaxed">
-                            Gravure monumentale du Canal du Midi — patrimoine UNESCO capturé dans le bois. Idéale pour une décoration murale unique ou un cadeau d'exception.
-                        </p>
-                        <p class="text-wood-300 font-bold text-sm mb-4">À partir de <span class="text-xl">20 €</span> <span class="text-gray-200 font-normal">(indicatif)</span></p>
-                        <ul class="flex flex-wrap items-center gap-x-6 gap-y-2 text-wood-300 text-sm mb-5">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 mb-6 lg:mb-8">
+                <article class="group flex flex-col overflow-hidden rounded-2xl bg-white/5 ring-1 ring-white/10 reveal delay-100">
+                    <div class="relative aspect-[4/3] overflow-hidden">
+                        <picture>
+                            <source type="image/avif" srcset="images/canal-du-midi-480.avif 480w, images/canal-du-midi-800.avif 800w, images/canal-du-midi-1195.avif 1195w" sizes="(min-width: 1024px) 544px, 100vw">
+                            <source type="image/webp" srcset="images/canal-du-midi-480.webp 480w, images/canal-du-midi-800.webp 800w, images/canal-du-midi-1195.webp 1195w" sizes="(min-width: 1024px) 544px, 100vw">
+                            <img src="images/canal-du-midi-800.webp" alt="Carte du Canal du Midi gravée au laser sur une planche de bois, de Toulouse à l'étang de Thau, posée sur un établi" width="1195" height="896" loading="lazy" decoding="async" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                        </picture>
+                        <p class="absolute top-4 left-4"><span class="badge bg-wood-300 text-wood-900">Sur mesure</span></p>
+                    </div>
+                    <div class="p-6 sm:p-8 flex flex-col flex-1">
+                        <h3 class="text-2xl font-serif font-bold text-white mb-2">Canal du Midi</h3>
+                        <p class="text-wood-100 text-sm leading-relaxed mb-4">Gravure monumentale du Canal du Midi — patrimoine UNESCO capturé dans le bois. Idéale pour une décoration murale unique ou un cadeau d'exception.</p>
+                        <ul class="flex flex-wrap gap-x-6 gap-y-2 text-wood-300 text-sm mb-6">
                             <li><svg class="icon mr-2" viewBox="0 0 512 512" aria-hidden="true" focusable="false"><use href="#i-ruler-combined"/></svg>Dimensions personnalisables</li>
                             <li><svg class="icon mr-2" viewBox="0 0 576 512" aria-hidden="true" focusable="false"><use href="#i-paint-brush"/></svg>Motif sur commande</li>
                         </ul>
-                        <button type="button" data-devis-open="Décoration murale"
-                                class="inline-block px-6 py-3 bg-wood-300 text-wood-900 font-bold rounded-full hover:bg-white transition-colors duration-300 text-sm">
-                            <svg class="icon mr-2" viewBox="0 0 384 512" aria-hidden="true" focusable="false"><use href="#i-file-invoice"/></svg> Demander un devis<span class="sr-only"> pour une gravure du Canal du Midi</span>
-                        </button>
+                        <div class="mt-auto flex flex-wrap items-center justify-between gap-4">
+                            <p class="text-wood-100 text-sm font-bold">À partir de <span class="text-2xl text-wood-300">20 €</span> <span class="font-normal">(indicatif)</span></p>
+                            <button type="button" data-devis-open="Décoration murale" class="btn btn-sm btn-light">Demander un devis<span class="sr-only"> pour une gravure du Canal du Midi</span></button>
+                        </div>
                     </div>
                 </article>
 
-                <!-- Passerelle de Mazamet -->
-                <article class="group relative overflow-hidden rounded-2xl reveal delay-200 flex flex-col justify-end min-h-[30rem] lg:min-h-[34rem]">
-                    <picture>
-                        <source type="image/avif" srcset="images/passerelle-mazamet-480.avif 480w, images/passerelle-mazamet-800.avif 800w" sizes="(min-width: 1024px) 50vw, 100vw">
-                        <source type="image/webp" srcset="images/passerelle-mazamet-480.webp 480w, images/passerelle-mazamet-800.webp 800w" sizes="(min-width: 1024px) 50vw, 100vw">
-                        <img src="images/passerelle-mazamet-800.webp" alt="Tableau en bois gravé au laser représentant la passerelle d'Hautpoul à Mazamet, avec un fourgon au premier plan" width="1195" height="896" loading="lazy" decoding="async"
-                             class="absolute inset-0 w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700">
-                    </picture>
-                    <div class="absolute inset-0 bg-gradient-to-t from-wood-900 via-wood-900/70 to-transparent"></div>
-
-                    <p class="absolute top-6 left-6">
-                        <span class="px-3 py-1.5 bg-wood-300 text-wood-900 text-xs font-bold rounded-full uppercase tracking-wider">Sur mesure</span>
-                    </p>
-
-                    <div class="relative p-6 sm:p-8">
-                        <h3 class="text-2xl sm:text-3xl font-serif font-bold text-white mb-2">Passerelle de Mazamet</h3>
-                        <p class="text-gray-200 text-sm mb-3 leading-relaxed">
-                            Architecture et urbanité sublimées par la gravure laser. Un tableau bois saisissant qui transforme n'importe quel espace en galerie d'art.
-                        </p>
-                        <p class="text-wood-300 font-bold text-sm mb-4">À partir de <span class="text-xl">20 €</span> <span class="text-gray-200 font-normal">(indicatif)</span></p>
-                        <ul class="flex flex-wrap items-center gap-x-6 gap-y-2 text-wood-300 text-sm mb-5">
+                <article class="group flex flex-col overflow-hidden rounded-2xl bg-white/5 ring-1 ring-white/10 reveal delay-200">
+                    <div class="relative aspect-[4/3] overflow-hidden">
+                        <picture>
+                            <source type="image/avif" srcset="images/passerelle-mazamet-480.avif 480w, images/passerelle-mazamet-800.avif 800w" sizes="(min-width: 1024px) 544px, 100vw">
+                            <source type="image/webp" srcset="images/passerelle-mazamet-480.webp 480w, images/passerelle-mazamet-800.webp 800w" sizes="(min-width: 1024px) 544px, 100vw">
+                            <img src="images/passerelle-mazamet-800.webp" alt="Tableau en bois gravé au laser représentant la passerelle d'Hautpoul à Mazamet, avec un fourgon au premier plan" width="1195" height="896" loading="lazy" decoding="async" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                        </picture>
+                        <p class="absolute top-4 left-4"><span class="badge bg-wood-300 text-wood-900">Sur mesure</span></p>
+                    </div>
+                    <div class="p-6 sm:p-8 flex flex-col flex-1">
+                        <h3 class="text-2xl font-serif font-bold text-white mb-2">Passerelle de Mazamet</h3>
+                        <p class="text-wood-100 text-sm leading-relaxed mb-4">Architecture et urbanité sublimées par la gravure laser. Un tableau bois saisissant qui transforme n'importe quel espace en galerie d'art.</p>
+                        <ul class="flex flex-wrap gap-x-6 gap-y-2 text-wood-300 text-sm mb-6">
                             <li><svg class="icon mr-2" viewBox="0 0 512 512" aria-hidden="true" focusable="false"><use href="#i-ruler-combined"/></svg>Dimensions personnalisables</li>
                             <li><svg class="icon mr-2" viewBox="0 0 576 512" aria-hidden="true" focusable="false"><use href="#i-paint-brush"/></svg>Motif sur commande</li>
                         </ul>
-                        <button type="button" data-devis-open="Décoration murale"
-                                class="inline-block px-6 py-3 bg-wood-300 text-wood-900 font-bold rounded-full hover:bg-white transition-colors duration-300 text-sm">
-                            <svg class="icon mr-2" viewBox="0 0 384 512" aria-hidden="true" focusable="false"><use href="#i-file-invoice"/></svg> Demander un devis<span class="sr-only"> pour une gravure de la passerelle de Mazamet</span>
-                        </button>
+                        <div class="mt-auto flex flex-wrap items-center justify-between gap-4">
+                            <p class="text-wood-100 text-sm font-bold">À partir de <span class="text-2xl text-wood-300">20 €</span> <span class="font-normal">(indicatif)</span></p>
+                            <button type="button" data-devis-open="Décoration murale" class="btn btn-sm btn-light">Demander un devis<span class="sr-only"> pour une gravure de la passerelle de Mazamet</span></button>
+                        </div>
                     </div>
                 </article>
             </div>
 
-            <!-- Compteur de pétanque : carte pleine largeur -->
-            <article class="mb-14 reveal overflow-hidden rounded-2xl flex flex-col lg:flex-row bg-wood-800">
-                <!-- Carrousel de photos -->
+            <!-- Compteur de pétanque -->
+            <article id="petanque" class="reveal overflow-hidden rounded-2xl flex flex-col lg:flex-row bg-white/5 ring-1 ring-white/10">
                 <div class="relative lg:w-3/5 aspect-[4/3] lg:aspect-auto lg:min-h-[28rem]" data-carousel role="group" aria-roledescription="carrousel" aria-label="Photos du compteur de pétanque personnalisé">
                     <ul class="carousel-track absolute inset-0 flex overflow-x-auto snap-x snap-mandatory" data-carousel-track>
                         <li class="relative shrink-0 w-full h-full snap-center">
                             <picture>
-                                <source type="image/avif" srcset="images/petanque-1-480.avif 480w, images/petanque-1-800.avif 800w" sizes="(min-width: 1024px) 60vw, 100vw">
-                                <source type="image/webp" srcset="images/petanque-1-480.webp 480w, images/petanque-1-800.webp 800w" sizes="(min-width: 1024px) 60vw, 100vw">
-                                <img src="images/petanque-1-800.webp" alt="Compteur de points de pétanque en bois gravé « L'Écrin du Lac », posé sur un terrain de boules à côté d'une boule et d'un cochonnet" width="1195" height="896" loading="lazy" decoding="async"
-                                     class="absolute inset-0 w-full h-full object-cover">
+                                <source type="image/avif" srcset="images/petanque-1-480.avif 480w, images/petanque-1-800.avif 800w" sizes="(min-width: 1024px) 660px, 100vw">
+                                <source type="image/webp" srcset="images/petanque-1-480.webp 480w, images/petanque-1-800.webp 800w" sizes="(min-width: 1024px) 660px, 100vw">
+                                <img src="images/petanque-1-800.webp" alt="Compteur de points de pétanque en bois gravé « L'Écrin du Lac », posé sur un terrain de boules à côté d'une boule et d'un cochonnet" width="1195" height="896" loading="lazy" decoding="async" class="absolute inset-0 w-full h-full object-cover">
                             </picture>
                         </li>
                         <li class="relative shrink-0 w-full h-full snap-center">
                             <picture>
-                                <source type="image/avif" srcset="images/petanque-2-480.avif 480w, images/petanque-2-800.avif 800w, images/petanque-2-1200.avif 1200w" sizes="(min-width: 1024px) 60vw, 100vw">
-                                <source type="image/webp" srcset="images/petanque-2-480.webp 480w, images/petanque-2-800.webp 800w, images/petanque-2-1200.webp 1200w" sizes="(min-width: 1024px) 60vw, 100vw">
-                                <img src="images/petanque-2-800.webp" alt="Le compteur de pétanque vu de face : chiffres de 1 à 13 gravés, chevilles en laiton et nom du club" width="1200" height="900" loading="lazy" decoding="async"
-                                     class="absolute inset-0 w-full h-full object-cover">
+                                <source type="image/avif" srcset="images/petanque-2-480.avif 480w, images/petanque-2-800.avif 800w, images/petanque-2-1200.avif 1200w" sizes="(min-width: 1024px) 660px, 100vw">
+                                <source type="image/webp" srcset="images/petanque-2-480.webp 480w, images/petanque-2-800.webp 800w, images/petanque-2-1200.webp 1200w" sizes="(min-width: 1024px) 660px, 100vw">
+                                <img src="images/petanque-2-800.webp" alt="Le compteur de pétanque vu de face : chiffres de 1 à 13 gravés, chevilles en laiton et nom du club" width="1200" height="900" loading="lazy" decoding="async" class="absolute inset-0 w-full h-full object-cover">
                             </picture>
                         </li>
                         <li class="relative shrink-0 w-full h-full snap-center">
                             <picture>
-                                <source type="image/avif" srcset="images/petanque-3-480.avif 480w, images/petanque-3-800.avif 800w, images/petanque-3-1200.avif 1200w" sizes="(min-width: 1024px) 60vw, 100vw">
-                                <source type="image/webp" srcset="images/petanque-3-480.webp 480w, images/petanque-3-800.webp 800w, images/petanque-3-1200.webp 1200w" sizes="(min-width: 1024px) 60vw, 100vw">
-                                <img src="images/petanque-3-800.webp" alt="Détail du compteur : deux médaillons gravés, le Pic de Nore et la passerelle de Mazamet" width="1200" height="900" loading="lazy" decoding="async"
-                                     class="absolute inset-0 w-full h-full object-cover">
+                                <source type="image/avif" srcset="images/petanque-3-480.avif 480w, images/petanque-3-800.avif 800w, images/petanque-3-1200.avif 1200w" sizes="(min-width: 1024px) 660px, 100vw">
+                                <source type="image/webp" srcset="images/petanque-3-480.webp 480w, images/petanque-3-800.webp 800w, images/petanque-3-1200.webp 1200w" sizes="(min-width: 1024px) 660px, 100vw">
+                                <img src="images/petanque-3-800.webp" alt="Détail du compteur : deux médaillons gravés, le Pic de Nore et la passerelle de Mazamet" width="1200" height="900" loading="lazy" decoding="async" class="absolute inset-0 w-full h-full object-cover">
                             </picture>
                         </li>
                     </ul>
-                    <p class="absolute top-6 left-6 z-10 pointer-events-none">
-                        <span class="px-3 py-1.5 bg-wood-300 text-wood-900 text-xs font-bold rounded-full uppercase tracking-wider">Sur mesure</span>
-                    </p>
+                    <p class="absolute top-4 left-4 z-10 pointer-events-none"><span class="badge bg-wood-300 text-wood-900">Sur mesure</span></p>
                 </div>
-                <!-- Texte -->
                 <div class="lg:w-2/5 p-6 sm:p-8 lg:p-10 flex flex-col justify-center">
                     <h3 class="text-2xl sm:text-3xl font-serif font-bold text-white mb-3">Compteur de pétanque personnalisé</h3>
-                    <p class="text-gray-200 text-sm mb-4 leading-relaxed">
+                    <p class="text-wood-100 text-sm mb-4 leading-relaxed">
                         Compteur de points en bois massif, entièrement personnalisable : logo de votre club, nom de votre équipe, marqueurs de points artisanaux. Avec médaillons gravés Pic de Nore et Passerelle de Mazamet.
                     </p>
                     <ul class="space-y-2 mb-6 text-sm text-wood-100">
@@ -638,559 +956,277 @@
                         <li class="flex items-center gap-2"><svg class="icon text-wood-300" viewBox="0 0 448 512" aria-hidden="true" focusable="false"><use href="#i-check"/></svg> Médaillons gravés au choix</li>
                         <li class="flex items-center gap-2"><svg class="icon text-wood-300" viewBox="0 0 448 512" aria-hidden="true" focusable="false"><use href="#i-check"/></svg> Bois massif, finition artisanale</li>
                     </ul>
-                    <p class="text-wood-100 font-bold text-sm mb-6">À partir de <span class="text-2xl text-wood-300">30 €</span></p>
-                    <button type="button" data-devis-open="Compteur de pétanque personnalisé"
-                            class="inline-block px-8 py-4 bg-wood-300 text-wood-900 font-bold rounded-full hover:bg-white hover:scale-105 transition-all duration-300 shadow-lg self-start">
-                        <svg class="icon mr-2" viewBox="0 0 384 512" aria-hidden="true" focusable="false"><use href="#i-file-invoice"/></svg> Demander un devis<span class="sr-only"> pour un compteur de pétanque</span>
+                    <p class="text-wood-100 font-bold text-sm mb-6">À partir de <span class="text-3xl text-wood-300">30 €</span></p>
+                    <button type="button" data-devis-open="Compteur de pétanque personnalisé" class="btn btn-primary self-start">
+                        <svg class="icon" viewBox="0 0 384 512" aria-hidden="true" focusable="false"><use href="#i-file-invoice"/></svg> Demander un devis<span class="sr-only"> pour un compteur de pétanque</span>
                     </button>
                 </div>
             </article>
-
-            <!-- Appel à l'action sur mesure -->
-            <div class="text-center reveal">
-                <div class="inline-flex flex-col sm:flex-row items-center gap-6 bg-wood-800 border border-wood-700 rounded-2xl px-6 sm:px-10 py-8">
-                    <div class="text-center sm:text-left">
-                        <p class="text-white font-bold text-lg mb-1">Vous avez un projet en tête ?</p>
-                        <p class="text-wood-100 text-sm">Devis gratuit · Réponse sous 24 h · Livraison soignée</p>
-                    </div>
-                    <button type="button" data-devis-open
-                            class="shrink-0 inline-block px-8 py-4 bg-wood-300 text-wood-900 font-bold rounded-full hover:bg-white hover:scale-105 transition-all duration-300 shadow-lg whitespace-nowrap">
-                        <svg class="icon mr-2" viewBox="0 0 384 512" aria-hidden="true" focusable="false"><use href="#i-file-invoice"/></svg> Demander un devis
-                    </button>
-                </div>
-            </div>
         </div>
     </section>
 
     <!-- ═══════════════════════════ COMMENT ÇA MARCHE ═══════════════════════════ -->
-    <section id="etapes" class="py-16 md:py-24 bg-wood-100">
-        <div class="container mx-auto px-4 sm:px-6">
-            <div class="text-center mb-12 md:mb-16 reveal">
-                <p class="text-wood-700 font-bold tracking-[0.3em] uppercase text-xs mb-3">Comment ça marche</p>
-                <h2 class="text-3xl sm:text-4xl md:text-5xl font-serif font-bold text-wood-900 mb-4">De votre idée à l'objet gravé, en 4 étapes</h2>
-                <p class="text-wood-800 max-w-xl mx-auto">Une commande sur mesure se passe simplement, par e-mail, et vous validez chaque étape.</p>
+    <section id="etapes" class="section bg-paper">
+        <div class="wrap">
+            <div class="text-center max-w-2xl mx-auto mb-12 md:mb-16 reveal">
+                <p class="eyebrow">Comment ça marche</p>
+                <h2 class="h2 mb-4">De votre idée à l'objet gravé, en 4 étapes</h2>
+                <p class="lead">Une commande sur mesure se passe simplement, par e-mail, et vous validez chaque étape.</p>
             </div>
 
-            <ol class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-10 max-w-6xl mx-auto">
-                <li class="relative bg-white rounded-2xl shadow-md p-6 pt-10 reveal delay-100">
-                    <span class="absolute -top-5 left-6 w-10 h-10 rounded-full bg-wood-900 text-wood-300 font-serif font-bold text-lg flex items-center justify-center" aria-hidden="true">1</span>
+            <ol class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <li class="border-t-2 border-ember-500 pt-6 reveal delay-100">
+                    <span class="block font-serif font-bold text-5xl text-ember-500 leading-none mb-4" aria-hidden="true">1</span>
                     <h3 class="text-lg font-serif font-bold text-wood-900 mb-2"><span class="sr-only">Étape 1 : </span>Votre idée, mon devis gratuit</h3>
                     <p class="text-wood-800 text-sm leading-relaxed">Décrivez votre projet dans le formulaire : objet, texte, motif, quantité. Vous recevez un devis gratuit sous 24 h.</p>
                 </li>
-                <li class="relative bg-white rounded-2xl shadow-md p-6 pt-10 reveal delay-200">
-                    <span class="absolute -top-5 left-6 w-10 h-10 rounded-full bg-wood-900 text-wood-300 font-serif font-bold text-lg flex items-center justify-center" aria-hidden="true">2</span>
+                <li class="border-t-2 border-ember-500 pt-6 reveal delay-200">
+                    <span class="block font-serif font-bold text-5xl text-ember-500 leading-none mb-4" aria-hidden="true">2</span>
                     <h3 class="text-lg font-serif font-bold text-wood-900 mb-2"><span class="sr-only">Étape 2 : </span>Maquette et validation</h3>
                     <p class="text-wood-800 text-sm leading-relaxed">Je prépare une maquette de votre gravure. Rien n'est gravé tant que vous ne l'avez pas validée.</p>
                 </li>
-                <li class="relative bg-white rounded-2xl shadow-md p-6 pt-10 reveal delay-300">
-                    <span class="absolute -top-5 left-6 w-10 h-10 rounded-full bg-wood-900 text-wood-300 font-serif font-bold text-lg flex items-center justify-center" aria-hidden="true">3</span>
+                <li class="border-t-2 border-ember-500 pt-6 reveal delay-300">
+                    <span class="block font-serif font-bold text-5xl text-ember-500 leading-none mb-4" aria-hidden="true">3</span>
                     <h3 class="text-lg font-serif font-bold text-wood-900 mb-2"><span class="sr-only">Étape 3 : </span>Gravure à l'atelier</h3>
                     <p class="text-wood-800 text-sm leading-relaxed">Une fois la maquette validée, votre pièce est gravée au laser dans mon atelier de Mazamet, avec une finition artisanale.</p>
                 </li>
-                <li class="relative bg-white rounded-2xl shadow-md p-6 pt-10 reveal delay-400">
-                    <span class="absolute -top-5 left-6 w-10 h-10 rounded-full bg-wood-900 text-wood-300 font-serif font-bold text-lg flex items-center justify-center" aria-hidden="true">4</span>
+                <li class="border-t-2 border-ember-500 pt-6 reveal delay-100">
+                    <span class="block font-serif font-bold text-5xl text-ember-500 leading-none mb-4" aria-hidden="true">4</span>
                     <h3 class="text-lg font-serif font-bold text-wood-900 mb-2"><span class="sr-only">Étape 4 : </span>Expédition ou retrait</h3>
                     <p class="text-wood-800 text-sm leading-relaxed">Votre commande est expédiée avec soin partout en France, ou remise en main propre à Mazamet.</p>
                 </li>
             </ol>
 
             <div class="text-center mt-12 reveal">
-                <button type="button" data-devis-open
-                        class="inline-block px-8 py-4 bg-wood-900 text-white font-bold rounded-full hover:bg-wood-800 hover:scale-105 transition-all duration-300 shadow-lg">
-                    <svg class="icon mr-2" viewBox="0 0 384 512" aria-hidden="true" focusable="false"><use href="#i-file-invoice"/></svg> Décrire mon projet
-                </button>
-            </div>
-        </div>
-    </section>
-
-    <!-- ═══════════════════════════ CATALOGUE ═══════════════════════════ -->
-    <section id="catalogue" class="py-16 md:py-24 bg-wood-50">
-        <div class="container mx-auto px-4 sm:px-6">
-
-            <!-- Section header -->
-            <div class="text-center mb-16 reveal">
-                <p class="text-wood-700 font-bold tracking-[0.3em] uppercase text-xs mb-3">Disponible maintenant</p>
-                <h2 class="text-3xl sm:text-4xl md:text-5xl font-serif font-bold text-wood-900 mb-4">La boutique : cadeaux gravés à personnaliser</h2>
-                <p class="text-wood-800 max-w-xl mx-auto">Pièces en stock, fabriquées dans notre atelier du Tarn — prêtes à expédier partout en France.</p>
-            </div>
-
-            <!-- Grille des produits : 1 colonne (mobile), 2 (tablette), 3 (ordinateur) -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-6 lg:gap-8 mb-12 max-w-6xl mx-auto">
-
-                <!-- Produit 1 : porte-clés -->
-                <article class="group flex flex-col bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition-shadow duration-300 reveal delay-100 lg:col-span-2">
-                    <div class="relative overflow-hidden aspect-[4/5]">
-                        <picture>
-                            <source type="image/avif" srcset="images/porte-cles-480.avif 480w, images/porte-cles-800.avif 800w, images/porte-cles-1200.avif 1200w" sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw">
-                            <source type="image/webp" srcset="images/porte-cles-480.webp 480w, images/porte-cles-800.webp 800w, images/porte-cles-1200.webp 1200w" sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw">
-                            <img src="images/porte-cles-800.webp" alt="Golden retriever tenant dans sa gueule un porte-clés gravé d'une patte de chien et du prénom Baloo" width="1588" height="2135" loading="lazy" decoding="async"
-                                 class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700">
-                        </picture>
-                    </div>
-                    <div class="p-6 flex flex-col flex-1">
-                        <h3 class="text-xl font-serif font-bold text-wood-900 mb-2">Porte-clés personnalisé</h3>
-                        <p class="text-wood-800 text-sm leading-relaxed mb-3">Petit accessoire gravé au laser. Idéal pour les cadeaux personnalisés — prénom, date, motif.</p>
-                        <div class="text-xs text-wood-800 bg-wood-50 rounded-xl p-3 mb-4 leading-relaxed">
-                            <p class="font-bold mb-1">Personnalisation :</p>
-                            <p class="mb-1"><span class="font-bold">RECTO</span> — Prénom ou mot doux + dessin au choix (patte de chien, cœur, étoile…)</p>
-                            <p class="mb-1"><span class="font-bold">VERSO</span> — Numéro de téléphone ou date de naissance (JJ.MM.AAAA)</p>
-                            <p class="italic mt-1">La personnalisation se fait au moment du paiement.</p>
-                        </div>
-                        <p class="flex items-center gap-2 mb-4 mt-auto">
-                            <span class="sr-only">Prix promotionnel :</span>
-                            <span class="text-xl font-bold text-wood-700">4 €</span>
-                            <span class="sr-only">au lieu de</span>
-                            <span class="text-sm text-gray-600 line-through">6 €</span>
-                            <span class="px-2 py-0.5 bg-red-100 text-red-800 text-xs font-bold rounded-full" aria-hidden="true">PROMO</span>
-                        </p>
-                        <div class="flex flex-col gap-2">
-                            <a href="https://buy.stripe.com/eVq6oHfL64vUcAecEw6Ri06"
-                               target="_blank" rel="noopener noreferrer"
-                               class="flex items-center justify-center gap-2 px-4 py-3 bg-wood-700 text-white font-bold rounded-xl hover:bg-wood-800 transition-colors duration-300 text-sm">
-                                <svg class="icon" viewBox="0 0 576 512" aria-hidden="true" focusable="false"><use href="#i-credit-card"/></svg> Commander<span class="sr-only"> le porte-clés personnalisé (paiement Stripe, nouvel onglet)</span>
-                            </a>
-                            <a href="https://www.etsy.com/fr/listing/4461380858/offre-de-lancement-porte-cles"
-                               target="_blank" rel="noopener noreferrer"
-                               class="flex items-center justify-center gap-2 px-4 py-3 bg-white border-2 border-wood-500 text-wood-800 font-bold rounded-xl hover:bg-wood-50 transition-colors duration-300 text-sm">
-                                <svg class="icon" viewBox="0 0 384 512" aria-hidden="true" focusable="false"><use href="#i-etsy"/></svg> Voir sur Etsy<span class="sr-only"> le porte-clés personnalisé (nouvel onglet)</span>
-                            </a>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Produit 2 : One Piece -->
-                <article class="group flex flex-col bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition-shadow duration-300 reveal delay-200 lg:col-span-2">
-                    <div class="relative overflow-hidden aspect-[4/5]">
-                        <picture>
-                            <source type="image/avif" srcset="images/one-piece-480.avif 480w, images/one-piece-800.avif 800w, images/one-piece-1200.avif 1200w" sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw">
-                            <source type="image/webp" srcset="images/one-piece-480.webp 480w, images/one-piece-800.webp 800w, images/one-piece-1200.webp 1200w" sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw">
-                            <img src="images/one-piece-800.webp" alt="Portrait de Gol D. Roger, personnage de One Piece, gravé au laser sur une planche de bois clair dans un décor de jungle" width="1588" height="2127" loading="lazy" decoding="async"
-                                 class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700">
-                        </picture>
-                    </div>
-                    <div class="p-6 flex flex-col flex-1">
-                        <h3 class="text-xl font-serif font-bold text-wood-900 mb-2">Gravure One Piece — Gol D. Roger</h3>
-                        <p class="text-wood-800 text-sm leading-relaxed mb-3">Décoration murale exclusive pour fans de manga. Gravure fine sur bois brut.</p>
-                        <div class="text-xs text-wood-800 bg-wood-50 rounded-xl p-3 mb-4 leading-relaxed">
-                            <p class="font-bold mb-1">Personnalisation possible :</p>
-                            <p class="mb-1">Ajoutez un nom ou une date sur votre gravure.</p>
-                            <p class="italic">La personnalisation se fait au moment du paiement.</p>
-                        </div>
-                        <p class="flex items-center gap-2 mb-4 mt-auto">
-                            <span class="sr-only">Prix promotionnel :</span>
-                            <span class="text-xl font-bold text-wood-700">15 €</span>
-                            <span class="sr-only">au lieu de</span>
-                            <span class="text-sm text-gray-600 line-through">20 €</span>
-                            <span class="px-2 py-0.5 bg-red-100 text-red-800 text-xs font-bold rounded-full" aria-hidden="true">PROMO</span>
-                        </p>
-                        <div class="flex flex-col gap-2">
-                            <a href="https://buy.stripe.com/cNi9ATaqMd2q9o25c46Ri01"
-                               target="_blank" rel="noopener noreferrer"
-                               class="flex items-center justify-center gap-2 px-4 py-3 bg-wood-700 text-white font-bold rounded-xl hover:bg-wood-800 transition-colors duration-300 text-sm">
-                                <svg class="icon" viewBox="0 0 576 512" aria-hidden="true" focusable="false"><use href="#i-credit-card"/></svg> Commander<span class="sr-only"> la gravure One Piece (paiement Stripe, nouvel onglet)</span>
-                            </a>
-                            <a href="https://www.etsy.com/fr/listing/4465006449/gravure-sur-bois-one-piece-gol-d-roger"
-                               target="_blank" rel="noopener noreferrer"
-                               class="flex items-center justify-center gap-2 px-4 py-3 bg-white border-2 border-wood-500 text-wood-800 font-bold rounded-xl hover:bg-wood-50 transition-colors duration-300 text-sm">
-                                <svg class="icon" viewBox="0 0 384 512" aria-hidden="true" focusable="false"><use href="#i-etsy"/></svg> Voir sur Etsy<span class="sr-only"> la gravure One Piece (nouvel onglet)</span>
-                            </a>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Produit 3 : Shelby Company -->
-                <article class="group flex flex-col bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition-shadow duration-300 reveal delay-300 lg:col-span-2">
-                    <div class="relative overflow-hidden aspect-[4/5]">
-                        <picture>
-                            <source type="image/avif" srcset="images/shelby-480.avif 480w, images/shelby-800.avif 800w, images/shelby-1200.avif 1200w" sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw">
-                            <source type="image/webp" srcset="images/shelby-480.webp 480w, images/shelby-800.webp 800w, images/shelby-1200.webp 1200w" sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw">
-                            <img src="images/shelby-800.webp" alt="Affiche en bois gravée « By order of the Peaky Blinders » avec une casquette, posée contre un mur de briques" width="1588" height="2176" loading="lazy" decoding="async"
-                                 class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700">
-                        </picture>
-                    </div>
-                    <div class="p-6 flex flex-col flex-1">
-                        <h3 class="text-xl font-serif font-bold text-wood-900 mb-2">Affiche bois — Shelby Company</h3>
-                        <p class="text-wood-800 text-sm leading-relaxed mb-3">L'ambiance Peaky Blinders dans votre intérieur. Style industriel brut et authentique.</p>
-                        <div class="text-xs text-wood-800 bg-wood-50 rounded-xl p-3 mb-4 leading-relaxed">
-                            <p class="font-bold mb-1">Personnalisation possible :</p>
-                            <p class="mb-1">Ajoutez un nom ou une date sur votre gravure.</p>
-                            <p class="italic">La personnalisation se fait au moment du paiement.</p>
-                        </div>
-                        <p class="flex items-center gap-2 mb-4 mt-auto">
-                            <span class="sr-only">Prix promotionnel :</span>
-                            <span class="text-xl font-bold text-wood-700">15 €</span>
-                            <span class="sr-only">au lieu de</span>
-                            <span class="text-sm text-gray-600 line-through">20 €</span>
-                            <span class="px-2 py-0.5 bg-red-100 text-red-800 text-xs font-bold rounded-full" aria-hidden="true">PROMO</span>
-                        </p>
-                        <div class="flex flex-col gap-2">
-                            <a href="https://buy.stripe.com/4gM6oH9mI1jIdEigUM6Ri03"
-                               target="_blank" rel="noopener noreferrer"
-                               class="flex items-center justify-center gap-2 px-4 py-3 bg-wood-700 text-white font-bold rounded-xl hover:bg-wood-800 transition-colors duration-300 text-sm">
-                                <svg class="icon" viewBox="0 0 576 512" aria-hidden="true" focusable="false"><use href="#i-credit-card"/></svg> Commander<span class="sr-only"> l'affiche bois Shelby Company (paiement Stripe, nouvel onglet)</span>
-                            </a>
-                            <a href="https://www.etsy.com/fr/listing/4460574568/offre-de-lancement-affiche-bois-grave"
-                               target="_blank" rel="noopener noreferrer"
-                               class="flex items-center justify-center gap-2 px-4 py-3 bg-white border-2 border-wood-500 text-wood-800 font-bold rounded-xl hover:bg-wood-50 transition-colors duration-300 text-sm">
-                                <svg class="icon" viewBox="0 0 384 512" aria-hidden="true" focusable="false"><use href="#i-etsy"/></svg> Voir sur Etsy<span class="sr-only"> l'affiche bois Shelby Company (nouvel onglet)</span>
-                            </a>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Produit 4 : cintre personnalisé -->
-                <article class="group flex flex-col bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition-shadow duration-300 reveal delay-100 lg:col-span-2 lg:col-start-2">
-                    <div class="relative aspect-[4/5]" data-carousel role="group" aria-roledescription="carrousel" aria-label="Photos du cintre personnalisé">
-                        <ul class="carousel-track absolute inset-0 flex overflow-x-auto snap-x snap-mandatory" data-carousel-track>
-                            <li class="relative shrink-0 w-full h-full snap-center">
-                                <picture>
-                                    <source type="image/avif" srcset="images/cintre-1-480.avif 480w, images/cintre-1-800.avif 800w" sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw">
-                                    <source type="image/webp" srcset="images/cintre-1-480.webp 480w, images/cintre-1-800.webp 800w" sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw">
-                                    <img src="images/cintre-1-800.webp" alt="Cintre en bois gravé « Charlotte &amp; Antoine » avec la date du mariage, orné d'un nœud en ruban ivoire" width="896" height="1195" loading="lazy" decoding="async"
-                                         class="absolute inset-0 w-full h-full object-cover">
-                                </picture>
-                            </li>
-                            <li class="relative shrink-0 w-full h-full snap-center">
-                                <picture>
-                                    <source type="image/avif" srcset="images/cintre-2-480.avif 480w, images/cintre-2-800.avif 800w" sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw">
-                                    <source type="image/webp" srcset="images/cintre-2-480.webp 480w, images/cintre-2-800.webp 800w" sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw">
-                                    <img src="images/cintre-2-800.webp" alt="Cintre en bois gravé d'un prénom, posé sur un linge en lin avec des fleurs séchées" width="896" height="1200" loading="lazy" decoding="async"
-                                         class="absolute inset-0 w-full h-full object-cover">
-                                </picture>
-                            </li>
-                            <li class="relative shrink-0 w-full h-full snap-center">
-                                <picture>
-                                    <source type="image/avif" srcset="images/cintre-3-480.avif 480w, images/cintre-3-800.avif 800w" sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw">
-                                    <source type="image/webp" srcset="images/cintre-3-480.webp 480w, images/cintre-3-800.webp 800w" sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw">
-                                    <img src="images/cintre-3-800.webp" alt="Gros plan sur un cintre en bois gravé du prénom Alice en lettres cursives" width="1024" height="1536" loading="lazy" decoding="async"
-                                         class="absolute inset-0 w-full h-full object-cover">
-                                </picture>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="p-6 flex flex-col flex-1">
-                        <h3 class="text-xl font-serif font-bold text-wood-900 mb-2">Cintre personnalisé</h3>
-                        <p class="text-wood-800 text-sm leading-relaxed mb-3">Cintre en bois gravé au laser. Idéal pour un mariage, un cadeau de témoin ou une attention personnalisée unique.</p>
-                        <div class="text-xs text-wood-800 bg-wood-50 rounded-xl p-3 mb-4 leading-relaxed">
-                            <p class="font-bold mb-1">Personnalisation :</p>
-                            <p class="mb-1">Prénoms, date, motif floral ou texte libre</p>
-                            <p class="mb-1">Parfait pour : mariage, EVJF, cadeau témoin, naissance</p>
-                            <p class="italic mt-1">La personnalisation se fait au moment du paiement.</p>
-                        </div>
-                        <p class="flex items-center gap-2 mb-4 mt-auto">
-                            <span class="text-sm text-wood-700 font-bold">À partir de</span>
-                            <span class="text-xl font-bold text-wood-700">2,50 €</span>
-                        </p>
-                        <div class="flex flex-col gap-2">
-                            <a href="https://buy.stripe.com/aFa3cvdCYd2qdEicEw6Ri04"
-                               target="_blank" rel="noopener noreferrer"
-                               class="flex items-center justify-center gap-2 px-4 py-3 bg-wood-700 text-white font-bold rounded-xl hover:bg-wood-800 transition-colors duration-300 text-sm">
-                                <svg class="icon" viewBox="0 0 576 512" aria-hidden="true" focusable="false"><use href="#i-credit-card"/></svg> Commander<span class="sr-only"> le cintre personnalisé (paiement Stripe, nouvel onglet)</span>
-                            </a>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Produit 5 : bouchon de vin personnalisé -->
-                <article class="group flex flex-col bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition-shadow duration-300 reveal delay-200 lg:col-span-2">
-                    <div class="relative aspect-[4/5]" data-carousel role="group" aria-roledescription="carrousel" aria-label="Photos du bouchon de vin personnalisé">
-                        <ul class="carousel-track absolute inset-0 flex overflow-x-auto snap-x snap-mandatory" data-carousel-track>
-                            <li class="relative shrink-0 w-full h-full snap-center">
-                                <picture>
-                                    <source type="image/avif" srcset="images/bouchon-1-480.avif 480w, images/bouchon-1-800.avif 800w" sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw">
-                                    <source type="image/webp" srcset="images/bouchon-1-480.webp 480w, images/bouchon-1-800.webp 800w" sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw">
-                                    <img src="images/bouchon-1-800.webp" alt="Deux bouchons de vin en bois gravés « Pascale 1966 » et « 60 ans », posés sur un plan en marbre" width="896" height="1195" loading="lazy" decoding="async"
-                                         class="absolute inset-0 w-full h-full object-cover">
-                                </picture>
-                            </li>
-                            <li class="relative shrink-0 w-full h-full snap-center">
-                                <picture>
-                                    <source type="image/avif" srcset="images/bouchon-2-480.avif 480w, images/bouchon-2-800.avif 800w" sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw">
-                                    <source type="image/webp" srcset="images/bouchon-2-480.webp 480w, images/bouchon-2-800.webp 800w" sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw">
-                                    <img src="images/bouchon-2-800.webp" alt="Bouchons de vin gravés pour un anniversaire, présentés sur une table avec une bouteille, un verre et du raisin" width="896" height="1195" loading="lazy" decoding="async"
-                                         class="absolute inset-0 w-full h-full object-cover">
-                                </picture>
-                            </li>
-                            <li class="relative shrink-0 w-full h-full snap-center">
-                                <picture>
-                                    <source type="image/avif" srcset="images/bouchon-3-480.avif 480w, images/bouchon-3-800.avif 800w" sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw">
-                                    <source type="image/webp" srcset="images/bouchon-3-480.webp 480w, images/bouchon-3-800.webp 800w" sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw">
-                                    <img src="images/bouchon-3-800.webp" alt="Quatre bouchons de vin en bois gravés, disposés sur un plateau en bois sombre à côté d'un coffret cadeau" width="896" height="1195" loading="lazy" decoding="async"
-                                         class="absolute inset-0 w-full h-full object-cover">
-                                </picture>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="p-6 flex flex-col flex-1">
-                        <h3 class="text-xl font-serif font-bold text-wood-900 mb-2">Bouchon de vin personnalisé</h3>
-                        <p class="text-wood-800 text-sm leading-relaxed mb-3">Bouchon de vin en bois gravé au laser. Parfait pour offrir lors d'un mariage, d'un anniversaire ou comme cadeau d'entreprise.</p>
-                        <div class="text-xs text-wood-800 bg-wood-50 rounded-xl p-3 mb-4 leading-relaxed">
-                            <p class="font-bold mb-1">Personnalisation :</p>
-                            <p class="mb-1">Prénom, date, logo, initiales ou motif au choix</p>
-                            <p class="mb-1">Idéal : mariage, EVG/EVJF, cadeau d'entreprise, amateur de vin</p>
-                            <p class="italic mt-1">La personnalisation se fait au moment du paiement.</p>
-                        </div>
-                        <p class="flex items-center gap-2 mb-4 mt-auto">
-                            <span class="text-sm text-wood-700 font-bold">À partir de</span>
-                            <span class="text-xl font-bold text-wood-700">3 €</span>
-                        </p>
-                        <div class="flex flex-col gap-2">
-                            <a href="https://buy.stripe.com/8x2aEX56saUi0Rw5c46Ri05"
-                               target="_blank" rel="noopener noreferrer"
-                               class="flex items-center justify-center gap-2 px-4 py-3 bg-wood-700 text-white font-bold rounded-xl hover:bg-wood-800 transition-colors duration-300 text-sm">
-                                <svg class="icon" viewBox="0 0 576 512" aria-hidden="true" focusable="false"><use href="#i-credit-card"/></svg> Commander<span class="sr-only"> le bouchon de vin personnalisé (paiement Stripe, nouvel onglet)</span>
-                            </a>
-                            <a href="https://montagnenoirelaser.etsy.com/listing/4487030595"
-                               target="_blank" rel="noopener noreferrer"
-                               class="flex items-center justify-center gap-2 px-4 py-3 bg-white border-2 border-wood-500 text-wood-800 font-bold rounded-xl hover:bg-wood-50 transition-colors duration-300 text-sm">
-                                <svg class="icon" viewBox="0 0 384 512" aria-hidden="true" focusable="false"><use href="#i-etsy"/></svg> Voir sur Etsy<span class="sr-only"> le bouchon de vin personnalisé (nouvel onglet)</span>
-                            </a>
-                        </div>
-                    </div>
-                </article>
-            </div>
-
-            <!-- Lien vers la boutique Etsy -->
-            <div class="text-center reveal">
-                <a href="https://montagnenoirelaser.etsy.com" target="_blank" rel="noopener noreferrer"
-                   class="inline-block px-8 sm:px-10 py-4 bg-wood-900 text-white font-bold rounded-full hover:bg-wood-800 hover:scale-105 transition-all duration-300 shadow-xl">
-                    <svg class="icon mr-2 text-lg" viewBox="0 0 384 512" aria-hidden="true" focusable="false"><use href="#i-etsy"/></svg> Voir toute la boutique Etsy<span class="sr-only"> (nouvel onglet)</span>
-                </a>
+                <button type="button" data-devis-open class="btn btn-dark"><svg class="icon" viewBox="0 0 384 512" aria-hidden="true" focusable="false"><use href="#i-file-invoice"/></svg> Décrire mon projet</button>
             </div>
         </div>
     </section>
 
     <!-- ═══════════════════════════ EXCLUSIVITÉ WEB ═══════════════════════════ -->
-    <section id="portefeuille" class="py-16 md:py-24 bg-wood-100">
-        <div class="container mx-auto px-4 sm:px-6">
-            <div class="text-center mb-12 md:mb-16 reveal">
-                <p class="text-red-700 font-bold tracking-[0.3em] uppercase text-xs mb-3"><span aria-hidden="true">★ </span>Uniquement ici</p>
-                <h2 class="text-3xl sm:text-4xl md:text-5xl font-serif font-bold text-wood-900 mb-4">Le portefeuille en cuir gravé, exclusivité du site</h2>
-                <p class="text-wood-800 max-w-xl mx-auto">Un produit introuvable ailleurs — disponible uniquement en commande directe.</p>
-            </div>
-
-            <!-- Portefeuille : carte large -->
-            <article class="max-w-5xl mx-auto reveal bg-white rounded-3xl overflow-hidden shadow-xl flex flex-col lg:flex-row">
-
-                <!-- Carrousel de photos -->
-                <div class="relative lg:w-1/2 aspect-[4/3] lg:aspect-auto lg:min-h-[30rem]" data-carousel role="group" aria-roledescription="carrousel" aria-label="Photos du portefeuille en cuir personnalisé">
+    <section id="portefeuille" class="section bg-sand">
+        <div class="wrap">
+            <article class="reveal grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-14 items-center">
+                <div class="relative aspect-[4/3] lg:aspect-square rounded-3xl overflow-hidden shadow-xl" data-carousel role="group" aria-roledescription="carrousel" aria-label="Photos du portefeuille en cuir personnalisé">
                     <ul class="carousel-track absolute inset-0 flex overflow-x-auto snap-x snap-mandatory" data-carousel-track>
                         <li class="relative shrink-0 w-full h-full snap-center">
                             <picture>
-                                <source type="image/avif" srcset="images/portefeuille-1-480.avif 480w, images/portefeuille-1-800.avif 800w" sizes="(min-width: 1024px) 512px, 100vw">
-                                <source type="image/webp" srcset="images/portefeuille-1-480.webp 480w, images/portefeuille-1-800.webp 800w" sizes="(min-width: 1024px) 512px, 100vw">
-                                <img src="images/portefeuille-1-800.webp" alt="Portefeuille en cuir marron gravé au laser d'un logo de montagne et d'un QR code, présenté sur un socle en bois" width="1195" height="896" loading="lazy" decoding="async"
-                                     class="absolute inset-0 w-full h-full object-cover">
+                                <source type="image/avif" srcset="images/portefeuille-1-480.avif 480w, images/portefeuille-1-800.avif 800w" sizes="(min-width: 1024px) 560px, 100vw">
+                                <source type="image/webp" srcset="images/portefeuille-1-480.webp 480w, images/portefeuille-1-800.webp 800w" sizes="(min-width: 1024px) 560px, 100vw">
+                                <img src="images/portefeuille-1-800.webp" alt="Portefeuille en cuir marron gravé au laser d'un logo de montagne et d'un QR code, présenté sur un socle en bois" width="1195" height="896" loading="lazy" decoding="async" class="absolute inset-0 w-full h-full object-cover">
                             </picture>
                         </li>
                         <li class="relative shrink-0 w-full h-full snap-center">
                             <picture>
-                                <source type="image/avif" srcset="images/portefeuille-2-480.avif 480w, images/portefeuille-2-800.avif 800w, images/portefeuille-2-1200.avif 1200w" sizes="(min-width: 1024px) 512px, 100vw">
-                                <source type="image/webp" srcset="images/portefeuille-2-480.webp 480w, images/portefeuille-2-800.webp 800w, images/portefeuille-2-1200.webp 1200w" sizes="(min-width: 1024px) 512px, 100vw">
-                                <img src="images/portefeuille-2-800.webp" alt="Le portefeuille en cuir vu de dessus, posé sur une pierre, avec un QR code gravé au centre" width="1200" height="1600" loading="lazy" decoding="async"
-                                     class="absolute inset-0 w-full h-full object-cover">
+                                <source type="image/avif" srcset="images/portefeuille-2-480.avif 480w, images/portefeuille-2-800.avif 800w, images/portefeuille-2-1200.avif 1200w" sizes="(min-width: 1024px) 560px, 100vw">
+                                <source type="image/webp" srcset="images/portefeuille-2-480.webp 480w, images/portefeuille-2-800.webp 800w, images/portefeuille-2-1200.webp 1200w" sizes="(min-width: 1024px) 560px, 100vw">
+                                <img src="images/portefeuille-2-800.webp" alt="Le portefeuille en cuir vu de dessus, posé sur une pierre, avec un QR code gravé au centre" width="1200" height="1600" loading="lazy" decoding="async" class="absolute inset-0 w-full h-full object-cover">
                             </picture>
                         </li>
                     </ul>
-                    <p class="absolute top-6 left-6 z-10 pointer-events-none">
-                        <span class="px-4 py-2 bg-red-700 text-white text-sm font-bold rounded-full shadow-lg">
-                            <svg class="icon mr-1.5" viewBox="0 0 448 512" aria-hidden="true" focusable="false"><use href="#i-lock"/></svg> Exclusivité web
-                        </span>
+                    <p class="absolute top-4 left-4 z-10 pointer-events-none">
+                        <span class="badge bg-ember-500 text-white shadow-md"><svg class="icon" viewBox="0 0 448 512" aria-hidden="true" focusable="false"><use href="#i-lock"/></svg> Exclusivité du site</span>
                     </p>
                 </div>
 
-                <!-- Texte -->
-                <div class="lg:w-1/2 p-6 sm:p-10 flex flex-col justify-center">
-                    <p class="text-red-700 font-bold tracking-widest uppercase text-xs mb-3">Seulement sur ce site</p>
-                    <h3 class="text-2xl sm:text-3xl font-serif font-bold text-wood-900 mb-4">Portefeuille en cuir personnalisé</h3>
-                    <p class="text-wood-800 mb-6 leading-relaxed">
+                <div>
+                    <p class="eyebrow">Uniquement ici</p>
+                    <h2 class="h2 mb-5">Le portefeuille en cuir gravé à votre image</h2>
+                    <p class="lead mb-6">
                         Portefeuille artisanal en cuir gravé au laser, entièrement personnalisable : vos initiales, un motif, un QR code ou votre logo. Un accessoire unique, élégant et durable.
                     </p>
-                    <ul class="space-y-2 mb-8 text-sm text-wood-800">
-                        <li class="flex items-center gap-2"><svg class="icon text-wood-700" viewBox="0 0 448 512" aria-hidden="true" focusable="false"><use href="#i-check"/></svg> Cuir pleine fleur gravé laser</li>
-                        <li class="flex items-center gap-2"><svg class="icon text-wood-700" viewBox="0 0 448 512" aria-hidden="true" focusable="false"><use href="#i-check"/></svg> Motif 100 % personnalisable</li>
-                        <li class="flex items-center gap-2"><svg class="icon text-wood-700" viewBox="0 0 448 512" aria-hidden="true" focusable="false"><use href="#i-check"/></svg> Initiales, logo, QR code, texte</li>
-                        <li class="flex items-center gap-2"><svg class="icon text-wood-700" viewBox="0 0 448 512" aria-hidden="true" focusable="false"><use href="#i-check"/></svg> Idéal cadeau d'anniversaire ou mariage</li>
+                    <ul class="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-3 mb-8 text-sm font-bold text-wood-900">
+                        <li class="flex items-center gap-2"><svg class="icon text-ember-500" viewBox="0 0 448 512" aria-hidden="true" focusable="false"><use href="#i-check"/></svg> Cuir pleine fleur gravé laser</li>
+                        <li class="flex items-center gap-2"><svg class="icon text-ember-500" viewBox="0 0 448 512" aria-hidden="true" focusable="false"><use href="#i-check"/></svg> Motif 100 % personnalisable</li>
+                        <li class="flex items-center gap-2"><svg class="icon text-ember-500" viewBox="0 0 448 512" aria-hidden="true" focusable="false"><use href="#i-check"/></svg> Initiales, logo, QR code, texte</li>
+                        <li class="flex items-center gap-2"><svg class="icon text-ember-500" viewBox="0 0 448 512" aria-hidden="true" focusable="false"><use href="#i-check"/></svg> Idéal anniversaire ou mariage</li>
                     </ul>
-                    <button type="button" data-devis-open="Portefeuille en cuir personnalisé"
-                            class="inline-block px-8 py-4 bg-wood-900 text-white font-bold rounded-full hover:bg-wood-800 hover:scale-105 transition-all duration-300 shadow-lg self-start">
-                        <svg class="icon mr-2" viewBox="0 0 384 512" aria-hidden="true" focusable="false"><use href="#i-file-invoice"/></svg> Demander un devis<span class="sr-only"> pour un portefeuille en cuir</span>
+                    <button type="button" data-devis-open="Portefeuille en cuir personnalisé" class="btn btn-primary">
+                        <svg class="icon" viewBox="0 0 384 512" aria-hidden="true" focusable="false"><use href="#i-file-invoice"/></svg> Demander un devis<span class="sr-only"> pour un portefeuille en cuir</span>
                     </button>
-                    <p class="text-xs text-wood-800 mt-3">mnlaser.contact@gmail.com · Devis gratuit</p>
+                    <p class="text-sm text-wood-800 mt-4">Introuvable ailleurs : disponible uniquement en commande directe. Devis gratuit.</p>
                 </div>
             </article>
         </div>
     </section>
 
     <!-- ═══════════════════════════ AVIS ═══════════════════════════ -->
-    <section id="reviews" class="py-16 md:py-24 bg-wood-900">
-        <div class="container mx-auto px-4 sm:px-6">
-            <div class="text-center mb-12 md:mb-16 reveal">
-                <p class="text-wood-300 font-bold tracking-[0.3em] uppercase text-xs mb-3">Témoignages</p>
-                <h2 class="text-3xl sm:text-4xl font-serif font-bold text-white">Les avis de nos clients</h2>
+    <section id="reviews" class="section bg-white">
+        <div class="wrap">
+            <div class="text-center max-w-2xl mx-auto mb-10 md:mb-14 reveal">
+                <p class="eyebrow">Témoignages</p>
+                <h2 class="h2">Les avis de nos clients</h2>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 max-w-6xl mx-auto">
-                <figure class="bg-wood-800 border border-wood-700 p-6 lg:p-8 rounded-2xl reveal flex flex-col">
-                    <p class="flex gap-0.5 text-wood-300 mb-4 text-sm" role="img" aria-label="Note : 5 sur 5">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+                <figure class="card p-6 lg:p-8 flex flex-col reveal delay-100">
+                    <p class="flex gap-1 text-ember-500 mb-4" role="img" aria-label="Note : 5 sur 5">
                         <svg class="icon" viewBox="0 0 576 512" aria-hidden="true" focusable="false"><use href="#i-star"/></svg><svg class="icon" viewBox="0 0 576 512" aria-hidden="true" focusable="false"><use href="#i-star"/></svg><svg class="icon" viewBox="0 0 576 512" aria-hidden="true" focusable="false"><use href="#i-star"/></svg><svg class="icon" viewBox="0 0 576 512" aria-hidden="true" focusable="false"><use href="#i-star"/></svg><svg class="icon" viewBox="0 0 576 512" aria-hidden="true" focusable="false"><use href="#i-star"/></svg>
                     </p>
-                    <blockquote class="mb-6 italic text-gray-200 leading-relaxed">
+                    <blockquote class="mb-6 text-wood-900 text-lg leading-relaxed">
                         <p>"Commande reçue très rapidement. La gravure sur la planche à découper est magnifique, un travail d'une grande finesse. Merci !"</p>
                     </blockquote>
-                    <figcaption class="flex items-center gap-3 mt-auto">
-                        <span class="w-10 h-10 bg-wood-300 rounded-full flex items-center justify-center text-wood-900 font-bold text-sm" aria-hidden="true">S</span>
-                        <span class="font-bold text-white text-sm">Sophie M.</span>
+                    <figcaption class="flex items-center gap-3 mt-auto pt-5 border-t border-line">
+                        <span class="w-10 h-10 bg-wood-900 rounded-full flex items-center justify-center text-wood-300 font-bold text-sm" aria-hidden="true">S</span>
+                        <span class="font-bold text-wood-900 text-sm">Sophie M.</span>
                     </figcaption>
                 </figure>
-
-                <figure class="bg-wood-800 border border-wood-700 p-6 lg:p-8 rounded-2xl reveal delay-100 flex flex-col">
-                    <p class="flex gap-0.5 text-wood-300 mb-4 text-sm" role="img" aria-label="Note : 5 sur 5">
+                <figure class="card p-6 lg:p-8 flex flex-col reveal delay-200">
+                    <p class="flex gap-1 text-ember-500 mb-4" role="img" aria-label="Note : 5 sur 5">
                         <svg class="icon" viewBox="0 0 576 512" aria-hidden="true" focusable="false"><use href="#i-star"/></svg><svg class="icon" viewBox="0 0 576 512" aria-hidden="true" focusable="false"><use href="#i-star"/></svg><svg class="icon" viewBox="0 0 576 512" aria-hidden="true" focusable="false"><use href="#i-star"/></svg><svg class="icon" viewBox="0 0 576 512" aria-hidden="true" focusable="false"><use href="#i-star"/></svg><svg class="icon" viewBox="0 0 576 512" aria-hidden="true" focusable="false"><use href="#i-star"/></svg>
                     </p>
-                    <blockquote class="mb-6 italic text-gray-200 leading-relaxed">
+                    <blockquote class="mb-6 text-wood-900 text-lg leading-relaxed">
                         <p>"J'ai commandé des marque-places pour mon mariage. Le rendu bois est naturel et élégant. Exactement ce que je voulais."</p>
                     </blockquote>
-                    <figcaption class="flex items-center gap-3 mt-auto">
-                        <span class="w-10 h-10 bg-wood-300 rounded-full flex items-center justify-center text-wood-900 font-bold text-sm" aria-hidden="true">T</span>
-                        <span class="font-bold text-white text-sm">Thomas D.</span>
+                    <figcaption class="flex items-center gap-3 mt-auto pt-5 border-t border-line">
+                        <span class="w-10 h-10 bg-wood-900 rounded-full flex items-center justify-center text-wood-300 font-bold text-sm" aria-hidden="true">T</span>
+                        <span class="font-bold text-wood-900 text-sm">Thomas D.</span>
                     </figcaption>
                 </figure>
-
-                <figure class="bg-wood-800 border border-wood-700 p-6 lg:p-8 rounded-2xl reveal delay-200 flex flex-col">
-                    <p class="flex gap-0.5 text-wood-300 mb-4 text-sm" role="img" aria-label="Note : 5 sur 5">
+                <figure class="card p-6 lg:p-8 flex flex-col reveal delay-300">
+                    <p class="flex gap-1 text-ember-500 mb-4" role="img" aria-label="Note : 5 sur 5">
                         <svg class="icon" viewBox="0 0 576 512" aria-hidden="true" focusable="false"><use href="#i-star"/></svg><svg class="icon" viewBox="0 0 576 512" aria-hidden="true" focusable="false"><use href="#i-star"/></svg><svg class="icon" viewBox="0 0 576 512" aria-hidden="true" focusable="false"><use href="#i-star"/></svg><svg class="icon" viewBox="0 0 576 512" aria-hidden="true" focusable="false"><use href="#i-star"/></svg><svg class="icon" viewBox="0 0 576 512" aria-hidden="true" focusable="false"><use href="#i-star"/></svg>
                     </p>
-                    <blockquote class="mb-6 italic text-gray-200 leading-relaxed">
+                    <blockquote class="mb-6 text-wood-900 text-lg leading-relaxed">
                         <p>"Super communication pour une demande personnalisée complexe. Le résultat dépasse mes attentes."</p>
                     </blockquote>
-                    <figcaption class="flex items-center gap-3 mt-auto">
-                        <span class="w-10 h-10 bg-wood-300 rounded-full flex items-center justify-center text-wood-900 font-bold text-sm" aria-hidden="true">J</span>
-                        <span class="font-bold text-white text-sm">Julie A.</span>
+                    <figcaption class="flex items-center gap-3 mt-auto pt-5 border-t border-line">
+                        <span class="w-10 h-10 bg-wood-900 rounded-full flex items-center justify-center text-wood-300 font-bold text-sm" aria-hidden="true">J</span>
+                        <span class="font-bold text-wood-900 text-sm">Julie A.</span>
                     </figcaption>
                 </figure>
             </div>
         </div>
     </section>
 
-    <!-- ═══════════════════════════ À PROPOS / LOCALISATION ═══════════════════════════ -->
-    <section id="apropos" class="py-16 md:py-24 bg-wood-50">
-        <div class="container mx-auto px-4 sm:px-6">
-            <div class="text-center mb-12 md:mb-16 reveal">
-                <p class="text-wood-700 font-bold tracking-[0.3em] uppercase text-xs mb-3">Notre atelier</p>
-                <h2 class="text-3xl sm:text-4xl md:text-5xl font-serif font-bold text-wood-900 mb-4">Un atelier de gravure laser à Mazamet</h2>
-                <p class="text-wood-800 max-w-2xl mx-auto text-lg">Installé au cœur de la Montagne Noire, dans le Tarn en Occitanie, notre atelier de gravure laser crée des pièces uniques pour particuliers et professionnels.</p>
+    <!-- ═══════════════════════════ ATELIER ═══════════════════════════ -->
+    <section id="apropos" class="section bg-paper">
+        <div class="wrap grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+            <div class="relative reveal order-last lg:order-first">
+                <div class="relative aspect-[4/3] rounded-3xl overflow-hidden shadow-xl">
+                    <picture>
+                        <source type="image/avif" srcset="images/passerelle-mazamet-480.avif 480w, images/passerelle-mazamet-800.avif 800w" sizes="(min-width: 1024px) 544px, 100vw">
+                        <source type="image/webp" srcset="images/passerelle-mazamet-480.webp 480w, images/passerelle-mazamet-800.webp 800w" sizes="(min-width: 1024px) 544px, 100vw">
+                        <img src="images/passerelle-mazamet-800.webp" alt="La passerelle de Mazamet gravée au laser sur un tableau en bois" width="1195" height="896" loading="lazy" decoding="async" class="absolute inset-0 w-full h-full object-cover">
+                    </picture>
+                </div>
+                <div class="absolute -bottom-6 -right-2 sm:-right-6 w-28 h-28 sm:w-36 sm:h-36 rounded-full overflow-hidden bg-white border-4 border-white shadow-xl">
+                    <picture>
+                        <source type="image/avif" srcset="images/pic-de-nore-480.avif 480w" sizes="144px">
+                        <source type="image/webp" srcset="images/pic-de-nore-480.webp 480w" sizes="144px">
+                        <img src="images/pic-de-nore-480.webp" alt="Médaillon du Pic de Nore, point culminant de la Montagne Noire" width="480" height="480" loading="lazy" decoding="async" class="w-full h-full object-cover">
+                    </picture>
+                </div>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 max-w-5xl mx-auto">
-                <div class="text-center p-6 lg:p-8 bg-white rounded-2xl shadow-md reveal delay-100">
-                    <div class="w-16 h-16 mx-auto mb-5 rounded-full bg-wood-100 flex items-center justify-center" aria-hidden="true">
-                        <svg class="icon text-wood-700 text-2xl" viewBox="0 0 384 512" aria-hidden="true" focusable="false"><use href="#i-location-dot"/></svg>
-                    </div>
-                    <h3 class="text-xl font-serif font-bold text-wood-900 mb-3">Mazamet, Tarn (81)</h3>
-                    <p class="text-wood-800 text-sm leading-relaxed">Atelier situé à Mazamet, à proximité de Castres, Carcassonne et Toulouse. Nous livrons partout en France et en Occitanie.</p>
+            <div>
+                <div class="reveal">
+                    <p class="eyebrow">L'atelier</p>
+                    <h2 class="h2 mb-5">Un atelier de gravure laser à Mazamet</h2>
+                    <p class="lead mb-8">Installé au cœur de la Montagne Noire, dans le Tarn en Occitanie, notre atelier de gravure laser crée des pièces uniques pour particuliers et professionnels.</p>
                 </div>
-
-                <div class="text-center p-6 lg:p-8 bg-white rounded-2xl shadow-md reveal delay-200">
-                    <div class="w-16 h-16 mx-auto mb-5 rounded-full bg-wood-100 flex items-center justify-center" aria-hidden="true">
-                        <svg class="icon text-wood-700 text-2xl" viewBox="0 0 640 512" aria-hidden="true" focusable="false"><use href="#i-hand-sparkles"/></svg>
-                    </div>
-                    <h3 class="text-xl font-serif font-bold text-wood-900 mb-3">100 % artisanal</h3>
-                    <p class="text-wood-800 text-sm leading-relaxed">Chaque pièce est imaginée, créée et gravée dans mon atelier avec soin. Bois, cuir et objets personnalisés — un savoir-faire local et authentique.</p>
-                </div>
-
-                <div class="text-center p-6 lg:p-8 bg-white rounded-2xl shadow-md reveal delay-300">
-                    <div class="w-16 h-16 mx-auto mb-5 rounded-full bg-wood-100 flex items-center justify-center" aria-hidden="true">
-                        <svg class="icon text-wood-700 text-2xl" viewBox="0 0 640 512" aria-hidden="true" focusable="false"><use href="#i-truck-fast"/></svg>
-                    </div>
-                    <h3 class="text-xl font-serif font-bold text-wood-900 mb-3">Livraison France entière</h3>
-                    <p class="text-wood-800 text-sm leading-relaxed">Expédition soignée depuis Mazamet. Retrait possible sur place dans le Tarn. Devis gratuit sous 24 h.</p>
-                </div>
+                <ul class="space-y-6">
+                    <li class="flex gap-4 reveal delay-100">
+                        <span class="shrink-0 w-12 h-12 rounded-full bg-ember-50 text-ember-600 flex items-center justify-center text-xl" aria-hidden="true"><svg class="icon" viewBox="0 0 384 512" aria-hidden="true" focusable="false"><use href="#i-location-dot"/></svg></span>
+                        <div>
+                            <h3 class="text-lg font-serif font-bold text-wood-900 mb-1">Mazamet, Tarn (81)</h3>
+                            <p class="text-wood-800 text-sm leading-relaxed">Atelier situé à Mazamet, à proximité de Castres, Carcassonne et Toulouse. Nous livrons partout en France et en Occitanie.</p>
+                        </div>
+                    </li>
+                    <li class="flex gap-4 reveal delay-200">
+                        <span class="shrink-0 w-12 h-12 rounded-full bg-ember-50 text-ember-600 flex items-center justify-center text-xl" aria-hidden="true"><svg class="icon" viewBox="0 0 640 512" aria-hidden="true" focusable="false"><use href="#i-hand-sparkles"/></svg></span>
+                        <div>
+                            <h3 class="text-lg font-serif font-bold text-wood-900 mb-1">100 % artisanal</h3>
+                            <p class="text-wood-800 text-sm leading-relaxed">Chaque pièce est imaginée, créée et gravée dans mon atelier avec soin. Bois, cuir et objets personnalisés — un savoir-faire local et authentique.</p>
+                        </div>
+                    </li>
+                    <li class="flex gap-4 reveal delay-300">
+                        <span class="shrink-0 w-12 h-12 rounded-full bg-ember-50 text-ember-600 flex items-center justify-center text-xl" aria-hidden="true"><svg class="icon" viewBox="0 0 640 512" aria-hidden="true" focusable="false"><use href="#i-truck-fast"/></svg></span>
+                        <div>
+                            <h3 class="text-lg font-serif font-bold text-wood-900 mb-1">Livraison France entière</h3>
+                            <p class="text-wood-800 text-sm leading-relaxed">Expédition soignée depuis Mazamet. Retrait possible sur place dans le Tarn. Devis gratuit sous 24 h.</p>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </div>
     </section>
 
     <!-- ═══════════════════════════ FAQ ═══════════════════════════ -->
-    <section id="faq" class="py-16 md:py-24 bg-wood-100">
-        <div class="container mx-auto px-4 sm:px-6">
-            <div class="text-center mb-12 md:mb-16 reveal">
-                <p class="text-wood-700 font-bold tracking-[0.3em] uppercase text-xs mb-3">Questions fréquentes</p>
-                <h2 class="text-3xl sm:text-4xl md:text-5xl font-serif font-bold text-wood-900 mb-4">Gravure laser personnalisée : vos questions</h2>
-                <p class="text-wood-800 max-w-xl mx-auto">Matériaux, prix, délais, livraison : les réponses aux questions que l'on me pose le plus souvent.</p>
-            </div>
-
-            <div class="max-w-3xl mx-auto space-y-4 reveal">
-                <details class="faq-item bg-white rounded-2xl shadow-md">
-                    <summary class="flex items-center justify-between gap-4 p-5 sm:p-6 rounded-2xl">
-                        <h3 class="text-base sm:text-lg font-serif font-bold text-wood-900">Sur quels matériaux gravez-vous&nbsp;?</h3>
-                        <svg class="icon faq-chevron text-wood-700 shrink-0" viewBox="0 0 512 512" aria-hidden="true" focusable="false"><use href="#i-chevron-down"/></svg>
-                    </summary>
-                    <p class="px-5 sm:px-6 pb-6 text-wood-800 leading-relaxed">Je grave principalement le bois et le cuir : décorations murales, porte-clés, cintres, bouchons de vin, compteurs de pétanque ou portefeuilles. Pour un autre support, décrivez votre projet dans la demande de devis : je vous dirai si la gravure est réalisable.</p>
-                </details>
-
-                <details class="faq-item bg-white rounded-2xl shadow-md">
-                    <summary class="flex items-center justify-between gap-4 p-5 sm:p-6 rounded-2xl">
-                        <h3 class="text-base sm:text-lg font-serif font-bold text-wood-900">Combien coûte une gravure laser personnalisée&nbsp;?</h3>
-                        <svg class="icon faq-chevron text-wood-700 shrink-0" viewBox="0 0 512 512" aria-hidden="true" focusable="false"><use href="#i-chevron-down"/></svg>
-                    </summary>
-                    <p class="px-5 sm:px-6 pb-6 text-wood-800 leading-relaxed">Le prix dépend du support, des dimensions et de la complexité du motif. Les articles de la boutique sont affichés à prix fixe, à partir de 2,50 €. Pour une création sur mesure, le devis est gratuit et envoyé sous 24 h.</p>
-                </details>
-
-                <details class="faq-item bg-white rounded-2xl shadow-md">
-                    <summary class="flex items-center justify-between gap-4 p-5 sm:p-6 rounded-2xl">
-                        <h3 class="text-base sm:text-lg font-serif font-bold text-wood-900">Quels sont les délais de fabrication&nbsp;?</h3>
-                        <svg class="icon faq-chevron text-wood-700 shrink-0" viewBox="0 0 512 512" aria-hidden="true" focusable="false"><use href="#i-chevron-down"/></svg>
-                    </summary>
-                    <p class="px-5 sm:px-6 pb-6 text-wood-800 leading-relaxed">Chaque pièce est gravée dans l'atelier de Mazamet. Le délai dépend du projet et des quantités : il vous est communiqué avec le devis, avant toute validation de votre part.</p>
-                </details>
-
-                <details class="faq-item bg-white rounded-2xl shadow-md">
-                    <summary class="flex items-center justify-between gap-4 p-5 sm:p-6 rounded-2xl">
-                        <h3 class="text-base sm:text-lg font-serif font-bold text-wood-900">Puis-je faire graver mon logo, un dessin ou une photo&nbsp;?</h3>
-                        <svg class="icon faq-chevron text-wood-700 shrink-0" viewBox="0 0 512 512" aria-hidden="true" focusable="false"><use href="#i-chevron-down"/></svg>
-                    </summary>
-                    <p class="px-5 sm:px-6 pb-6 text-wood-800 leading-relaxed">Oui, c'est le principe du sur-mesure. Décrivez votre idée dans la demande de devis, puis envoyez votre logo, votre dessin ou votre photo par e-mail : je vous indique si le visuel se prête à la gravure et quelles adaptations prévoir.</p>
-                </details>
-
-                <details class="faq-item bg-white rounded-2xl shadow-md">
-                    <summary class="flex items-center justify-between gap-4 p-5 sm:p-6 rounded-2xl">
-                        <h3 class="text-base sm:text-lg font-serif font-bold text-wood-900">Livrez-vous partout en France ? Peut-on retirer sa commande à Mazamet&nbsp;?</h3>
-                        <svg class="icon faq-chevron text-wood-700 shrink-0" viewBox="0 0 512 512" aria-hidden="true" focusable="false"><use href="#i-chevron-down"/></svg>
-                    </summary>
-                    <p class="px-5 sm:px-6 pb-6 text-wood-800 leading-relaxed">Oui. Les commandes sont expédiées avec soin depuis Mazamet, partout en France. Si vous habitez dans le Tarn ou à proximité, le retrait sur place est possible : il suffit de le préciser dans votre demande.</p>
-                </details>
-
-                <details class="faq-item bg-white rounded-2xl shadow-md">
-                    <summary class="flex items-center justify-between gap-4 p-5 sm:p-6 rounded-2xl">
-                        <h3 class="text-base sm:text-lg font-serif font-bold text-wood-900">Réalisez-vous des commandes en quantité pour un mariage, une entreprise ou une association&nbsp;?</h3>
-                        <svg class="icon faq-chevron text-wood-700 shrink-0" viewBox="0 0 512 512" aria-hidden="true" focusable="false"><use href="#i-chevron-down"/></svg>
-                    </summary>
-                    <p class="px-5 sm:px-6 pb-6 text-wood-800 leading-relaxed">Oui. Cintres ou bouchons gravés pour un mariage, cadeaux d'entreprise, compteurs de pétanque aux couleurs d'un club : indiquez la quantité souhaitée dans votre demande de devis pour recevoir une proposition adaptée.</p>
-                </details>
-
-                <details class="faq-item bg-white rounded-2xl shadow-md">
-                    <summary class="flex items-center justify-between gap-4 p-5 sm:p-6 rounded-2xl">
-                        <h3 class="text-base sm:text-lg font-serif font-bold text-wood-900">Comment indiquer ma personnalisation&nbsp;?</h3>
-                        <svg class="icon faq-chevron text-wood-700 shrink-0" viewBox="0 0 512 512" aria-hidden="true" focusable="false"><use href="#i-chevron-down"/></svg>
-                    </summary>
-                    <p class="px-5 sm:px-6 pb-6 text-wood-800 leading-relaxed">Pour les articles de la boutique, la personnalisation (prénom, date, motif…) se renseigne au moment du paiement. Pour un projet sur mesure, décrivez-le dans le formulaire de devis : nous affinons ensuite les détails ensemble par e-mail.</p>
-                </details>
-
-                <details class="faq-item bg-white rounded-2xl shadow-md">
-                    <summary class="flex items-center justify-between gap-4 p-5 sm:p-6 rounded-2xl">
-                        <h3 class="text-base sm:text-lg font-serif font-bold text-wood-900">Quels sont les moyens de paiement acceptés&nbsp;?</h3>
-                        <svg class="icon faq-chevron text-wood-700 shrink-0" viewBox="0 0 512 512" aria-hidden="true" focusable="false"><use href="#i-chevron-down"/></svg>
-                    </summary>
-                    <p class="px-5 sm:px-6 pb-6 text-wood-800 leading-relaxed">Les articles de la boutique se règlent en ligne par carte bancaire via Stripe, une plateforme de paiement sécurisée, ou directement sur la boutique Etsy MontagneNoireLaser. Pour une création sur mesure, les modalités de paiement sont précisées avec le devis.</p>
-                </details>
-            </div>
-
-            <div class="text-center mt-12 reveal">
+    <section id="faq" class="section bg-sand">
+        <div class="wrap grid grid-cols-1 lg:grid-cols-3 gap-10 lg:gap-14">
+            <div class="reveal lg:sticky lg:top-28 lg:self-start">
+                <p class="eyebrow">Questions fréquentes</p>
+                <h2 class="font-serif font-bold text-3xl lg:text-4xl leading-tight text-wood-900 mb-4">Gravure laser personnalisée : vos questions</h2>
+                <p class="lead mb-6">Matériaux, prix, délais, livraison : les réponses aux questions que l'on me pose le plus souvent.</p>
                 <p class="text-wood-800 mb-4">Vous ne trouvez pas la réponse à votre question ?</p>
-                <button type="button" data-devis-open
-                        class="inline-block px-8 py-4 bg-wood-900 text-white font-bold rounded-full hover:bg-wood-800 hover:scale-105 transition-all duration-300 shadow-lg">
-                    <svg class="icon mr-2" viewBox="0 0 512 512" aria-hidden="true" focusable="false"><use href="#i-envelope"/></svg> Poser ma question
-                </button>
+                <button type="button" data-devis-open class="btn btn-dark"><svg class="icon" viewBox="0 0 512 512" aria-hidden="true" focusable="false"><use href="#i-envelope"/></svg> Poser ma question</button>
+            </div>
+
+            <div class="lg:col-span-2 space-y-4 reveal">
+                    <details class="faq-item card">
+                        <summary class="flex items-center justify-between gap-4 p-5 sm:p-6 rounded-2xl">
+                            <h3 class="text-base sm:text-lg font-serif font-bold text-wood-900">Sur quels matériaux gravez-vous&nbsp;?</h3>
+                            <svg class="icon faq-chevron text-ember-500 shrink-0" viewBox="0 0 512 512" aria-hidden="true" focusable="false"><use href="#i-chevron-down"/></svg>
+                        </summary>
+                        <p class="px-5 sm:px-6 pb-6 text-wood-800 leading-relaxed">Je grave principalement le bois et le cuir : décorations murales, porte-clés, cintres, bouchons de vin, compteurs de pétanque ou portefeuilles. Pour un autre support, décrivez votre projet dans la demande de devis : je vous dirai si la gravure est réalisable.</p>
+                    </details>
+
+                    <details class="faq-item card">
+                        <summary class="flex items-center justify-between gap-4 p-5 sm:p-6 rounded-2xl">
+                            <h3 class="text-base sm:text-lg font-serif font-bold text-wood-900">Combien coûte une gravure laser personnalisée&nbsp;?</h3>
+                            <svg class="icon faq-chevron text-ember-500 shrink-0" viewBox="0 0 512 512" aria-hidden="true" focusable="false"><use href="#i-chevron-down"/></svg>
+                        </summary>
+                        <p class="px-5 sm:px-6 pb-6 text-wood-800 leading-relaxed">Le prix dépend du support, des dimensions et de la complexité du motif. Les articles de la boutique sont affichés à prix fixe, à partir de 2,50 €. Pour une création sur mesure, le devis est gratuit et envoyé sous 24 h.</p>
+                    </details>
+
+                    <details class="faq-item card">
+                        <summary class="flex items-center justify-between gap-4 p-5 sm:p-6 rounded-2xl">
+                            <h3 class="text-base sm:text-lg font-serif font-bold text-wood-900">Quels sont les délais de fabrication&nbsp;?</h3>
+                            <svg class="icon faq-chevron text-ember-500 shrink-0" viewBox="0 0 512 512" aria-hidden="true" focusable="false"><use href="#i-chevron-down"/></svg>
+                        </summary>
+                        <p class="px-5 sm:px-6 pb-6 text-wood-800 leading-relaxed">Chaque pièce est gravée dans l'atelier de Mazamet. Le délai dépend du projet et des quantités : il vous est communiqué avec le devis, avant toute validation de votre part.</p>
+                    </details>
+
+                    <details class="faq-item card">
+                        <summary class="flex items-center justify-between gap-4 p-5 sm:p-6 rounded-2xl">
+                            <h3 class="text-base sm:text-lg font-serif font-bold text-wood-900">Puis-je faire graver mon logo, un dessin ou une photo&nbsp;?</h3>
+                            <svg class="icon faq-chevron text-ember-500 shrink-0" viewBox="0 0 512 512" aria-hidden="true" focusable="false"><use href="#i-chevron-down"/></svg>
+                        </summary>
+                        <p class="px-5 sm:px-6 pb-6 text-wood-800 leading-relaxed">Oui, c'est le principe du sur-mesure. Décrivez votre idée dans la demande de devis, puis envoyez votre logo, votre dessin ou votre photo par e-mail : je vous indique si le visuel se prête à la gravure et quelles adaptations prévoir.</p>
+                    </details>
+
+                    <details class="faq-item card">
+                        <summary class="flex items-center justify-between gap-4 p-5 sm:p-6 rounded-2xl">
+                            <h3 class="text-base sm:text-lg font-serif font-bold text-wood-900">Livrez-vous partout en France ? Peut-on retirer sa commande à Mazamet&nbsp;?</h3>
+                            <svg class="icon faq-chevron text-ember-500 shrink-0" viewBox="0 0 512 512" aria-hidden="true" focusable="false"><use href="#i-chevron-down"/></svg>
+                        </summary>
+                        <p class="px-5 sm:px-6 pb-6 text-wood-800 leading-relaxed">Oui. Les commandes sont expédiées avec soin depuis Mazamet, partout en France. Si vous habitez dans le Tarn ou à proximité, le retrait sur place est possible : il suffit de le préciser dans votre demande.</p>
+                    </details>
+
+                    <details class="faq-item card">
+                        <summary class="flex items-center justify-between gap-4 p-5 sm:p-6 rounded-2xl">
+                            <h3 class="text-base sm:text-lg font-serif font-bold text-wood-900">Réalisez-vous des commandes en quantité pour un mariage, une entreprise ou une association&nbsp;?</h3>
+                            <svg class="icon faq-chevron text-ember-500 shrink-0" viewBox="0 0 512 512" aria-hidden="true" focusable="false"><use href="#i-chevron-down"/></svg>
+                        </summary>
+                        <p class="px-5 sm:px-6 pb-6 text-wood-800 leading-relaxed">Oui. Cintres ou bouchons gravés pour un mariage, cadeaux d'entreprise, compteurs de pétanque aux couleurs d'un club : indiquez la quantité souhaitée dans votre demande de devis pour recevoir une proposition adaptée.</p>
+                    </details>
+
+                    <details class="faq-item card">
+                        <summary class="flex items-center justify-between gap-4 p-5 sm:p-6 rounded-2xl">
+                            <h3 class="text-base sm:text-lg font-serif font-bold text-wood-900">Comment indiquer ma personnalisation&nbsp;?</h3>
+                            <svg class="icon faq-chevron text-ember-500 shrink-0" viewBox="0 0 512 512" aria-hidden="true" focusable="false"><use href="#i-chevron-down"/></svg>
+                        </summary>
+                        <p class="px-5 sm:px-6 pb-6 text-wood-800 leading-relaxed">Pour les articles de la boutique, la personnalisation (prénom, date, motif…) se renseigne au moment du paiement. Pour un projet sur mesure, décrivez-le dans le formulaire de devis : nous affinons ensuite les détails ensemble par e-mail.</p>
+                    </details>
+
+                    <details class="faq-item card">
+                        <summary class="flex items-center justify-between gap-4 p-5 sm:p-6 rounded-2xl">
+                            <h3 class="text-base sm:text-lg font-serif font-bold text-wood-900">Quels sont les moyens de paiement acceptés&nbsp;?</h3>
+                            <svg class="icon faq-chevron text-ember-500 shrink-0" viewBox="0 0 512 512" aria-hidden="true" focusable="false"><use href="#i-chevron-down"/></svg>
+                        </summary>
+                        <p class="px-5 sm:px-6 pb-6 text-wood-800 leading-relaxed">Les articles de la boutique se règlent en ligne par carte bancaire via Stripe, une plateforme de paiement sécurisée, ou directement sur la boutique Etsy MontagneNoireLaser. Pour une création sur mesure, les modalités de paiement sont précisées avec le devis.</p>
+                    </details>
             </div>
         </div>
     </section>
@@ -1243,18 +1279,31 @@
         ]
     }
     </script>
+
+    <!-- ═══════════════════════════ APPEL À L'ACTION FINAL ═══════════════════════════ -->
+    <section class="bg-ember-600" aria-labelledby="cta-title">
+        <div class="wrap py-14 md:py-20 flex flex-col lg:flex-row items-center justify-between gap-8 text-center lg:text-left">
+            <div class="max-w-2xl">
+                <h2 id="cta-title" class="font-serif font-bold text-3xl sm:text-4xl text-white mb-3">Vous avez un projet en tête ?</h2>
+                <p class="text-white text-base sm:text-lg">Devis gratuit · Réponse sous 24 h · Livraison soignée partout en France.</p>
+            </div>
+            <div class="flex flex-col sm:flex-row gap-3 shrink-0">
+                <button type="button" data-devis-open class="btn btn-light"><svg class="icon" viewBox="0 0 384 512" aria-hidden="true" focusable="false"><use href="#i-file-invoice"/></svg> Demander un devis</button>
+                <a href="#catalogue" class="btn btn-ghost"><svg class="icon" viewBox="0 0 448 512" aria-hidden="true" focusable="false"><use href="#i-bag-shopping"/></svg> Voir la boutique</a>
+            </div>
+        </div>
+    </section>
     </main>
 
     <!-- ═══════════════════════════ FOOTER ═══════════════════════════ -->
-    <footer class="bg-wood-900 border-t border-wood-800 pt-16 pb-24 lg:pb-8">
-        <div class="container mx-auto px-4 sm:px-6">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-12 mb-12">
-                <div>
+    <footer class="bg-wood-900 pt-14 md:pt-16 pb-28 lg:pb-8">
+        <div class="wrap">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+                <div class="sm:col-span-2 lg:col-span-1">
                     <div class="flex items-center gap-3 mb-4">
                         <picture>
-                            <source type="image/avif" srcset="images/logo-96.avif 96w, images/logo-192.avif 192w" sizes="40px">
-                            <img src="images/logo-96.webp" srcset="images/logo-96.webp 96w, images/logo-192.webp 192w" sizes="40px" alt="" width="96" height="96" loading="lazy" decoding="async"
-                                 class="h-10 w-10 rounded-full object-cover">
+                            <source type="image/avif" srcset="images/logo-96.avif 96w, images/logo-192.avif 192w" sizes="44px">
+                            <img src="images/logo-96.webp" srcset="images/logo-96.webp 96w, images/logo-192.webp 192w" sizes="44px" alt="" width="96" height="96" loading="lazy" decoding="async" class="h-11 w-11 shrink-0 rounded-full object-cover">
                         </picture>
                         <p class="text-xl font-serif font-bold text-white">MontagneNoireLaser</p>
                     </div>
@@ -1281,27 +1330,38 @@
                                 <svg class="icon" viewBox="0 0 448 512" aria-hidden="true" focusable="false"><use href="#i-tiktok"/></svg>
                             </a>
                         </li>
+                        <li>
+                            <a href="https://share.google/HAJsXumx35SjQ1CpI" target="_blank" rel="noopener noreferrer" aria-label="MontagneNoireLaser sur Google (nouvel onglet)"
+                               class="w-11 h-11 rounded-full bg-wood-800 flex items-center justify-center text-wood-300 hover:bg-wood-300 hover:text-wood-900 transition-colors">
+                                <svg class="icon" viewBox="0 0 488 512" aria-hidden="true" focusable="false"><use href="#i-google"/></svg>
+                            </a>
+                        </li>
                     </ul>
                 </div>
+                <nav aria-labelledby="footer-shop-title">
+                    <h2 id="footer-shop-title" class="text-sm font-bold mb-5 text-white uppercase tracking-widest">Boutique</h2>
+                    <ul class="space-y-3 text-gray-300 text-sm">
+                        <li><a href="#produit-porte-cles" class="hover:text-wood-300 transition-colors">Porte-clés personnalisé</a></li>
+                        <li><a href="#produit-cintre" class="hover:text-wood-300 transition-colors">Cintre personnalisé</a></li>
+                        <li><a href="#produit-bouchon" class="hover:text-wood-300 transition-colors">Bouchon de vin personnalisé</a></li>
+                        <li><a href="#portefeuille" class="hover:text-wood-300 transition-colors">Portefeuille en cuir</a></li>
+                        <li><a href="https://montagnenoirelaser.etsy.com" target="_blank" rel="noopener noreferrer" class="hover:text-wood-300 transition-colors">Boutique Etsy<span class="sr-only"> (nouvel onglet)</span></a></li>
+                    </ul>
+                </nav>
                 <nav aria-labelledby="footer-nav-title">
                     <h2 id="footer-nav-title" class="text-sm font-bold mb-5 text-white uppercase tracking-widest">Navigation</h2>
                     <ul class="space-y-3 text-gray-300 text-sm">
                         <li><a href="#surmesure" class="hover:text-wood-300 transition-colors">Créations sur mesure</a></li>
                         <li><a href="#etapes" class="hover:text-wood-300 transition-colors">Comment ça marche</a></li>
-                        <li><a href="#catalogue" class="hover:text-wood-300 transition-colors">Boutique</a></li>
                         <li><a href="#reviews" class="hover:text-wood-300 transition-colors">Avis clients</a></li>
                         <li><a href="#apropos" class="hover:text-wood-300 transition-colors">Notre atelier à Mazamet</a></li>
                         <li><a href="#faq" class="hover:text-wood-300 transition-colors">Questions fréquentes</a></li>
-                        <li><a href="https://montagnenoirelaser.etsy.com" target="_blank" rel="noopener noreferrer" class="hover:text-wood-300 transition-colors">Boutique Etsy<span class="sr-only"> (nouvel onglet)</span></a></li>
                     </ul>
                 </nav>
                 <div>
                     <h2 class="text-sm font-bold mb-5 text-white uppercase tracking-widest">Contact</h2>
                     <p class="text-gray-300 mb-4 text-sm">Un projet, une question ? Je vous réponds sous 24 h.</p>
-                    <button type="button" data-devis-open
-                            class="inline-block px-5 py-3 bg-wood-300 text-wood-900 font-bold rounded-full hover:bg-white transition-colors text-sm mb-4">
-                        <svg class="icon mr-2" viewBox="0 0 384 512" aria-hidden="true" focusable="false"><use href="#i-file-invoice"/></svg>Demander un devis gratuit
-                    </button>
+                    <button type="button" data-devis-open class="btn btn-sm btn-primary mb-4"><svg class="icon" viewBox="0 0 384 512" aria-hidden="true" focusable="false"><use href="#i-file-invoice"/></svg> Demander un devis gratuit</button>
                     <p class="text-sm">
                         <a href="mailto:mnlaser.contact@gmail.com" class="text-gray-300 underline underline-offset-4 hover:text-wood-300 transition-colors break-all">
                             <svg class="icon mr-2" viewBox="0 0 512 512" aria-hidden="true" focusable="false"><use href="#i-envelope"/></svg>mnlaser.contact@gmail.com
@@ -1309,23 +1369,24 @@
                     </p>
                 </div>
             </div>
-            <div class="border-t border-wood-800 pt-8 flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-6 text-gray-300 text-sm">
+            <div class="border-t border-wood-800 pt-8 flex flex-col sm:flex-row items-center justify-between gap-3 text-gray-300 text-sm">
                 <p>&copy; 2026 MontagneNoireLaser. Tous droits réservés.</p>
+                <p class="flex items-center gap-2"><svg class="icon text-wood-300" viewBox="0 0 448 512" aria-hidden="true" focusable="false"><use href="#i-lock"/></svg> Paiement sécurisé par Stripe</p>
                 <a href="mentions-legales.html" class="underline underline-offset-4 hover:text-wood-300 transition-colors">Mentions légales</a>
             </div>
         </div>
     </footer>
 
-    <!-- ═══════════════════════════ BOUTONS FLOTTANTS ═══════════════════════════ -->
-    <div id="floating-actions" class="floating-actions fixed bottom-4 right-4 z-40 flex flex-col items-end gap-3">
+    <!-- ═══════════════════════════ BARRE D'ACTION (mobile) + RETOUR EN HAUT ═══════════════════════════ -->
+    <div id="floating-actions" class="floating-actions fixed bottom-0 inset-x-0 z-40 pointer-events-none">
+        <div class="lg:hidden pointer-events-auto bg-white border-t border-line shadow-2xl px-3 py-2.5 flex gap-2.5">
+            <a href="#catalogue" class="btn btn-sm btn-primary flex-1"><svg class="icon" viewBox="0 0 448 512" aria-hidden="true" focusable="false"><use href="#i-bag-shopping"/></svg> Boutique</a>
+            <button type="button" data-devis-open class="btn btn-sm btn-outline flex-1"><svg class="icon" viewBox="0 0 384 512" aria-hidden="true" focusable="false"><use href="#i-file-invoice"/></svg> Devis gratuit</button>
+        </div>
         <a href="#home" aria-label="Retour en haut de la page"
-           class="w-11 h-11 rounded-full bg-wood-900 border border-wood-700 text-wood-300 flex items-center justify-center shadow-lg hover:bg-wood-800 transition-colors">
+           class="hidden lg:flex pointer-events-auto absolute right-5 bottom-5 w-12 h-12 rounded-full bg-wood-900 text-white items-center justify-center shadow-lg hover:bg-ember-500 transition-colors">
             <svg class="icon" viewBox="0 0 384 512" aria-hidden="true" focusable="false"><use href="#i-arrow-up"/></svg>
         </a>
-        <button type="button" data-devis-open
-                class="lg:hidden px-5 py-3 bg-wood-300 text-wood-900 font-bold rounded-full shadow-xl border border-wood-900/20 text-sm">
-            <svg class="icon mr-1.5" viewBox="0 0 384 512" aria-hidden="true" focusable="false"><use href="#i-file-invoice"/></svg> Devis gratuit
-        </button>
     </div>
 
     <!-- ═══════════════════════════ MODALE DEVIS ═══════════════════════════ -->
@@ -1414,7 +1475,7 @@
                 </div>
 
                 <button type="submit"
-                        class="w-full py-4 bg-wood-900 text-white font-bold rounded-full hover:bg-wood-800 transition-colors duration-300 shadow-lg text-sm tracking-wide disabled:opacity-70 disabled:cursor-wait">
+                        class="btn btn-primary w-full disabled:opacity-70 disabled:cursor-wait">
                     <svg class="icon mr-2" viewBox="0 0 512 512" aria-hidden="true" focusable="false"><use href="#i-paper-plane"/></svg> Envoyer ma demande
                 </button>
 
